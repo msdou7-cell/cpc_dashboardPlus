@@ -1170,3 +1170,34 @@ body {
 .filter-table-container {
   overflow-x: scroll;   /* Always show scrollbar */
 }
+
+/* Detail Table Styles */
+.detail-table-container {
+  width: 100%;
+  overflow-x: auto;              /* Enables horizontal scroll */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on Android/iOS */
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+#detailTable {
+  border-collapse: collapse;
+  width: max-content;            /* Table expands beyond screen width */
+  min-width: 600px;              /* Ensures scroll on small screens */
+}
+
+#detailTable th,
+#detailTable td {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  white-space: nowrap;           /* Prevents wrapping */
+}
+
+@media (max-width: 768px) {
+  #detailTable th,
+  #detailTable td {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+}
