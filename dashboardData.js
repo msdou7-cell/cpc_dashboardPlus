@@ -8,8 +8,8 @@ const dashboardData =
 {
     "totalFamilies":  148,
     "totalMembers":  797,
-    "grandTotal":  6205643,
-    "freeWill":  364100,
+    "grandTotal":  6200643,
+    "freeWill":  359100,
     "faithPromise":  0,
     "employeeSubscription":  1800850,
     "nonEmployeeSubscription":  244600,
@@ -35,7 +35,7 @@ const dashboardData =
                          "members":  12,
                          "savingBox":  20404,
                          "tiles":  3000,
-                         "total":  89004
+                         "total":  84004
                      },
                      {
                          "leikai":  "Khawai",
@@ -1220,7 +1220,7 @@ const dashboardData =
                                 "leikai":  "Khawai",
                                 "member":  "Dk Roshan",
                                 "relationship":  "Self",
-                                "freeWill":  5000,
+                                "freeWill":  0,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
