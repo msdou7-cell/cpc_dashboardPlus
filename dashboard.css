@@ -1073,11 +1073,11 @@ body {
 }
 
 /* =========================================================
-   RESPONSIVE FILTER TABLE
+   RESPONSIVE DETAIL TABLE
    Horizontal scrolling on mobile
    ========================================================= */
 
-.filter-table-container {
+.detail-table-container {
     width: 100%;
     max-width: 100%;
     overflow-x: auto;
@@ -1087,89 +1087,50 @@ body {
 }
 
 /* Keep the table wide enough for all columns */
-.filter-table-container table {
+.detail-table-container table {
     min-width: 900px;
     width: max-content;
     border-collapse: collapse;
 }
 
 /* Prevent column contents from being squeezed */
-.filter-table-container th,
-.filter-table-container td {
+.detail-table-container th,
+.detail-table-container td {
     white-space: nowrap;
 }
 
 
 /* =========================================================
-   MOBILE FILTER TABLE
+   MOBILE DETAIL TABLE
    ========================================================= */
 
 @media screen and (max-width: 767px) {
 
-    .filter-table-container {
+    .detail-table-container {
         width: 100%;
         overflow-x: auto;
         overflow-y: hidden;
 
-        /* Smooth scrolling on iPhone */
+        /* Smooth scrolling on Android/iPhone */
         -webkit-overflow-scrolling: touch;
 
         /* Makes the scrollbar easier to use */
         padding-bottom: 8px;
     }
 
-    .filter-table-container table {
+    .detail-table-container table {
         min-width: 900px;
         width: max-content;
     }
 
-    .filter-table-container th,
-    .filter-table-container td {
+    .detail-table-container th,
+    .detail-table-container td {
         white-space: nowrap;
         font-size: 12px;
         padding: 7px 9px;
     }
 }
 
-
-/* =========================================================
-   SMALL PHONES
-   ========================================================= */
-
-@media screen and (max-width: 479px) {
-
-    .filter-table-container table {
-        min-width: 900px;
-    }
-
-    .filter-table-container th,
-    .filter-table-container td {
-        font-size: 11px;
-        padding: 6px 8px;
-    }
-}
-
-.filter-table-container {
-  width: 100%;
-  overflow-x: auto;                 /* Enables horizontal scroll */
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling on Android/iOS */
-}
-
-#filter-table {
-  border-collapse: collapse;
-  width: max-content;               /* Table expands beyond screen */
-  min-width: 600px;                 /* Ensures scroll on small screens */
-}
-
-#filter-table th, #filter-table td {
-  padding: 8px 12px;
-  border: 1px solid #ccc;
-  white-space: nowrap;              /* Prevents wrapping */
-}
-
-.filter-table-container {
-  overflow-x: scroll;   /* Always show scrollbar */
-}
 
 /* Detail Table Styles */
 .detail-table-container {
