@@ -1071,3 +1071,80 @@ body {
         -webkit-tap-highlight-color: transparent;
     }
 }
+
+/* =========================================================
+   RESPONSIVE FILTER TABLE
+   Horizontal scrolling on mobile
+   ========================================================= */
+
+.filter-table-container {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: auto;
+}
+
+/* Keep the table wide enough for all columns */
+.filter-table-container table {
+    min-width: 900px;
+    width: max-content;
+    border-collapse: collapse;
+}
+
+/* Prevent column contents from being squeezed */
+.filter-table-container th,
+.filter-table-container td {
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   MOBILE FILTER TABLE
+   ========================================================= */
+
+@media screen and (max-width: 767px) {
+
+    .filter-table-container {
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        /* Smooth scrolling on iPhone */
+        -webkit-overflow-scrolling: touch;
+
+        /* Makes the scrollbar easier to use */
+        padding-bottom: 8px;
+    }
+
+    .filter-table-container table {
+        min-width: 900px;
+        width: max-content;
+    }
+
+    .filter-table-container th,
+    .filter-table-container td {
+        white-space: nowrap;
+        font-size: 12px;
+        padding: 7px 9px;
+    }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media screen and (max-width: 479px) {
+
+    .filter-table-container table {
+        min-width: 900px;
+    }
+
+    .filter-table-container th,
+    .filter-table-container td {
+        font-size: 11px;
+        padding: 6px 8px;
+    }
+}
