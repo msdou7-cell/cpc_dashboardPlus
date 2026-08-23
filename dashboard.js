@@ -37,7 +37,20 @@ const App = {
 
     selectedLeikai : "",
 
-    searchText  : ""
+    searchText  : "",
+	
+	societyShares: [],
+
+societyShareTotals:
+{
+    phaseI: 0,
+    phaseII: 0,
+    phaseIII: 0,
+    phaseIV: 0,
+    phaseV: 0,
+    total: 0
+}
+	
 
 };
 
@@ -90,13 +103,15 @@ document.addEventListener(
 );
 
 
-function initialiseApplication()
+async function initialiseApplication()
 {
     cacheControls();
 
     loadDashboardData();
 
-    registerGlobalEvents();
+    await loadSocietyShares();
+	
+	registerGlobalEvents();
 
     showApplicationInformation();
 
@@ -159,6 +174,340 @@ function loadDashboardData()
     }
 
     App.data = dashboardData;
+}
+
+/*=============================================================
+    SOCIETY SHARES CSV
+=============================================================*/
+
+/*=============================================================
+    SOCIETY SHARES CSV
+=============================================================*/
+
+async function loadSocietyShares()
+{
+    try
+    {
+        console.log("=================================");
+        console.log("Loading societyshares.csv...");
+        console.log("=================================");
+
+        const response =
+            await fetch("societyshares.csv?ts=" + Date.now(), {
+                cache: "no-store"
+            });
+
+        if (!response.ok)
+        {
+            throw new Error(
+                "Could not load societyshares.csv. HTTP Status: " +
+                response.status
+            );
+        }
+
+        const csvText =
+            await response.text();
+
+        console.log(
+            "Raw Society CSV:",
+            csvText
+        );
+
+
+        /* =========================================
+           PARSE CSV
+        ========================================= */
+
+        const rows =
+            parseSocietyCSV(csvText);
+
+        console.log(
+            "Parsed CSV rows:",
+            rows
+        );
+
+
+        if (rows.length < 2)
+        {
+            throw new Error(
+                "societyshares.csv contains no data rows."
+            );
+        }
+
+
+        /* =========================================
+           HEADER
+        ========================================= */
+
+        const headers =
+            rows[0].map(header =>
+                String(header)
+                    .trim()
+                    .toLowerCase()
+            );
+
+        console.log(
+            "Society CSV Headers:",
+            headers
+        );
+
+
+        /* =========================================
+           BUILD SOCIETY ROWS
+        ========================================= */
+
+        const societyRows = [];
+
+
+        for(let i = 1; i < rows.length; i++)
+        {
+            const values = rows[i];
+
+            console.log(
+                "Processing CSV row:",
+                i,
+                values
+            );
+
+
+            if(!values || values.length === 0)
+                continue;
+
+
+            const societyName =
+                String(values[0] || "")
+                    .trim();
+
+
+            /*
+               Ignore completely blank rows
+            */
+
+            if(!societyName)
+                continue;
+
+
+            const phaseI =
+                societyNumber(values[1]);
+
+            const phaseII =
+                societyNumber(values[2]);
+
+            const phaseIII =
+                societyNumber(values[3]);
+
+            const phaseIV =
+                societyNumber(values[4]);
+
+            const phaseV =
+                societyNumber(values[5]);
+
+
+            const total =
+                phaseI +
+                phaseII +
+                phaseIII +
+                phaseIV +
+                phaseV;
+
+
+            const societyRow =
+            {
+                societyname: societyName,
+
+                phaseI: phaseI,
+
+                phaseII: phaseII,
+
+                phaseIII: phaseIII,
+
+                phaseIV: phaseIV,
+
+                phaseV: phaseV,
+
+                total: total
+            };
+
+
+            console.log(
+                "Society row created:",
+                societyRow
+            );
+
+
+            societyRows.push(
+                societyRow
+            );
+        }
+
+
+        /* =========================================
+           CALCULATE GRAND TOTALS
+        ========================================= */
+
+        const totals =
+        {
+            phaseI: 0,
+
+            phaseII: 0,
+
+            phaseIII: 0,
+
+            phaseIV: 0,
+
+            phaseV: 0,
+
+            total: 0
+        };
+
+
+        societyRows.forEach(row =>
+        {
+            totals.phaseI +=
+                row.phaseI;
+
+            totals.phaseII +=
+                row.phaseII;
+
+            totals.phaseIII +=
+                row.phaseIII;
+
+            totals.phaseIV +=
+                row.phaseIV;
+
+            totals.phaseV +=
+                row.phaseV;
+
+            totals.total +=
+                row.total;
+        });
+
+
+        /* =========================================
+           STORE DATA
+        ========================================= */
+
+        App.societyShares =
+            societyRows;
+
+        App.societyShareTotals =
+            totals;
+
+
+        /* =========================================
+           UPDATE SOCIETY SHARES KPI ONLY
+        ========================================= */
+
+        if(App.data)
+        {
+            App.data.societyshares =
+                totals.total;
+        }
+
+
+        console.log(
+            "================================="
+        );
+
+        console.log(
+            "Society Shares Rows:",
+            societyRows
+        );
+
+        console.log(
+            "Society Shares Totals:",
+            totals
+        );
+
+        console.log(
+            "Society Shares KPI Total:",
+            App.data.societyshares
+        );
+
+        console.log(
+            "================================="
+        );
+    }
+    catch(error)
+    {
+        console.error(
+            "Society Shares Error:",
+            error
+        );
+
+
+        if(App.data)
+        {
+            App.data.societyshares = 0;
+        }
+
+
+        App.societyShares = [];
+
+
+        App.societyShareTotals =
+        {
+            phaseI: 0,
+
+            phaseII: 0,
+
+            phaseIII: 0,
+
+            phaseIV: 0,
+
+            phaseV: 0,
+
+            total: 0
+        };
+    }
+}
+
+/*=============================================================
+    SOCIETY CSV PARSER
+=============================================================*/
+
+function parseSocietyCSV(text)
+{
+    return text
+        .replace(/^\uFEFF/, "")
+        .trim()
+        .split(/\r?\n/)
+        .map(line =>
+        {
+            return line
+                .split(",")
+                .map(value =>
+                    value
+                        .trim()
+                        .replace(/^"|"$/g, "")
+                );
+        });
+}
+
+
+/*=============================================================
+    SOCIETY NUMBER CONVERTER
+=============================================================*/
+
+function societyNumber(value)
+{
+    if(value === undefined ||
+       value === null ||
+       value === "")
+    {
+        return 0;
+    }
+
+    const cleaned =
+        String(value)
+            .replace(/[₹,\s]/g, "");
+
+    const number =
+        Number(cleaned);
+
+    return isNaN(number)
+        ? 0
+        : number;
 }
 
 
@@ -1329,6 +1678,10 @@ case "savingBox":
         "Saving Box Contributions"
     );
     break;
+	
+case "societyshares":
+	openSocietyShares();
+	break;
             default:
 
                 console.warn("Unknown KPI :", view);
@@ -1341,6 +1694,170 @@ case "savingBox":
     MODULE 7
     MEMBER DIRECTORY
 =============================================================*/
+
+/*=============================================================
+    SOCIETY SHARES
+=============================================================*/
+
+function openSocietyShares()
+{
+    console.log(
+        "Opening Society Shares"
+    );
+
+    const rows =
+        App.societyShares.map(
+            (row, index) =>
+            ({
+                sl:
+                    index + 1,
+
+                societyname:
+                    row.societyname,
+
+                phaseI:
+                    row.phaseI,
+
+                phaseII:
+                    row.phaseII,
+
+                phaseIII:
+                    row.phaseIII,
+
+                phaseIV:
+                    row.phaseIV,
+
+                phaseV:
+                    row.phaseV,
+
+                total:
+                    row.total
+            })
+        );
+
+
+    /*
+    =========================================
+    GRAND TOTAL ROW
+    =========================================
+    */
+
+    const totals =
+        App.societyShareTotals;
+
+
+    rows.push({
+
+        sl: "",
+
+        societyname:
+            "GRAND TOTAL",
+
+        phaseI:
+            totals.phaseI,
+
+        phaseII:
+            totals.phaseII,
+
+        phaseIII:
+            totals.phaseIII,
+
+        phaseIV:
+            totals.phaseIV,
+
+        phaseV:
+            totals.phaseV,
+
+        total:
+            totals.total
+    });
+
+
+    /*
+    =========================================
+    DISPLAY
+    =========================================
+    */
+
+    renderDirectory({
+
+        title:
+            "Society Shares",
+
+        rows:
+            rows,
+
+        totalAmount:
+            totals.total,
+
+        columns:
+        [
+
+            {
+                field: "sl",
+                title: "Sl No",
+                align: "center"
+            },
+
+            {
+                field: "societyname",
+                title: "Society Name",
+                align: "left"
+            },
+
+            {
+                field: "phaseI",
+                title: "Phase I",
+                align: "right",
+                format: "currency"
+            },
+
+            {
+                field: "phaseII",
+                title: "Phase II",
+                align: "right",
+                format: "currency"
+            },
+
+            {
+                field: "phaseIII",
+                title: "Phase III",
+                align: "right",
+                format: "currency"
+            },
+
+            {
+                field: "phaseIV",
+                title: "Phase IV",
+                align: "right",
+                format: "currency"
+            },
+
+            {
+                field: "phaseV",
+                title: "Phase V",
+                align: "right",
+                format: "currency"
+            },
+
+            {
+                field: "total",
+                title: "Total",
+                align: "right",
+                format: "currency"
+            }
+
+        ],
+
+        toolbar:
+        {
+            search:
+                "Search Society"
+        }
+
+    });
+}
+
 
 function openFamilies()
 {
