@@ -394,15 +394,29 @@ async function loadSocietyShares()
             totals;
 
 
-        /* =========================================
-           UPDATE SOCIETY SHARES KPI ONLY
-        ========================================= */
+       /* =========================================
+   UPDATE DASHBOARD KPIs
+========================================= */
 
-        if(App.data)
-        {
-            App.data.societyshares =
-                totals.total;
-        }
+if(App.data)
+{
+    /*
+       Society Shares KPI
+    */
+
+    App.data.societyshares =
+        totals.total;
+
+
+    /*
+       Grand Total KPI
+       Include Society Shares
+    */
+
+    App.data.grandTotal =
+        safeNumber(App.data.grandTotal) +
+        totals.total;
+}
 
 
         console.log(
