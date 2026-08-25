@@ -1,408 +1,506 @@
-#=========================================================
-# DashboardDataGenerator.ps1
-# MODULE 1
-#=========================================================
+# =========================================================
+# DataGenerator.ps1
+# CPC Dashboard Data Generator
+# =========================================================
 
 $ErrorActionPreference = "Stop"
 
-#---------------------------------------------------------
-# Paths
-#---------------------------------------------------------
+Write-Host ""
+Write-Host "========================================================="
+Write-Host "        CPC DASHBOARD DATA GENERATOR"
+Write-Host "========================================================="
+Write-Host ""
+
+# =========================================================
+# 1. PATHS
+# =========================================================
 
 $BaseFolder = Split-Path -Parent $MyInvocation.MyCommand.Path
 
-$CsvFile = Join-Path $BaseFolder "data.csv"
-
+$CsvFile  = Join-Path $BaseFolder "data.csv"
 $OutputJS = Join-Path $BaseFolder "dashboardData.js"
 
-#---------------------------------------------------------
-# Check CSV
-#---------------------------------------------------------
+Write-Host "Base Folder:"
+Write-Host $BaseFolder
+Write-Host ""
 
-if(!(Test-Path $CsvFile))
-{
+Write-Host "CSV File:"
+Write-Host $CsvFile
+Write-Host ""
+
+Write-Host "Output File:"
+Write-Host $OutputJS
+Write-Host ""
+
+
+# =========================================================
+# 2. CHECK CSV FILE
+# =========================================================
+
+if (!(Test-Path -LiteralPath $CsvFile)) {
+
     Write-Host ""
-    Write-Host "CSV file not found."
+    Write-Host "ERROR: data.csv was not found."
+    Write-Host ""
+    Write-Host "Expected location:"
     Write-Host $CsvFile
-    pause
-    exit
+    Write-Host ""
+
+    exit 1
 }
 
-#---------------------------------------------------------
-# Read CSV
-#---------------------------------------------------------
 
-$Rows = Import-Csv $CsvFile
+# =========================================================
+# 3. READ CSV
+# =========================================================
 
-
+Write-Host "Reading data.csv..."
 Write-Host ""
-Write-Host "===== FIRST ROW VALUES ====="
 
-$Rows[0].PSObject.Properties | ForEach-Object {
-    Write-Host "$($_.Name) = [$($_.Value)]"
+$Rows = Import-Csv -LiteralPath $CsvFile
+
+if ($null -eq $Rows -or $Rows.Count -eq 0) {
+
+    Write-Host ""
+    Write-Host "ERROR: data.csv contains no records."
+    Write-Host ""
+
+    exit 1
 }
 
-Write-Host ""
-Pause
-
-
-if($Rows.Count -eq 0)
-{
-    Write-Host "CSV contains no records."
-    pause
-    exit
-}
-
-Write-Host ""
-Write-Host "CSV Loaded Successfully"
+Write-Host "CSV loaded successfully."
 Write-Host "Records : $($Rows.Count)"
+Write-Host ""
 
-#---------------------------------------------------------
-# Column Mapping
-#---------------------------------------------------------
+
+# =========================================================
+# 4. COLUMN MAPPING
+# =========================================================
 
 $Col = @{
 
-    HOF = "HOF"
+    HOF            = "HOF"
+    Member         = "Family Members"
+    Relationship   = "Relationship"
+    Leikai         = "Leikai"
 
-    Member = "Family Members"
+    FreeWill       = "FreeWill"
+    FaithPromise   = "FaithPromise"
 
-    Relationship = "Relationship"
+    Phase1         = "Phase 1"
+    Phase2         = "Phase 2"
+    Phase3         = "Phase 3 (50%)"
+    Phase4         = "Phase 4 (50%)"
+    Phase5         = "Phase 5 (40%)"
 
-    Leikai = "Leikai"
+    PhaseA         = "Phase A"
+    PhaseB         = "Phase B"
+    PhaseC         = "Phase C (50%)"
+    PhaseD         = "Phase D (50%)"
+    PhaseE         = "Phase E (Cate. A/B)"
 
-    FreeWill = "FreeWill"
-
-    FaithPromise = "FaithPromise"
-
-    Phase1 = "Phase 1"
-
-    Phase2 = "Phase 2"
-
-    Phase3 = "Phase 3 (50%)"
-
-    Phase4 = "Phase 4 (50%)"
-
-    Phase5 = "Phase 5 (40%)"
-
-    PhaseA = "Phase A"
-
-    PhaseB = "Phase B"
-
-    PhaseC = "Phase C (50%)"
-
-    PhaseD = "Phase D (50%)"
-
-    PhaseE = "Phase E (Cate. A/B)"
-
-    Windows = "Windows"
-
-    CPC = "CPC Subscription"
-
-    Pillars = "Pillars"
-
-    Tiles = "Tiles"
-
-    SavingBox = "Saving Box"
-
+    Windows        = "Windows"
+    CPC            = "CPC Subscription"
+    Pillars        = "Pillars"
+    Tiles          = "Tiles"
+    SavingBox      = "Saving Box"
 }
 
-#---------------------------------------------------------
-# Number Converter
-#---------------------------------------------------------
 
-function NumberValue($Value)
-{
-    if([string]::IsNullOrWhiteSpace($Value))
-    {
-        return 0
-    }
+# =========================================================
+# 5. CHECK REQUIRED CSV COLUMNS
+# =========================================================
 
-    $Value = $Value.ToString().Replace(",","").Trim()
+$CsvColumns = $Rows[0].PSObject.Properties.Name
 
-    try
-    {
-        return [decimal]$Value
-    }
-    catch
-    {
-        return 0
+foreach ($Key in $Col.Keys) {
+
+    $RequiredColumn = $Col[$Key]
+
+    if ($CsvColumns -notcontains $RequiredColumn) {
+
+        Write-Host ""
+        Write-Host "ERROR: Required CSV column not found:"
+        Write-Host $RequiredColumn
+        Write-Host ""
+
+        exit 1
     }
 }
 
+Write-Host "CSV column check completed successfully."
 Write-Host ""
-Write-Host "Module 1 completed successfully."
 
-#=========================================================
-# MODULE 2
-# Build Family Collection
-#=========================================================
 
-Write-Host ""
+# =========================================================
+# 6. NUMBER CONVERTER
+# =========================================================
+
+function NumberValue {
+
+    param(
+        $Value
+    )
+
+    if ($null -eq $Value) {
+        return [decimal]0
+    }
+
+    $Text = $Value.ToString().Trim()
+
+    if ([string]::IsNullOrWhiteSpace($Text)) {
+        return [decimal]0
+    }
+
+    # Remove commas and currency symbols
+    
+	$Text = $Text -replace '[^0-9.-]', ''
+	
+    try {
+        return [decimal]$Text
+    }
+    catch {
+        return [decimal]0
+    }
+}
+
+function NumberValue {
+
+    param(
+        [object]$Value
+    )
+
+    if ($null -eq $Value -or $Value -eq "") {
+        return 0
+    }
+
+    $Text = [string]$Value
+
+    $Text = $Text -replace '[^0-9.-]', ''
+
+    if ($Text -eq "" -or $Text -eq "-") {
+        return 0
+    }
+
+    return [decimal]$Text
+}
+
+# =========================================================
+# 7. BUILD FAMILY COLLECTION
+# =========================================================
+
 Write-Host "Building family collection..."
+Write-Host ""
 
 $Families = @()
 
 $currentFamily = $null
 
-foreach($row in $Rows)
+foreach ($row in $Rows) {
 
-{
-	Write-Host "HOF=[$($row.($Col.HOF))]  Member=[$($row.($Col.Member))]"
+    $HofValue = $row.($Col.HOF)
 
-    $hof = ($row.($Col.HOF)).Trim()
+    if ($null -eq $HofValue) {
+        $hof = ""
+    }
+    else {
+        $hof = $HofValue.ToString().Trim()
+    }
 
-    #-----------------------------------------------------
-    # New family starts whenever HOF column has a value
-    #-----------------------------------------------------
 
-    if($hof -ne "")
-    {
+    # -----------------------------------------------------
+    # New family starts when HOF has a value
+    # -----------------------------------------------------
+
+    if ($hof -ne "") {
+
+        $LeikaiValue = $row.($Col.Leikai)
+
+        if ($null -eq $LeikaiValue) {
+            $LeikaiValue = ""
+        }
+        else {
+            $LeikaiValue = $LeikaiValue.ToString().Trim()
+        }
+
+
         $currentFamily = [PSCustomObject]@{
 
             Head       = $hof
-
-            Leikai     = ($row.($Col.Leikai)).Trim()
+            Leikai     = $LeikaiValue
 
             Members    = @()
 
-            SavingBox  = 0
-
-            Tiles      = 0
-
-            Total      = 0
+            SavingBox  = [decimal]0
+            Tiles      = [decimal]0
+            Total      = [decimal]0
 
         }
 
         $Families += $currentFamily
     }
 
-    if($null -eq $currentFamily)
-    {
+
+    # -----------------------------------------------------
+    # Ignore rows before first family
+    # -----------------------------------------------------
+
+    if ($null -eq $currentFamily) {
         continue
     }
 
-    #-----------------------------------------------------
-    # Store original CSV row
-    #-----------------------------------------------------
+
+    # -----------------------------------------------------
+    # Add CSV row to current family
+    # -----------------------------------------------------
 
     $currentFamily.Members += $row
 }
 
-#---------------------------------------------------------
-# Calculate family information
-#---------------------------------------------------------
+
+# =========================================================
+# 8. CALCULATE FAMILY TOTALS
+# =========================================================
 
 $totalFamilies = $Families.Count
 $totalMembers  = 0
 
-foreach($family in $Families)
-{
-	
-   $familyMemberCount = $family.Members.Count
+
+foreach ($family in $Families) {
+
+    $familyMemberCount = $family.Members.Count
 
     $totalMembers += $familyMemberCount
 
-    
-    foreach($member in $family.Members)
-    {
+
+    foreach ($member in $family.Members) {
+
+        # Saving Box
         $family.SavingBox += NumberValue $member.($Col.SavingBox)
 
+        # Tiles
         $family.Tiles += NumberValue $member.($Col.Tiles)
 
-        $memberTotal = 0
 
-$memberTotal += NumberValue $member.($Col.FreeWill)
-$memberTotal += NumberValue $member.($Col.FaithPromise)
+        # -------------------------------------------------
+        # Member total
+        # -------------------------------------------------
 
-$memberTotal += NumberValue $member.($Col.Phase1)
-$memberTotal += NumberValue $member.($Col.Phase2)
-$memberTotal += NumberValue $member.($Col.Phase3)
-$memberTotal += NumberValue $member.($Col.Phase4)
-$memberTotal += NumberValue $member.($Col.Phase5)
+        $memberTotal = [decimal]0
 
-$memberTotal += NumberValue $member.($Col.PhaseA)
-$memberTotal += NumberValue $member.($Col.PhaseB)
-$memberTotal += NumberValue $member.($Col.PhaseC)
-$memberTotal += NumberValue $member.($Col.PhaseD)
-$memberTotal += NumberValue $member.($Col.PhaseE)
+        $memberTotal += NumberValue $member.($Col.FreeWill)
+        $memberTotal += NumberValue $member.($Col.FaithPromise)
 
-$memberTotal += NumberValue $member.($Col.Windows)
-$memberTotal += NumberValue $member.($Col.CPC)
-$memberTotal += NumberValue $member.($Col.Pillars)
+        $memberTotal += NumberValue $member.($Col.Phase1)
+        $memberTotal += NumberValue $member.($Col.Phase2)
+        $memberTotal += NumberValue $member.($Col.Phase3)
+        $memberTotal += NumberValue $member.($Col.Phase4)
+        $memberTotal += NumberValue $member.($Col.Phase5)
 
-$memberTotal += NumberValue $member.($Col.Tiles)
-$memberTotal += NumberValue $member.($Col.SavingBox)
+        $memberTotal += NumberValue $member.($Col.PhaseA)
+        $memberTotal += NumberValue $member.($Col.PhaseB)
+        $memberTotal += NumberValue $member.($Col.PhaseC)
+        $memberTotal += NumberValue $member.($Col.PhaseD)
+        $memberTotal += NumberValue $member.($Col.PhaseE)
 
-$family.Total += $memberTotal
-    
-	Write-Host "$($member.($Col.Member)) = $memberTotal"
-	}
-    # Save member count as a property for later use
-    $family | Add-Member -NotePropertyName MemberCount -NotePropertyValue $familyMemberCount -Force
+        $memberTotal += NumberValue $member.($Col.Windows)
+        $memberTotal += NumberValue $member.($Col.CPC)
+        $memberTotal += NumberValue $member.($Col.Pillars)
+
+        $memberTotal += NumberValue $member.($Col.Tiles)
+        $memberTotal += NumberValue $member.($Col.SavingBox)
+
+
+        # Add member total to family
+        $family.Total += $memberTotal
+    }
+
+
+    # Save member count
+    $family | Add-Member `
+        -NotePropertyName MemberCount `
+        -NotePropertyValue $familyMemberCount `
+        -Force
 }
 
-Write-Host ""
-Write-Host "Families : $totalFamilies"
-Write-Host "Members  : $totalMembers"
 
-Write-Host ""
-Write-Host "First family preview:"
-Write-Host "Head      : $($Families[0].Head)"
-Write-Host "Leikai    : $($Families[0].Leikai)"
-Write-Host "Members   : $($Families[0].MemberCount)"
-Write-Host "Total     : $($Families[0].Total)"
-Write-Host "SavingBox : $($Families[0].SavingBox)"
-Write-Host "Tiles     : $($Families[0].Tiles)"
-
-
-#=========================================================
-# MODULE 3
-# Calculate Dashboard Totals
-#=========================================================
-
-Write-Host ""
-Write-Host "Calculating dashboard totals..."
-
-#---------------------------------------------------------
-# Dashboard Object
-#---------------------------------------------------------
+# =========================================================
+# 9. DASHBOARD OBJECT
+# =========================================================
 
 $dashboard = [ordered]@{
 
-    totalFamilies = 0
+    totalFamilies = $totalFamilies
+    totalMembers  = $totalMembers
 
-    totalMembers = 0
+    grandTotal = [decimal]0
 
-    grandTotal = 0
+    freeWill     = [decimal]0
+    faithPromise = [decimal]0
 
-    freeWill = 0
+    employeeSubscription    = [decimal]0
+    nonEmployeeSubscription = [decimal]0
 
-    faithPromise = 0
+    phase1 = [decimal]0
+    phase2 = [decimal]0
+    phase3 = [decimal]0
+    phase4 = [decimal]0
+    phase5 = [decimal]0
 
-    employeeSubscription = 0
+    phaseA = [decimal]0
+    phaseB = [decimal]0
+    phaseC = [decimal]0
+    phaseD = [decimal]0
+    phaseE = [decimal]0
 
-    nonEmployeeSubscription = 0
-	
-	phase1 = 0
-phase2 = 0
-phase3 = 0
-phase4 = 0
-phase5 = 0
-
-phaseA = 0
-phaseB = 0
-phaseC = 0
-phaseD = 0
-phaseE = 0
-
-    windows = 0
-
-    cpc = 0
-
-    pillars = 0
-
-    tiles = 0
-
-    savingBox = 0
+    windows   = [decimal]0
+    cpc       = [decimal]0
+    pillars   = [decimal]0
+    tiles     = [decimal]0
+    savingBox = [decimal]0
 
     families = @()
 
+    memberDirectory = @()
 }
 
-#---------------------------------------
-# Dashboard Counts
-#---------------------------------------
 
-$dashboard.totalFamilies = $Families.Count
+# =========================================================
+# 10. CALCULATE DASHBOARD TOTALS
+# =========================================================
 
-$dashboard.totalMembers = $totalMembers
+Write-Host "Calculating dashboard totals..."
+Write-Host ""
 
-foreach($family in $Families)
-{
-   
 
-    foreach($member in $family.Members)
-    {
-		
-        $dashboard.freeWill     += NumberValue $member.($Col.FreeWill)
-        $dashboard.faithPromise += NumberValue $member.($Col.FaithPromise)
-		
+foreach ($family in $Families) {
 
+    foreach ($member in $family.Members) {
+
+
+        # -------------------------------------------------
+        # Basic contributions
+        # -------------------------------------------------
+
+        $dashboard.freeWill += NumberValue `
+            $member.($Col.FreeWill)
+
+        $dashboard.faithPromise += NumberValue `
+            $member.($Col.FaithPromise)
+
+
+        # -------------------------------------------------
+        # Employee subscription phases
+        # -------------------------------------------------
+
+        $dashboard.phase1 += NumberValue `
+            $member.($Col.Phase1)
+
+        $dashboard.phase2 += NumberValue `
+            $member.($Col.Phase2)
+
+        $dashboard.phase3 += NumberValue `
+            $member.($Col.Phase3)
+
+        $dashboard.phase4 += NumberValue `
+            $member.($Col.Phase4)
+
+        $dashboard.phase5 += NumberValue `
+            $member.($Col.Phase5)
+
+
+        # -------------------------------------------------
+        # Non-employee subscription phases
+        # -------------------------------------------------
+
+        $dashboard.phaseA += NumberValue `
+            $member.($Col.PhaseA)
+
+        $dashboard.phaseB += NumberValue `
+            $member.($Col.PhaseB)
+
+        $dashboard.phaseC += NumberValue `
+            $member.($Col.PhaseC)
+
+        $dashboard.phaseD += NumberValue `
+            $member.($Col.PhaseD)
+
+        $dashboard.phaseE += NumberValue `
+            $member.($Col.PhaseE)
+
+
+        # -------------------------------------------------
+        # Other contributions
+        # -------------------------------------------------
+
+        $dashboard.windows += NumberValue `
+            $member.($Col.Windows)
+
+        $dashboard.cpc += NumberValue `
+            $member.($Col.CPC)
+
+        $dashboard.pillars += NumberValue `
+            $member.($Col.Pillars)
+
+        $dashboard.tiles += NumberValue `
+            $member.($Col.Tiles)
+
+        $dashboard.savingBox += NumberValue `
+            $member.($Col.SavingBox)
+    }
+}
+
+
+# =========================================================
+# 11. CALCULATE SUBSCRIPTION TOTALS
+# =========================================================
+
+# Employee Subscription
 $dashboard.employeeSubscription =
+
     $dashboard.phase1 +
     $dashboard.phase2 +
     $dashboard.phase3 +
     $dashboard.phase4 +
     $dashboard.phase5
 
+
+# Non-Employee Subscription
 $dashboard.nonEmployeeSubscription =
+
     $dashboard.phaseA +
     $dashboard.phaseB +
     $dashboard.phaseC +
     $dashboard.phaseD +
     $dashboard.phaseE
-	
-	
-		$dashboard.nonEmployeeSubscription +=
-    NumberValue $member.'Phase A' +
-    NumberValue $member.'Phase B' +
-    NumberValue $member.'Phase C (50%)' +
-    NumberValue $member.'Phase D (50%)' +
-    NumberValue $member.'Phase E (Cate. A/B)'
-	
-        $dashboard.phase1 += NumberValue $member.($Col.Phase1)
-        $dashboard.phase2 += NumberValue $member.($Col.Phase2)
-        $dashboard.phase3 += NumberValue $member.($Col.Phase3)
-        $dashboard.phase4 += NumberValue $member.($Col.Phase4)
-        $dashboard.phase5 += NumberValue $member.($Col.Phase5)
 
-        $dashboard.phaseA += NumberValue $member.($Col.PhaseA)
-        $dashboard.phaseB += NumberValue $member.($Col.PhaseB)
-        $dashboard.phaseC += NumberValue $member.($Col.PhaseC)
-        $dashboard.phaseD += NumberValue $member.($Col.PhaseD)
-        $dashboard.phaseE += NumberValue $member.($Col.PhaseE)
 
-        $dashboard.windows += NumberValue $member.($Col.Windows)
-        $dashboard.cpc      += NumberValue $member.($Col.CPC)
-        $dashboard.pillars  += NumberValue $member.($Col.Pillars)
+# =========================================================
+# 12. CALCULATE GRAND TOTAL
+# =========================================================
 
-        $dashboard.tiles     += NumberValue $member.($Col.Tiles)
-        $dashboard.savingBox += NumberValue $member.($Col.SavingBox)
-    	
-	Write-Host "$($family.Head) : $($family.Total)"
-	}
-	
-    $dashboard.grandTotal =
+$dashboard.grandTotal =
+
     $dashboard.freeWill +
     $dashboard.faithPromise +
 
-    $dashboard.phase1 +
-    $dashboard.phase2 +
-    $dashboard.phase3 +
-    $dashboard.phase4 +
-    $dashboard.phase5 +
+    $dashboard.employeeSubscription +
 
-    $dashboard.phaseA +
-    $dashboard.phaseB +
-    $dashboard.phaseC +
-    $dashboard.phaseD +
-    $dashboard.phaseE +
+    $dashboard.nonEmployeeSubscription +
 
     $dashboard.windows +
     $dashboard.cpc +
     $dashboard.pillars +
-
     $dashboard.tiles +
     $dashboard.savingBox
-}
 
-#---------------------------------------------------------
-# Build Family List
-#---------------------------------------------------------
 
-foreach($family in $Families)
-{
+# =========================================================
+# 13. BUILD FAMILY ARRAY
+# =========================================================
+
+foreach ($family in $Families) {
+
     $dashboard.families += [ordered]@{
 
         leikai = $family.Leikai
@@ -416,143 +514,18 @@ foreach($family in $Families)
         tiles = $family.Tiles
 
         total = $family.Total
-
     }
 }
 
-#---------------------------------------------------------
-# Display Totals
-#---------------------------------------------------------
 
-Write-Host ""
-Write-Host "============= DASHBOARD TOTALS ============="
+# =========================================================
+# 14. BUILD MEMBER DIRECTORY
+# =========================================================
 
-Write-Host ("Families       : {0}" -f $dashboard.totalFamilies)
-Write-Host ("Members        : {0}" -f $dashboard.totalMembers)
+foreach ($family in $Families) {
 
-Write-Host ("Free Will      : {0}" -f $dashboard.freeWill)
-Write-Host ("Faith Promise  : {0}" -f $dashboard.faithPromise)
+    foreach ($member in $family.Members) {
 
-Write-Host ("Phase 1        : {0}" -f $dashboard.phase1)
-Write-Host ("Phase 2        : {0}" -f $dashboard.phase2)
-Write-Host ("Phase 3        : {0}" -f $dashboard.phase3)
-Write-Host ("Phase 4        : {0}" -f $dashboard.phase4)
-Write-Host ("Phase 5        : {0}" -f $dashboard.phase5)
-
-Write-Host ("Phase A        : {0}" -f $dashboard.phaseA)
-Write-Host ("Phase B        : {0}" -f $dashboard.phaseB)
-Write-Host ("Phase C        : {0}" -f $dashboard.phaseC)
-Write-Host ("Phase D        : {0}" -f $dashboard.phaseD)
-Write-Host ("Phase E        : {0}" -f $dashboard.phaseE)
-
-Write-Host ("Windows        : {0}" -f $dashboard.windows)
-Write-Host ("CPC            : {0}" -f $dashboard.cpc)
-Write-Host ("Pillars        : {0}" -f $dashboard.pillars)
-
-Write-Host ("Tiles          : {0}" -f $dashboard.tiles)
-Write-Host ("Saving Box     : {0}" -f $dashboard.savingBox)
-
-Write-Host ("Grand Total    : {0}" -f $dashboard.grandTotal)
-
-Write-Host ""
-
-Write-Host "Employee Subscription     : $($dashboard.employeeSubscription)"
-
-Write-Host "Non-Employee Subscription : $($dashboard.nonEmployeeSubscription)"
-
-
-
-#=========================================================
-# MODULE 4
-# Generate dashboardData.js
-#=========================================================
-
-Write-Host ""
-Write-Host "Generating dashboardData.js..."
-
-#---------------------------------------------------------
-# Convert Dashboard Object to JSON
-#---------------------------------------------------------
-
-$json = $dashboard | ConvertTo-Json -Depth 10
-
-#---------------------------------------------------------
-# Create JavaScript
-#---------------------------------------------------------
-
-$js = @"
-//=========================================================
-// AUTO GENERATED
-// Do not edit manually
-//=========================================================
-
-const dashboardData =
-
-$json;
-
-"@
-
-#---------------------------------------------------------
-# Save File
-#---------------------------------------------------------
-
-Set-Content `
-    -Path $OutputJS `
-    -Value $js `
-    -Encoding UTF8
-
-Write-Host ""
-Write-Host "dashboardData.js generated successfully."
-
-Write-Host ""
-Write-Host "Location:"
-Write-Host $OutputJS
-
-Write-Host ""
-Write-Host "Families : $($dashboard.totalFamilies)"
-Write-Host "Members  : $($dashboard.totalMembers)"
-Write-Host "Grand Total : $($dashboard.grandTotal)"
-
-pause
-
-#=========================================================
-# MODULE 4
-# Generate dashboardData.js
-#=========================================================
-
-Write-Host ""
-Write-Host "Generating dashboardData.js..."
-
-#---------------------------------------------------------
-# Build Family Array
-#---------------------------------------------------------
-
-$dashboard.families = @()
-
-foreach($family in $Families)
-{
-    $dashboard.families += [ordered]@{
-
-        leikai = $family.Leikai
-
-        head = $family.Head
-
-        members = $family.MemberCount
-
-        savingBox = $family.SavingBox
-
-        tiles = $family.Tiles
-
-        total = $family.Total
-
-    }
-	
-	$dashboard.memberDirectory = @()
-
-foreach($family in $Families)
-{
-    foreach($member in $family.Members)
-    {
         $dashboard.memberDirectory += [ordered]@{
 
             head = $family.Head
@@ -563,61 +536,139 @@ foreach($family in $Families)
 
             relationship = $member.($Col.Relationship)
 
-            freeWill = NumberValue $member.($Col.FreeWill)
+            freeWill =
+                NumberValue $member.($Col.FreeWill)
 
-            faithPromise = NumberValue $member.($Col.FaithPromise)
+            faithPromise =
+                NumberValue $member.($Col.FaithPromise)
 
-            phase1 = NumberValue $member.($Col.Phase1)
+            phase1 =
+                NumberValue $member.($Col.Phase1)
 
-            phase2 = NumberValue $member.($Col.Phase2)
+            phase2 =
+                NumberValue $member.($Col.Phase2)
 
-            phase3 = NumberValue $member.($Col.Phase3)
+            phase3 =
+                NumberValue $member.($Col.Phase3)
 
-            phase4 = NumberValue $member.($Col.Phase4)
+            phase4 =
+                NumberValue $member.($Col.Phase4)
 
-            phase5 = NumberValue $member.($Col.Phase5)
+            phase5 =
+                NumberValue $member.($Col.Phase5)
 
-            phaseA = NumberValue $member.($Col.PhaseA)
+            phaseA =
+                NumberValue $member.($Col.PhaseA)
 
-            phaseB = NumberValue $member.($Col.PhaseB)
+            phaseB =
+                NumberValue $member.($Col.PhaseB)
 
-            phaseC = NumberValue $member.($Col.PhaseC)
+            phaseC =
+                NumberValue $member.($Col.PhaseC)
 
-            phaseD = NumberValue $member.($Col.PhaseD)
+            phaseD =
+                NumberValue $member.($Col.PhaseD)
 
-            phaseE = NumberValue $member.($Col.PhaseE)
+            phaseE =
+                NumberValue $member.($Col.PhaseE)
 
-            windows = NumberValue $member.($Col.Windows)
+            windows =
+                NumberValue $member.($Col.Windows)
 
-            cpc = NumberValue $member.($Col.CPC)
+            cpc =
+                NumberValue $member.($Col.CPC)
 
-            pillars = NumberValue $member.($Col.Pillars)
+            pillars =
+                NumberValue $member.($Col.Pillars)
 
-            tiles = NumberValue $member.($Col.Tiles)
+            tiles =
+                NumberValue $member.($Col.Tiles)
 
-            savingBox = NumberValue $member.($Col.SavingBox)
-
+            savingBox =
+                NumberValue $member.($Col.SavingBox)
         }
     }
 }
-	
-}
 
-#---------------------------------------------------------
-# Convert to JSON
-#---------------------------------------------------------
+
+# =========================================================
+# 15. DISPLAY RESULTS
+# =========================================================
+
+Write-Host ""
+Write-Host "========================================================="
+Write-Host "             DASHBOARD TOTALS"
+Write-Host "========================================================="
+Write-Host ""
+
+Write-Host ("Families              : {0}" -f $dashboard.totalFamilies)
+Write-Host ("Members               : {0}" -f $dashboard.totalMembers)
+
+Write-Host ""
+
+Write-Host ("Free Will             : {0}" -f $dashboard.freeWill)
+Write-Host ("Faith Promise         : {0}" -f $dashboard.faithPromise)
+
+Write-Host ""
+
+Write-Host ("Employee Subscription : {0}" -f `
+    $dashboard.employeeSubscription)
+
+Write-Host ("Non-Employee Sub.     : {0}" -f `
+    $dashboard.nonEmployeeSubscription)
+
+Write-Host ""
+
+Write-Host ("Phase 1               : {0}" -f $dashboard.phase1)
+Write-Host ("Phase 2               : {0}" -f $dashboard.phase2)
+Write-Host ("Phase 3               : {0}" -f $dashboard.phase3)
+Write-Host ("Phase 4               : {0}" -f $dashboard.phase4)
+Write-Host ("Phase 5               : {0}" -f $dashboard.phase5)
+
+Write-Host ""
+
+Write-Host ("Phase A               : {0}" -f $dashboard.phaseA)
+Write-Host ("Phase B               : {0}" -f $dashboard.phaseB)
+Write-Host ("Phase C               : {0}" -f $dashboard.phaseC)
+Write-Host ("Phase D               : {0}" -f $dashboard.phaseD)
+Write-Host ("Phase E               : {0}" -f $dashboard.phaseE)
+
+Write-Host ""
+
+Write-Host ("Windows               : {0}" -f $dashboard.windows)
+Write-Host ("CPC                   : {0}" -f $dashboard.cpc)
+Write-Host ("Pillars               : {0}" -f $dashboard.pillars)
+Write-Host ("Tiles                 : {0}" -f $dashboard.tiles)
+Write-Host ("Saving Box            : {0}" -f $dashboard.savingBox)
+
+Write-Host ""
+
+Write-Host ("GRAND TOTAL           : {0}" -f `
+    $dashboard.grandTotal)
+
+Write-Host ""
+
+
+# =========================================================
+# 16. CONVERT TO JSON
+# =========================================================
+
+Write-Host "Generating dashboardData.js..."
 
 $json = $dashboard | ConvertTo-Json -Depth 10
 
-#---------------------------------------------------------
-# JavaScript File
-#---------------------------------------------------------
+
+# =========================================================
+# 17. CREATE JAVASCRIPT
+# =========================================================
 
 $javascript = @"
-//=====================================================
-// Church Contribution Dashboard
-// Auto Generated
-//=====================================================
+// =========================================================
+// CPC DASHBOARD
+// AUTO GENERATED FILE
+// Do NOT edit this file manually.
+// Generated from data.csv
+// =========================================================
 
 const dashboardData =
 
@@ -625,26 +676,51 @@ $json;
 
 "@
 
-#---------------------------------------------------------
-# Save dashboardData.js
-#---------------------------------------------------------
+
+# =========================================================
+# 18. WRITE dashboardData.js
+# =========================================================
 
 Set-Content `
-    -Path $OutputJS `
+    -LiteralPath $OutputJS `
     -Value $javascript `
     -Encoding UTF8
 
-Write-Host ""
-Write-Host "dashboardData.js generated successfully."
+
+# =========================================================
+# 19. VERIFY OUTPUT
+# =========================================================
+
+if (!(Test-Path -LiteralPath $OutputJS)) {
+
+    Write-Host ""
+    Write-Host "ERROR: dashboardData.js was not created."
+    Write-Host ""
+
+    exit 1
+}
+
+
+# =========================================================
+# 20. SUCCESS
+# =========================================================
 
 Write-Host ""
-Write-Host "Saved to:"
+Write-Host "========================================================="
+Write-Host "       dashboardData.js GENERATED SUCCESSFULLY"
+Write-Host "========================================================="
+Write-Host ""
+
+Write-Host "Output:"
 Write-Host $OutputJS
-
 Write-Host ""
 
-Write-Host "Total Families : $($dashboard.totalFamilies)"
-Write-Host "Total Members  : $($dashboard.totalMembers)"
-Write-Host "Grand Total    : $($dashboard.grandTotal)"
+Write-Host ("Families    : {0}" -f $dashboard.totalFamilies)
+Write-Host ("Members     : {0}" -f $dashboard.totalMembers)
+Write-Host ("Grand Total : {0}" -f $dashboard.grandTotal)
 
-pause
+Write-Host ""
+Write-Host "PowerShell generation completed successfully."
+Write-Host ""
+
+exit 0
