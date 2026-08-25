@@ -8,10 +8,10 @@
 const dashboardData =
 
 {
-    "totalFamilies":  148,
-    "totalMembers":  797,
-    "grandTotal":  6201143,
-    "freeWill":  359100,
+    "totalFamilies":  155,
+    "totalMembers":  804,
+    "grandTotal":  6388558,
+    "freeWill":  546515,
     "faithPromise":  0,
     "employeeSubscription":  1801350,
     "nonEmployeeSubscription":  244600,
@@ -37,7 +37,7 @@ const dashboardData =
                          "members":  12,
                          "savingBox":  20404,
                          "tiles":  3000,
-                         "total":  84004
+                         "total":  109004
                      },
                      {
                          "leikai":  "Khawai",
@@ -173,7 +173,7 @@ const dashboardData =
                          "members":  10,
                          "savingBox":  36223,
                          "tiles":  1000,
-                         "total":  64723
+                         "total":  74873
                      },
                      {
                          "leikai":  "Khawai",
@@ -237,7 +237,7 @@ const dashboardData =
                          "members":  7,
                          "savingBox":  22861,
                          "tiles":  0,
-                         "total":  33861
+                         "total":  34861
                      },
                      {
                          "leikai":  "Khawai",
@@ -293,7 +293,7 @@ const dashboardData =
                          "members":  6,
                          "savingBox":  52776,
                          "tiles":  0,
-                         "total":  116276
+                         "total":  118276
                      },
                      {
                          "leikai":  "Mayai",
@@ -317,7 +317,7 @@ const dashboardData =
                          "members":  11,
                          "savingBox":  15171,
                          "tiles":  0,
-                         "total":  15671
+                         "total":  20671
                      },
                      {
                          "leikai":  "Mayai",
@@ -381,7 +381,7 @@ const dashboardData =
                          "members":  7,
                          "savingBox":  17692,
                          "tiles":  500,
-                         "total":  93192
+                         "total":  97192
                      },
                      {
                          "leikai":  "Wangwai",
@@ -421,7 +421,7 @@ const dashboardData =
                          "members":  6,
                          "savingBox":  2912,
                          "tiles":  0,
-                         "total":  3412
+                         "total":  3712
                      },
                      {
                          "leikai":  "Wangwai",
@@ -429,7 +429,7 @@ const dashboardData =
                          "members":  7,
                          "savingBox":  105409,
                          "tiles":  3000,
-                         "total":  151909
+                         "total":  152409
                      },
                      {
                          "leikai":  "Wangwai",
@@ -437,7 +437,7 @@ const dashboardData =
                          "members":  10,
                          "savingBox":  32808,
                          "tiles":  0,
-                         "total":  143308
+                         "total":  145208
                      },
                      {
                          "leikai":  "Wangwai",
@@ -453,7 +453,7 @@ const dashboardData =
                          "members":  11,
                          "savingBox":  6905,
                          "tiles":  0,
-                         "total":  7405
+                         "total":  8405
                      },
                      {
                          "leikai":  "Wangwai",
@@ -493,7 +493,7 @@ const dashboardData =
                          "members":  7,
                          "savingBox":  0,
                          "tiles":  0,
-                         "total":  15500
+                         "total":  16000
                      },
                      {
                          "leikai":  "Wangwai",
@@ -501,7 +501,7 @@ const dashboardData =
                          "members":  10,
                          "savingBox":  5839,
                          "tiles":  0,
-                         "total":  6339
+                         "total":  6839
                      },
                      {
                          "leikai":  "Wangwai",
@@ -533,7 +533,7 @@ const dashboardData =
                          "members":  5,
                          "savingBox":  7665,
                          "tiles":  0,
-                         "total":  13165
+                         "total":  14165
                      },
                      {
                          "leikai":  "Wangwai",
@@ -557,7 +557,7 @@ const dashboardData =
                          "members":  7,
                          "savingBox":  23635,
                          "tiles":  0,
-                         "total":  77135
+                         "total":  78135
                      },
                      {
                          "leikai":  "Heaven",
@@ -645,7 +645,7 @@ const dashboardData =
                          "members":  10,
                          "savingBox":  11446,
                          "tiles":  0,
-                         "total":  28446
+                         "total":  28646
                      },
                      {
                          "leikai":  "Heaven",
@@ -669,7 +669,7 @@ const dashboardData =
                          "members":  5,
                          "savingBox":  123477,
                          "tiles":  2500,
-                         "total":  326977
+                         "total":  334977
                      },
                      {
                          "leikai":  "Heaven",
@@ -773,7 +773,7 @@ const dashboardData =
                          "members":  9,
                          "savingBox":  6149,
                          "tiles":  0,
-                         "total":  10149
+                         "total":  11049
                      },
                      {
                          "leikai":  "Heaven",
@@ -781,7 +781,7 @@ const dashboardData =
                          "members":  12,
                          "savingBox":  36608,
                          "tiles":  1000,
-                         "total":  136608
+                         "total":  137608
                      },
                      {
                          "leikai":  "Heaven",
@@ -869,7 +869,7 @@ const dashboardData =
                          "members":  6,
                          "savingBox":  41054,
                          "tiles":  0,
-                         "total":  77554
+                         "total":  127554
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -901,7 +901,7 @@ const dashboardData =
                          "members":  12,
                          "savingBox":  67979,
                          "tiles":  6000,
-                         "total":  357879
+                         "total":  372104
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -909,7 +909,7 @@ const dashboardData =
                          "members":  8,
                          "savingBox":  16773,
                          "tiles":  4000,
-                         "total":  193273
+                         "total":  193473
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -941,7 +941,7 @@ const dashboardData =
                          "members":  6,
                          "savingBox":  15404,
                          "tiles":  0,
-                         "total":  60404
+                         "total":  60904
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -973,7 +973,7 @@ const dashboardData =
                          "members":  3,
                          "savingBox":  18989,
                          "tiles":  2000,
-                         "total":  21989
+                         "total":  22989
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -1045,7 +1045,7 @@ const dashboardData =
                          "members":  5,
                          "savingBox":  6520,
                          "tiles":  1000,
-                         "total":  11020
+                         "total":  13020
                      },
                      {
                          "leikai":  "Chingyang",
@@ -1141,7 +1141,7 @@ const dashboardData =
                          "members":  5,
                          "savingBox":  19549,
                          "tiles":  1000,
-                         "total":  46349
+                         "total":  56349
                      },
                      {
                          "leikai":  "Chingyang",
@@ -1189,7 +1189,7 @@ const dashboardData =
                          "members":  7,
                          "savingBox":  5858,
                          "tiles":  0,
-                         "total":  7858
+                         "total":  10858
                      },
                      {
                          "leikai":  "Chingyang",
@@ -1214,6 +1214,62 @@ const dashboardData =
                          "savingBox":  0,
                          "tiles":  0,
                          "total":  5000
+                     },
+                     {
+                         "leikai":  "Phunal Khunou",
+                         "head":  "L Leikhulshim",
+                         "members":  1,
+                         "savingBox":  0,
+                         "tiles":  0,
+                         "total":  20000
+                     },
+                     {
+                         "leikai":  "Kyamgei",
+                         "head":  "L Rameshwor",
+                         "members":  1,
+                         "savingBox":  0,
+                         "tiles":  0,
+                         "total":  2000
+                     },
+                     {
+                         "leikai":  "Yultang",
+                         "head":  "S Lakhan",
+                         "members":  1,
+                         "savingBox":  0,
+                         "tiles":  0,
+                         "total":  3000
+                     },
+                     {
+                         "leikai":  "Church",
+                         "head":  "Men\u0027s Society",
+                         "members":  1,
+                         "savingBox":  0,
+                         "tiles":  0,
+                         "total":  7800
+                     },
+                     {
+                         "leikai":  "Church",
+                         "head":  "All Society",
+                         "members":  1,
+                         "savingBox":  0,
+                         "tiles":  0,
+                         "total":  2340
+                     },
+                     {
+                         "leikai":  "Church",
+                         "head":  "General Fund",
+                         "members":  1,
+                         "savingBox":  0,
+                         "tiles":  0,
+                         "total":  7200
+                     },
+                     {
+                         "leikai":  "Group",
+                         "head":  "Mother Teresa Group",
+                         "members":  1,
+                         "savingBox":  0,
+                         "tiles":  0,
+                         "total":  200
                      }
                  ],
     "memberDirectory":  [
@@ -1289,9 +1345,9 @@ const dashboardData =
                             {
                                 "head":  "Dk Roshan",
                                 "leikai":  "Khawai",
-                                "member":  "Dk Tenai",
+                                "member":  "P Tenai",
                                 "relationship":  "Daughter-in-law",
-                                "freeWill":  0,
+                                "freeWill":  24500,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
@@ -1314,7 +1370,7 @@ const dashboardData =
                                 "leikai":  "Khawai",
                                 "member":  "Dk Thomas",
                                 "relationship":  "Son",
-                                "freeWill":  0,
+                                "freeWill":  500,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
@@ -3200,7 +3256,7 @@ const dashboardData =
                                 "leikai":  "Khawai",
                                 "member":  "P Temui",
                                 "relationship":  "Self",
-                                "freeWill":  0,
+                                "freeWill":  1000,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
@@ -3244,9 +3300,9 @@ const dashboardData =
                             {
                                 "head":  "P Temui",
                                 "leikai":  "Khawai",
-                                "member":  "P Tomui",
+                                "member":  "K Tomui",
                                 "relationship":  "Sister-in-law",
-                                "freeWill":  0,
+                                "freeWill":  5000,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
@@ -3315,7 +3371,7 @@ const dashboardData =
                                 "leikai":  "Khawai",
                                 "member":  "P Muining",
                                 "relationship":  "Niece",
-                                "freeWill":  0,
+                                "freeWill":  2000,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
@@ -3338,7 +3394,7 @@ const dashboardData =
                                 "leikai":  "Khawai",
                                 "member":  "P Toshilning",
                                 "relationship":  "Niece",
-                                "freeWill":  0,
+                                "freeWill":  2150,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
@@ -4304,7 +4360,7 @@ const dashboardData =
                                 "leikai":  "Khawai",
                                 "member":  "Th Tomuishim",
                                 "relationship":  "Granddaughter",
-                                "freeWill":  0,
+                                "freeWill":  1000,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
@@ -4948,7 +5004,7 @@ const dashboardData =
                                 "leikai":  "Mayai",
                                 "member":  "L Tedun",
                                 "relationship":  "Sister",
-                                "freeWill":  0,
+                                "freeWill":  2000,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
@@ -5477,7 +5533,7 @@ const dashboardData =
                                 "leikai":  "Mayai",
                                 "member":  "Km Angrung",
                                 "relationship":  "Son",
-                                "freeWill":  0,
+                                "freeWill":  5000,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
@@ -6627,7 +6683,7 @@ const dashboardData =
                                 "leikai":  "Wangwai",
                                 "member":  "K Tungran",
                                 "relationship":  "Granddaughter",
-                                "freeWill":  0,
+                                "freeWill":  4000,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
@@ -7064,7 +7120,7 @@ const dashboardData =
                                 "leikai":  "Wangwai",
                                 "member":  "Kh Tomui",
                                 "relationship":  "Daughter",
-                                "freeWill":  0,
+                                "freeWill":  300,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
@@ -7202,7 +7258,7 @@ const dashboardData =
                                 "leikai":  "Wangwai",
                                 "member":  "Ks Amos",
                                 "relationship":  "Son",
-                                "freeWill":  0,
+                                "freeWill":  500,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
@@ -7363,7 +7419,7 @@ const dashboardData =
                                 "leikai":  "Wangwai",
                                 "member":  "L Mophom",
                                 "relationship":  "Son",
-                                "freeWill":  0,
+                                "freeWill":  1900,
                                 "faithPromise":  0,
                                 "phase1":  20000,
                                 "phase2":  10000,
@@ -7777,7 +7833,7 @@ const dashboardData =
                                 "leikai":  "Wangwai",
                                 "member":  "M Modar",
                                 "relationship":  "Son",
-                                "freeWill":  0,
+                                "freeWill":  1000,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
@@ -8559,7 +8615,7 @@ const dashboardData =
                                 "leikai":  "Wangwai",
                                 "member":  "Th Yaima",
                                 "relationship":  "Son",
-                                "freeWill":  0,
+                                "freeWill":  500,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
@@ -8881,7 +8937,7 @@ const dashboardData =
                                 "leikai":  "Wangwai",
                                 "member":  "Th Mozayn",
                                 "relationship":  "Grandson",
-                                "freeWill":  0,
+                                "freeWill":  500,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
@@ -9433,7 +9489,7 @@ const dashboardData =
                                 "leikai":  "Wangwai",
                                 "member":  "U Toshil",
                                 "relationship":  "Sister",
-                                "freeWill":  0,
+                                "freeWill":  1000,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
@@ -9755,7 +9811,7 @@ const dashboardData =
                                 "leikai":  "Heaven",
                                 "member":  "K Mothil",
                                 "relationship":  "Son",
-                                "freeWill":  0,
+                                "freeWill":  1000,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
@@ -11135,7 +11191,7 @@ const dashboardData =
                                 "leikai":  "Heaven",
                                 "member":  "Ks Mongam",
                                 "relationship":  "Son",
-                                "freeWill":  0,
+                                "freeWill":  200,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
@@ -11549,7 +11605,7 @@ const dashboardData =
                                 "leikai":  "Heaven",
                                 "member":  "Ks Angrung",
                                 "relationship":  "Self",
-                                "freeWill":  0,
+                                "freeWill":  1000,
                                 "faithPromise":  0,
                                 "phase1":  30000,
                                 "phase2":  15000,
@@ -11572,7 +11628,7 @@ const dashboardData =
                                 "leikai":  "Heaven",
                                 "member":  "Ks Shanti",
                                 "relationship":  "Wife",
-                                "freeWill":  5500,
+                                "freeWill":  7500,
                                 "faithPromise":  0,
                                 "phase1":  1000,
                                 "phase2":  500,
@@ -11641,7 +11697,7 @@ const dashboardData =
                                 "leikai":  "Heaven",
                                 "member":  "Ks Victor",
                                 "relationship":  "Son",
-                                "freeWill":  0,
+                                "freeWill":  5000,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
@@ -12883,7 +12939,7 @@ const dashboardData =
                                 "leikai":  "Heaven",
                                 "member":  "P Tothum",
                                 "relationship":  "Wife",
-                                "freeWill":  500,
+                                "freeWill":  900,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
@@ -12906,7 +12962,7 @@ const dashboardData =
                                 "leikai":  "Heaven",
                                 "member":  "P Modar",
                                 "relationship":  "Son",
-                                "freeWill":  0,
+                                "freeWill":  500,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
@@ -13090,7 +13146,7 @@ const dashboardData =
                                 "leikai":  "Heaven",
                                 "member":  "P Shangkhu",
                                 "relationship":  "Wife",
-                                "freeWill":  0,
+                                "freeWill":  1000,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
@@ -14562,7 +14618,7 @@ const dashboardData =
                                 "leikai":  "Heinoukhong",
                                 "member":  "U Francis",
                                 "relationship":  "Grandson",
-                                "freeWill":  4000,
+                                "freeWill":  54000,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
@@ -14976,7 +15032,7 @@ const dashboardData =
                                 "leikai":  "Heinoukhong",
                                 "member":  "K Koshil",
                                 "relationship":  "Self",
-                                "freeWill":  1000,
+                                "freeWill":  1500,
                                 "faithPromise":  0,
                                 "phase1":  20000,
                                 "phase2":  2500,
@@ -15022,7 +15078,7 @@ const dashboardData =
                                 "leikai":  "Heinoukhong",
                                 "member":  "K Modar",
                                 "relationship":  "Son",
-                                "freeWill":  100000,
+                                "freeWill":  101000,
                                 "faithPromise":  0,
                                 "phase1":  20000,
                                 "phase2":  10000,
@@ -15068,7 +15124,7 @@ const dashboardData =
                                 "leikai":  "Heinoukhong",
                                 "member":  "K Korung",
                                 "relationship":  "Son",
-                                "freeWill":  0,
+                                "freeWill":  11725,
                                 "faithPromise":  0,
                                 "phase1":  5000,
                                 "phase2":  7500,
@@ -15091,7 +15147,7 @@ const dashboardData =
                                 "leikai":  "Heinoukhong",
                                 "member":  "Mothang Darshim",
                                 "relationship":  "Daughter-in-law",
-                                "freeWill":  0,
+                                "freeWill":  500,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
@@ -15160,7 +15216,7 @@ const dashboardData =
                                 "leikai":  "Heinoukhong",
                                 "member":  "K Teniya",
                                 "relationship":  "Grand-Daughter",
-                                "freeWill":  0,
+                                "freeWill":  250,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
@@ -15206,7 +15262,7 @@ const dashboardData =
                                 "leikai":  "Heinoukhong",
                                 "member":  "K Toin",
                                 "relationship":  "Grand-Daughter",
-                                "freeWill":  0,
+                                "freeWill":  250,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
@@ -15344,7 +15400,7 @@ const dashboardData =
                                 "leikai":  "Heinoukhong",
                                 "member":  "K Kothil",
                                 "relationship":  "Son",
-                                "freeWill":  0,
+                                "freeWill":  200,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
@@ -15804,7 +15860,7 @@ const dashboardData =
                                 "leikai":  "Heinoukhong",
                                 "member":  "Ks Monesh",
                                 "relationship":  "Son",
-                                "freeWill":  0,
+                                "freeWill":  500,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  7500,
@@ -16264,7 +16320,7 @@ const dashboardData =
                                 "leikai":  "Heinoukhong",
                                 "member":  "S Toshil",
                                 "relationship":  "Wife",
-                                "freeWill":  0,
+                                "freeWill":  1000,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
@@ -17414,7 +17470,7 @@ const dashboardData =
                                 "leikai":  "Heinoukhong",
                                 "member":  "Tk Toshil",
                                 "relationship":  "Daughter",
-                                "freeWill":  0,
+                                "freeWill":  2000,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
@@ -18541,7 +18597,7 @@ const dashboardData =
                                 "leikai":  "Chingyang",
                                 "member":  "P Merung",
                                 "relationship":  "Self",
-                                "freeWill":  0,
+                                "freeWill":  5000,
                                 "faithPromise":  0,
                                 "phase1":  15000,
                                 "phase2":  7500,
@@ -18564,7 +18620,7 @@ const dashboardData =
                                 "leikai":  "Chingyang",
                                 "member":  "K Todar",
                                 "relationship":  "Wife",
-                                "freeWill":  0,
+                                "freeWill":  5000,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
@@ -19162,7 +19218,7 @@ const dashboardData =
                                 "leikai":  "Chingyang",
                                 "member":  "K Khamba",
                                 "relationship":  "Self",
-                                "freeWill":  0,
+                                "freeWill":  2000,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
@@ -19208,7 +19264,7 @@ const dashboardData =
                                 "leikai":  "Chingyang",
                                 "member":  "K Morishangba",
                                 "relationship":  "Son",
-                                "freeWill":  0,
+                                "freeWill":  1000,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
@@ -19528,9 +19584,170 @@ const dashboardData =
                             {
                                 "head":  "Kt Shelmoingam",
                                 "leikai":  "Khangshim",
-                                "member":  "Kt Shelmoingam",
-                                "relationship":  "Self",
+                                "member":  "",
+                                "relationship":  "",
                                 "freeWill":  5000,
+                                "faithPromise":  0,
+                                "phase1":  0,
+                                "phase2":  0,
+                                "phase3":  0,
+                                "phase4":  0,
+                                "phase5":  0,
+                                "phaseA":  0,
+                                "phaseB":  0,
+                                "phaseC":  0,
+                                "phaseD":  0,
+                                "phaseE":  0,
+                                "windows":  0,
+                                "cpc":  0,
+                                "pillars":  0,
+                                "tiles":  0,
+                                "savingBox":  0
+                            },
+                            {
+                                "head":  "L Leikhulshim",
+                                "leikai":  "Phunal Khunou",
+                                "member":  "",
+                                "relationship":  "",
+                                "freeWill":  20000,
+                                "faithPromise":  0,
+                                "phase1":  0,
+                                "phase2":  0,
+                                "phase3":  0,
+                                "phase4":  0,
+                                "phase5":  0,
+                                "phaseA":  0,
+                                "phaseB":  0,
+                                "phaseC":  0,
+                                "phaseD":  0,
+                                "phaseE":  0,
+                                "windows":  0,
+                                "cpc":  0,
+                                "pillars":  0,
+                                "tiles":  0,
+                                "savingBox":  0
+                            },
+                            {
+                                "head":  "L Rameshwor",
+                                "leikai":  "Kyamgei",
+                                "member":  "",
+                                "relationship":  "",
+                                "freeWill":  2000,
+                                "faithPromise":  0,
+                                "phase1":  0,
+                                "phase2":  0,
+                                "phase3":  0,
+                                "phase4":  0,
+                                "phase5":  0,
+                                "phaseA":  0,
+                                "phaseB":  0,
+                                "phaseC":  0,
+                                "phaseD":  0,
+                                "phaseE":  0,
+                                "windows":  0,
+                                "cpc":  0,
+                                "pillars":  0,
+                                "tiles":  0,
+                                "savingBox":  0
+                            },
+                            {
+                                "head":  "S Lakhan",
+                                "leikai":  "Yultang",
+                                "member":  "",
+                                "relationship":  "",
+                                "freeWill":  3000,
+                                "faithPromise":  0,
+                                "phase1":  0,
+                                "phase2":  0,
+                                "phase3":  0,
+                                "phase4":  0,
+                                "phase5":  0,
+                                "phaseA":  0,
+                                "phaseB":  0,
+                                "phaseC":  0,
+                                "phaseD":  0,
+                                "phaseE":  0,
+                                "windows":  0,
+                                "cpc":  0,
+                                "pillars":  0,
+                                "tiles":  0,
+                                "savingBox":  0
+                            },
+                            {
+                                "head":  "Men\u0027s Society",
+                                "leikai":  "Church",
+                                "member":  "",
+                                "relationship":  "",
+                                "freeWill":  7800,
+                                "faithPromise":  0,
+                                "phase1":  0,
+                                "phase2":  0,
+                                "phase3":  0,
+                                "phase4":  0,
+                                "phase5":  0,
+                                "phaseA":  0,
+                                "phaseB":  0,
+                                "phaseC":  0,
+                                "phaseD":  0,
+                                "phaseE":  0,
+                                "windows":  0,
+                                "cpc":  0,
+                                "pillars":  0,
+                                "tiles":  0,
+                                "savingBox":  0
+                            },
+                            {
+                                "head":  "All Society",
+                                "leikai":  "Church",
+                                "member":  "",
+                                "relationship":  "",
+                                "freeWill":  2340,
+                                "faithPromise":  0,
+                                "phase1":  0,
+                                "phase2":  0,
+                                "phase3":  0,
+                                "phase4":  0,
+                                "phase5":  0,
+                                "phaseA":  0,
+                                "phaseB":  0,
+                                "phaseC":  0,
+                                "phaseD":  0,
+                                "phaseE":  0,
+                                "windows":  0,
+                                "cpc":  0,
+                                "pillars":  0,
+                                "tiles":  0,
+                                "savingBox":  0
+                            },
+                            {
+                                "head":  "General Fund",
+                                "leikai":  "Church",
+                                "member":  "",
+                                "relationship":  "",
+                                "freeWill":  7200,
+                                "faithPromise":  0,
+                                "phase1":  0,
+                                "phase2":  0,
+                                "phase3":  0,
+                                "phase4":  0,
+                                "phase5":  0,
+                                "phaseA":  0,
+                                "phaseB":  0,
+                                "phaseC":  0,
+                                "phaseD":  0,
+                                "phaseE":  0,
+                                "windows":  0,
+                                "cpc":  0,
+                                "pillars":  0,
+                                "tiles":  0,
+                                "savingBox":  0
+                            },
+                            {
+                                "head":  "Mother Teresa Group",
+                                "leikai":  "Group",
+                                "member":  "",
+                                "relationship":  "",
+                                "freeWill":  200,
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
