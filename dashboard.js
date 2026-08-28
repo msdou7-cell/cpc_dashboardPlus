@@ -114,6 +114,8 @@ async function initialiseApplication()
 	registerGlobalEvents();
 
     showApplicationInformation();
+	
+	calculateCustomKPIs();
 
 	buildDashboard();
 
@@ -176,9 +178,6 @@ function loadDashboardData()
     App.data = dashboardData;
 }
 
-/*=============================================================
-    SOCIETY SHARES CSV
-=============================================================*/
 
 /*=============================================================
     SOCIETY SHARES CSV
@@ -1421,107 +1420,88 @@ const ExportEngine = {
     KPI CONFIGURATION
 =============================================================*/
 
-const KPI = [
+// Allowed leikais for Families/Members KPIs
+const allowedLeikais = ["chingyang", "heinoukhong", "heaven", "wangwai", "mayai", "khawai"];
 
-{
-    id:"grandTotal",
-    title:"Grand Total",
-    icon:"💰",
-    value:"grandTotal"
-},
+function calculateCustomKPIs() {
+    if (!App.data || !App.data.memberDirectory) return;
 
-{
-    id:"totalFamilies",
-    title:"Families",
-    icon:"🏠",
-    value:"totalFamilies"
-},
+    // Filter members by allowed leikais
+    const filteredMembers = App.data.memberDirectory.filter(m =>
+        allowedLeikais.includes((m.leikai || "").toLowerCase())
+    );
 
-{
-    id:"totalMembers",
-    title:"Members",
-    icon:"👨‍👩‍👧‍👦",
-    value:"totalMembers"
-},
+    // Families & Members KPIs (filtered)
+    App.data.totalFamilies = new Set(filteredMembers.map(m => m.head)).size;
+    App.data.totalMembers = filteredMembers.length;
 
-{
-    id:"freeWill",
-    title:"Free Will",
-    icon:"🙏",
-    value:"freeWill"
-},
+    // Other KPI totals (global, unchanged)
+    App.data.freeWill = App.data.memberDirectory.reduce((sum, m) => sum + (Number(m.freeWill) || 0), 0);
+    App.data.faithPromise = App.data.memberDirectory.reduce((sum, m) => sum + (Number(m.faithPromise) || 0), 0);
+    App.data.employeeSubscription = App.data.memberDirectory.reduce((sum, m) =>
+        sum + (Number(m.phase1) || 0) + (Number(m.phase2) || 0) + (Number(m.phase3) || 0) +
+        (Number(m.phase4) || 0) + (Number(m.phase5) || 0), 0);
+    App.data.nonEmployeeSubscription = App.data.memberDirectory.reduce((sum, m) =>
+        sum + (Number(m.phaseA) || 0) + (Number(m.phaseB) || 0) + (Number(m.phaseC) || 0) +
+        (Number(m.phaseD) || 0) + (Number(m.phaseE) || 0), 0);
+    App.data.windows = App.data.memberDirectory.reduce((sum, m) => sum + (Number(m.windows) || 0), 0);
+    App.data.cpc = App.data.memberDirectory.reduce((sum, m) => sum + (Number(m.cpc) || 0), 0);
+    App.data.pillars = App.data.memberDirectory.reduce((sum, m) => sum + (Number(m.pillars) || 0), 0);
+    App.data.tiles = App.data.memberDirectory.reduce((sum, m) => sum + (Number(m.tiles) || 0), 0);
+    App.data.savingBox = App.data.memberDirectory.reduce((sum, m) => sum + (Number(m.savingBox) || 0), 0);
+    App.data.executiveMembers = App.data.memberDirectory.reduce((sum, m) => sum + (Number(m.executiveMembers) || 0), 0);
 
-{
-    id:"faithPromise",
-    title:"Faith Promise",
-    icon:"❤️",
-    value:"faithPromise"
-},
+    // Society shares are already set in loadSocietyShares()
+    App.data.societyshares = safeNumber(App.data.societyshares);
 
-{
-    id:"employeeSubscription",
-    title:"Employee Subscription",
-    icon:"👨‍💼",
-    value:"employeeSubscription"
-},
-
-{
-    id:"nonEmployeeSubscription",
-    title:"Non Employee Subscription",
-    icon:"👥",
-    value:"nonEmployeeSubscription"
-},
-
-{
-    id:"windows",
-    title:"Windows",
-    icon:"🪟",
-    value:"windows"
-},
-
-{
-    id:"cpc",
-    title:"CPC",
-    icon:"📘",
-    value:"cpc"
-},
-
-{
-    id:"pillars",
-    title:"Pillars",
-    icon:"🏛",
-    value:"pillars"
-},
-
-{
-    id:"tiles",
-    title:"Tiles",
-    icon:"🧱",
-    value:"tiles"
-},
-
-{
-    id:"savingBox",
-    title:"Saving Box",
-    icon:"💵",
-    value:"savingBox"
-},
-
-{
-    id:"executiveMembers",
-    title:"Executive Members",
-    icon:"👔",
-    value:"executiveMembers"
-},
-
-{
-    id:"societyshares",
-    title:"Society Shares",
-    icon:"⛪",
-    value:"societyshares"
+    // Grand Total (all contributions included)
+    App.data.grandTotal =
+        App.data.freeWill +
+        App.data.faithPromise +
+        App.data.employeeSubscription +
+        App.data.nonEmployeeSubscription +
+        App.data.windows +
+        App.data.cpc +
+        App.data.pillars +
+        App.data.tiles +
+        App.data.savingBox +
+        App.data.executiveMembers +
+        App.data.societyshares;
 }
 
+// KPI definitions (string keys so buildDashboard can resolve App.data values)
+const KPI = [
+    { id: "grandTotal", title: "Grand Total", icon: "💰", value: "grandTotal" },
+    { id: "totalFamilies", title: "Families", icon: "🏠", value: "totalFamilies" },
+    { id: "totalMembers", title: "Members", icon: "👨‍👩‍👧‍👦", value: "totalMembers" },
+    { id: "freeWill", title: "Free Will", icon: "🙏", value: "freeWill" },
+    { id: "faithPromise", title: "Faith Promise", icon: "❤️", value: "faithPromise" },
+    { id: "employeeSubscription", title: "Employee Subscription", icon: "👨‍💼", value: "employeeSubscription" },
+    { id: "nonEmployeeSubscription", title: "Non Employee Subscription", icon: "👥", value: "nonEmployeeSubscription" },
+    { id: "windows", title: "Windows", icon: "🪟", value: "windows" },
+    { id: "cpc", title: "CPC", icon: "📘", value: "cpc" },
+    { id: "pillars", title: "Pillars", icon: "🏛", value: "pillars" },
+    { id: "tiles", title: "Tiles", icon: "🧱", value: "tiles" },
+    { id: "savingBox", title: "Saving Box", icon: "💵", value: "savingBox" },
+    { id: "executiveMembers", title: "Executive Members", icon: "👔", value: "executiveMembers" },
+    { id: "societyshares", title: "Society Shares", icon: "⛪", value: "societyshares" },
+	{
+    id: "genuineFamilies",
+    title: "Genuine Families",
+    icon: "🏠",
+    value: "totalFamilies" // already filtered by allowedLeikais
+},
+{
+    id: "genuineMembers",
+    title: "Genuine Members",
+    icon: "👨‍👩‍👧‍👦",
+    value: "totalMembers" // already filtered by allowedLeikais
+}
 ];
+
+
+
+
 
 /*=============================================================
     BUILD KPI DASHBOARD
@@ -1619,8 +1599,12 @@ const Dashboard = {
         switch(view)
         {
             case "grandTotal":
-                openGrandTotal();
+                openGrandTotalSummary();
                 break;
+				
+			case "leikaiSummary":
+				openLeikaiWiseSummary();
+				break;
 
             case "totalFamilies":
                 openFamilies();
@@ -1696,6 +1680,15 @@ case "savingBox":
 case "societyshares":
 	openSocietyShares();
 	break;
+	
+case "genuineFamilies":
+    openGenuineFamilies();
+    break;
+
+case "genuineMembers":
+    openGenuineMembers();
+    break;
+
             default:
 
                 console.warn("Unknown KPI :", view);
@@ -1708,6 +1701,78 @@ case "societyshares":
     MODULE 7
     MEMBER DIRECTORY
 =============================================================*/
+
+function openGenuineFamilies() {
+    console.log("Opening Genuine Families Report");
+
+    const allowedLeikais = ["chingyang", "heinoukhong", "heaven", "wangwai", "mayai", "khawai"];
+
+    // Filter members by allowed leikais
+    const filteredMembers = App.data.memberDirectory.filter(m =>
+        allowedLeikais.includes((m.leikai || "").toLowerCase())
+    );
+
+    // Group by Head of Family and count members
+    const familyMap = {};
+    filteredMembers.forEach(m => {
+        const head = m.head || "Unknown";
+        if (!familyMap[head]) {
+            familyMap[head] = { head: head, members: [] };
+        }
+        familyMap[head].members.push(m.member);
+    });
+
+    const rows = Object.values(familyMap).map((f, index) => ({
+        sl: index + 1,
+        head: f.head,
+        noOfMembers: f.members.length
+    }));
+
+    renderDirectory({
+        title: "Genuine Families",
+        rows: rows,
+        columns: [
+            { field: "sl", title: "Sl No", align: "center" },
+            { field: "head", title: "Head of Family" },
+            { field: "noOfMembers", title: "No of Members", align: "center" }
+        ],
+        toolbar: { search: "Search Family" }
+    });
+}
+
+function openGenuineMembers() {
+    console.log("Opening Genuine Members Report");
+
+    const allowedLeikais = ["chingyang", "heinoukhong", "heaven", "wangwai", "mayai", "khawai"];
+
+    const filteredMembers = App.data.memberDirectory.filter(m =>
+        allowedLeikais.includes((m.leikai || "").toLowerCase())
+    );
+
+    const rows = filteredMembers.map((m, index) => ({
+        sl: index + 1,
+        member: m.member,
+        head: m.head,
+        relationship: m.relationship,
+        leikai: m.leikai
+    }));
+
+    renderDirectory({
+        title: "Genuine Members",
+        rows: rows,
+        columns: [
+            { field: "sl", title: "Sl No", align: "center" },
+            { field: "member", title: "Member Name" },
+            { field: "head", title: "Head of Family" },
+            { field: "relationship", title: "Relationship" },
+            { field: "leikai", title: "Leikai" }
+        ],
+        toolbar: { search: "Search Member" }
+    });
+}
+
+
+
 
 /*=============================================================
     SOCIETY SHARES
@@ -2253,67 +2318,101 @@ rows.push({
         );
 }
 
-function openMembers()
-{
-    const rows = App.data.memberDirectory.map((m,index)=>({
+function openMembers() {
+    console.log("Opening Member Directory");
 
-        sl : index + 1,
+    /* ========================================= BUILD MEMBER ROWS ========================================= */
+    let rows = App.data.memberDirectory.map(m => {
+        const freeWill = Number(m.freeWill) || 0;
+        const faithPromise = Number(m.faithPromise) || 0;
 
-        member : m.member,
+        const employeeSubscription =
+            (Number(m.phase1) || 0) +
+            (Number(m.phase2) || 0) +
+            (Number(m.phase3) || 0) +
+            (Number(m.phase4) || 0) +
+            (Number(m.phase5) || 0);
 
-        head : m.head,
+        const nonEmployeeSubscription =
+            (Number(m.phaseA) || 0) +
+            (Number(m.phaseB) || 0) +
+            (Number(m.phaseC) || 0) +
+            (Number(m.phaseD) || 0) +
+            (Number(m.phaseE) || 0);
 
-        relationship : m.relationship,
+        const windows = Number(m.windows) || 0;
+        const cpc = Number(m.cpc) || 0;
+        const pillars = Number(m.pillars) || 0;
 
-        leikai : m.leikai
+        // Exclude savingBox and tiles
+        const total =
+            freeWill +
+            faithPromise +
+            employeeSubscription +
+            nonEmployeeSubscription +
+            windows +
+            cpc +
+            pillars;
 
-    }));
-
-    renderDirectory({
-
-        title : "Member Directory",
-
-        rows : rows,
-
-        columns : [
-
-            {
-                field : "sl",
-                title : "Sl No",
-                align : "center"
-            },
-
-            {
-                field : "member",
-                title : "Member Name"
-            },
-
-            {
-                field : "head",
-                title : "Head of Family"
-            },
-
-            {
-                field : "relationship",
-                title : "Relationship"
-            },
-
-            {
-                field : "leikai",
-                title : "Leikai"
-            }
-
-        ],
-
-        toolbar : {
-
-            search : "Search Member"
-
-        }
-
+        return {
+            member: m.member,
+            head: m.head,
+            relationship: m.relationship,
+            leikai: m.leikai,
+            total: total
+        };
     });
 
+    /* ========================================= FILTER NON-CONTRIBUTORS ========================================= */
+    rows = rows.filter(row => row.total > 0);
+
+    /* ========================================= SORT BY TOTAL DESCENDING ========================================= */
+    rows.sort((a, b) => b.total - a.total);
+
+    /* ========================================= REASSIGN SERIAL NUMBERS ========================================= */
+    rows = rows.map((row, index) => ({
+        sl: index + 1,
+        ...row
+    }));
+
+    /* ========================================= CALCULATE GRAND TOTAL ========================================= */
+    const grandTotal = rows.reduce((sum, row) => sum + (Number(row.total) || 0), 0);
+
+    /* ========================================= ADD GRAND TOTAL ROW ========================================= */
+    rows.push({
+        sl: "",
+        member: "GRAND TOTAL",
+        head: "",
+        relationship: "",
+        leikai: "",
+        total: grandTotal
+    });
+
+    /* ========================================= DISPLAY MEMBER REPORT ========================================= */
+    renderDirectory({
+        title: "Member Directory",
+        rows: rows,
+        columns: [
+            { field: "sl", title: "Sl No", align: "center" },
+            { field: "member", title: "Member Name" },
+            { field: "head", title: "Head of Family" },
+            { field: "relationship", title: "Relationship" },
+            { field: "leikai", title: "Leikai" },
+            { field: "total", title: "Total Contributions", align: "right", format: "currency" }
+        ],
+        toolbar: { search: "Search Member" }
+    });
+
+    /* ========================================= EXPORT DATA ========================================= */
+    ExportEngine.rows = [...View.rows];
+    ExportEngine.columns = [...View.columns];
+    ExportEngine.title = View.title;
+    ExportEngine.totalAmount = View.rows.reduce((sum, row) => sum + (Number(row.total) || 0), 0);
+
+    console.log("Member Grand Total:", grandTotal);
 }
+
+
 
 
 
@@ -3459,15 +3558,252 @@ function buildPrintReport()
 }
 
 
+/*=============================================================
+    GRAND TOTAL KPI SUMMARY
+    Shows calculation of all contribution KPI cards
+=============================================================*/
+
+function openGrandTotalSummary()
+{
+    console.log(
+        "Opening Grand Total KPI Summary"
+    );
+
+
+    /* =========================================
+       KPI VALUES
+    ========================================= */
+
+    const freeWill =
+        safeNumber(
+            App.data.freeWill
+        );
+
+
+    const faithPromise =
+        safeNumber(
+            App.data.faithPromise
+        );
+
+
+    const employeeSubscription =
+        safeNumber(
+            App.data.employeeSubscription
+        );
+
+
+    const nonEmployeeSubscription =
+        safeNumber(
+            App.data.nonEmployeeSubscription
+        );
+
+
+    const windows =
+        safeNumber(
+            App.data.windows
+        );
+
+
+    const cpc =
+        safeNumber(
+            App.data.cpc
+        );
+
+
+    const pillars =
+        safeNumber(
+            App.data.pillars
+        );
+
+
+    const tiles =
+        safeNumber(
+            App.data.tiles
+        );
+
+
+    const savingBox =
+        safeNumber(
+            App.data.savingBox
+        );
+
+
+    const societyShares =
+        safeNumber(
+            App.data.societyshares
+        );
+
+
+    /* =========================================
+       BUILD SUMMARY ROWS
+    ========================================= */
+
+    const rows =
+    [
+        {
+            sl: 1,
+            category: "Free Will",
+            amount: freeWill
+        },
+
+        {
+            sl: 2,
+            category: "Faith Promise",
+            amount: faithPromise
+        },
+
+        {
+            sl: 3,
+            category: "Employee Subscription",
+            amount: employeeSubscription
+        },
+
+        {
+            sl: 4,
+            category: "Non-Employee Subscription",
+            amount: nonEmployeeSubscription
+        },
+
+        {
+            sl: 5,
+            category: "Windows",
+            amount: windows
+        },
+
+        {
+            sl: 6,
+            category: "CPC",
+            amount: cpc
+        },
+
+        {
+            sl: 7,
+            category: "Pillars",
+            amount: pillars
+        },
+
+        {
+            sl: 8,
+            category: "Tiles",
+            amount: tiles
+        },
+
+        {
+            sl: 9,
+            category: "Saving Box",
+            amount: savingBox
+        },
+
+        {
+            sl: 10,
+            category: "Society Shares",
+            amount: societyShares
+        }
+    ];
+
+
+    /* =========================================
+       CALCULATE GRAND TOTAL
+    ========================================= */
+
+    const grandTotal =
+        rows.reduce(
+            (sum, row) =>
+                sum +
+                safeNumber(row.amount),
+            0
+        );
+
+
+    /* =========================================
+       GRAND TOTAL ROW
+    ========================================= */
+
+    rows.push({
+
+        sl: "",
+
+        category: "GRAND TOTAL",
+
+        amount: grandTotal
+
+    });
+
+
+    console.log(
+        "Grand Total KPI Summary:",
+        rows
+    );
+
+    console.log(
+        "Calculated Grand Total:",
+        grandTotal
+    );
+
+
+    /* =========================================
+       DISPLAY REPORT
+    ========================================= */
+
+    renderDirectory({
+
+        title:
+            "Grand Total Summary",
+
+        rows:
+            rows,
+
+        totalAmount:
+            grandTotal,
+
+        columns:
+        [
+
+            {
+                field: "sl",
+
+                title: "Sl No",
+
+                align: "center"
+            },
+
+            {
+                field: "category",
+
+                title: "Contribution Category",
+
+                align: "left"
+            },
+
+            {
+                field: "amount",
+
+                title: "Amount",
+
+                align: "right",
+
+                format: "currency"
+            }
+
+        ],
+
+        toolbar:
+        {
+            search:
+                "Search Contribution"
+        }
+
+    });
+}
 
 
 /*------------------------------------
-Grand Total Table 
+Leikai-wise Contribution Summary
 /*------------------------------------*/
 
-function openGrandTotal()
+function openLeikaiWiseSummary()
 {
-    console.log("Grand Total opened");
+    console.log("Opening Leikai-wise Contribution Summary");
 	const leikaiMap = {};
 	
     // Build Leikai-wise totals
