@@ -1434,6 +1434,15 @@ function calculateCustomKPIs() {
     // Families & Members KPIs (filtered)
     App.data.totalFamilies = new Set(filteredMembers.map(m => m.head)).size;
     App.data.totalMembers = filteredMembers.length;
+	
+App.data.genuineFamilyLeikais = [...new Set(filteredMembers.map(m => (m.leikai || "").toLowerCase()))];
+
+App.data.genuineMemberLeikais = [...new Set(filteredMembers.map(m => (m.leikai || "").toLowerCase()))];
+
+console.log("Families Leikai:", App.data.genuineFamilyLeikais);
+console.log("Members Leikai:", App.data.genuineMemberLeikais);
+
+
 
     // Other KPI totals (global, unchanged)
     App.data.freeWill = App.data.memberDirectory.reduce((sum, m) => sum + (Number(m.freeWill) || 0), 0);
@@ -1489,13 +1498,15 @@ const KPI = [
     id: "genuineFamilies",
     title: "Genuine Families",
     icon: "🏠",
-    value: "totalFamilies" // already filtered by allowedLeikais
+    value: "totalFamilies", // already filtered by allowedLeikais
+	leikai: "genuineFamilyLeikais"
 },
 {
     id: "genuineMembers",
     title: "Genuine Members",
     icon: "👨‍👩‍👧‍👦",
-    value: "totalMembers" // already filtered by allowedLeikais
+    value: "totalMembers", // already filtered by allowedLeikais
+	leikai: "genuineMemberLeikais"
 }
 ];
 
@@ -1509,6 +1520,7 @@ const KPI = [
 
 function buildDashboard()
 {
+		
     let html="";
 
     KPI.forEach(item=>{
@@ -1551,7 +1563,32 @@ function buildDashboard()
     Cache.kpiSection.innerHTML = html;
 
     registerKPICards();
+	
+	
+    
+    Cache.dashboardCards.innerHTML = "";
+
+    KPI.forEach(kpi => {
+        const value = formatNumber(App.data[kpi.value] || 0);
+        const leikaiList = kpi.leikai ? (App.data[kpi.leikai] || []).join(", ") : "";
+
+        const card = `
+            <div class="kpi-card">
+                <div class="kpi-icon">${kpi.icon}</div>
+                <div class="kpi-title">${kpi.title}</div>
+                <div class="kpi-value">${value}</div>
+                ${leikaiList ? `<div class="kpi-leikai">Leikai: ${leikaiList}</div>` : ""}
+            </div>
+        `;
+        Cache.dashboardCards.innerHTML += card;
+    });
 }
+
+
+	
+	
+	
+
 
 /*=============================================================
     KPI CLICK EVENTS
