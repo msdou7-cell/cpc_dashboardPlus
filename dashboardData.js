@@ -10,7 +10,7 @@ const dashboardData =
 {
     "totalFamilies":  155,
     "totalMembers":  804,
-    "grandTotal":  6467058,
+    "grandTotal":  6461058,
     "freeWill":  551515,
     "faithPromise":  0,
     "employeeSubscription":  1801350,
@@ -28,7 +28,7 @@ const dashboardData =
     "windows":  666500,
     "cpc":  0,
     "pillars":  810000,
-    "tiles":  94250,
+    "tiles":  88250,
     "savingBox":  2249343,
     "families":  [
                      {
@@ -36,8 +36,8 @@ const dashboardData =
                          "head":  "Dk Roshan",
                          "members":  12,
                          "savingBox":  20404,
-                         "tiles":  3000,
-                         "total":  109004
+                         "tiles":  0,
+                         "total":  106004
                      },
                      {
                          "leikai":  "Khawai",
@@ -188,8 +188,8 @@ const dashboardData =
                          "head":  "P Konai",
                          "members":  5,
                          "savingBox":  18377,
-                         "tiles":  500,
-                         "total":  51377
+                         "tiles":  0,
+                         "total":  50877
                      },
                      {
                          "leikai":  "Khawai",
@@ -268,8 +268,8 @@ const dashboardData =
                          "head":  "Ks Darshim",
                          "members":  6,
                          "savingBox":  111722,
-                         "tiles":  2000,
-                         "total":  114722
+                         "tiles":  0,
+                         "total":  112722
                      },
                      {
                          "leikai":  "Mayai",
@@ -300,8 +300,8 @@ const dashboardData =
                          "head":  "P Moshilpha",
                          "members":  4,
                          "savingBox":  40732,
-                         "tiles":  2000,
-                         "total":  49732
+                         "tiles":  1500,
+                         "total":  49232
                      },
                      {
                          "leikai":  "Mayai",
@@ -1293,7 +1293,7 @@ const dashboardData =
                                 "windows":  0,
                                 "cpc":  0,
                                 "pillars":  0,
-                                "tiles":  3000,
+                                "tiles":  0,
                                 "savingBox":  20404
                             },
                             {
@@ -3662,7 +3662,7 @@ const dashboardData =
                                 "windows":  0,
                                 "cpc":  0,
                                 "pillars":  0,
-                                "tiles":  500,
+                                "tiles":  0,
                                 "savingBox":  18377
                             },
                             {
@@ -4628,7 +4628,7 @@ const dashboardData =
                                 "windows":  0,
                                 "cpc":  0,
                                 "pillars":  0,
-                                "tiles":  2000,
+                                "tiles":  0,
                                 "savingBox":  111722
                             },
                             {
@@ -5111,7 +5111,7 @@ const dashboardData =
                                 "windows":  0,
                                 "cpc":  0,
                                 "pillars":  0,
-                                "tiles":  2000,
+                                "tiles":  1500,
                                 "savingBox":  40732
                             },
                             {

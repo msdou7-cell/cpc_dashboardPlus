@@ -1,5 +1,5 @@
 HOF,Family Members,Relationship,Leikai,FreeWill,FaithPromise,Phase 1,Phase 2,Phase 3 (50%),Phase 4 (50%),Phase 5 (40%),Phase A,Phase B,Phase C (50%),Phase D (50%),Phase E (Cate. A/B),Windows,CPC Subscription,Pillars,Tiles,Saving Box
-Dk Roshan,Dk Roshan,Self,Khawai,,,,,,,,,,,,,,,,3000,20404
+Dk Roshan,Dk Roshan,Self,Khawai,,,,,,,,,,,,,,,,,20404
 ,P Darshim,Wife,Khawai,,,,,,,,,,,,,,,,,
 ,Dk Amothil,Son,Khawai,13600,,,4000,,,10000,,,,,,,,30000,,
 ,P Tenai,Daughter-in-law,Khawai,24500,,,,,3000,,,,,,,,,,,
@@ -102,7 +102,7 @@ Parhai Medun,Parhai Medun,Self,Khawai,,,20000,2500,,,14400,,,,,,30000,,30000,500
 ,P Muiran,Daughter-in-law,Khawai,,,,,,,,,,,,,,,,,
 ,P Koin,Son,Khawai,,,,,,,,,,,,,,,,,
 ,P Teshimreidar Dangsha,Granddaughter,Khawai,,,,,,,,,,,,,,,,,
-P Konai,P Konai,Self,Khawai,,,15000,7500,,,10000,,,,,,,,,500,18377
+P Konai,P Konai,Self,Khawai,,,15000,7500,,,10000,,,,,,,,,,18377
 ,P Mary@Thangyang,Wife,Khawai,,,,,,,,,,,,,,,,,
 ,P Teshining,Daughter,Khawai,,,,,,,,,,,,,,,,,
 ,P Moshangphun,Son,Khawai,,,,,,,,,,,,,,,,,
@@ -144,7 +144,7 @@ S Monglembi,S Monglembi,Self,Khawai,,,,,,,,,500,,,,,,,,
 Th Tomui,Th Tomui,Self,Khawai,,,,,,,,,,,,,,,,,
 ,Th Teresa,Daughter-in-law,Khawai,,,,,,,,,,,,,,,,,
 ,Th Ako,Son,Khawai,,,,,,,,,,,,,,,,,
-Ks Darshim,Ks Darshim,Self,Mayai,,,,,,,,,,,,,,,,2000,111722
+Ks Darshim,Ks Darshim,Self,Mayai,,,,,,,,,,,,,,,,,111722
 ,L Modar,Son,Mayai,,,,,,,,,1000,,,,,,,,
 ,K Rashi,Daughter-in-law,Mayai,,,,,,,,,,,,,,,,,
 ,L Serena,Grand-Daughter,Mayai,,,,,,,,,,,,,,,,,
@@ -165,7 +165,7 @@ L Angrung,L Angrung,Self,Mayai,,,,,,,,,,,,,,,30000,,52776
 ,L Darshim,Daughter,Mayai,15000,,,,,,,,,,,,,,,,
 ,L Tungin,Daughter,Mayai,,,,,,,,,,,,,,,,,
 ,L Khushim,Daughter,Mayai,,,,,,,,,,,,,,,,,
-P Moshilpha,P Moshilpha,Self,Mayai,,,,,,,,,1000,,,5000,,,,2000,40732
+P Moshilpha,P Moshilpha,Self,Mayai,,,,,,,,,1000,,,5000,,,,1500,40732
 ,Theishingla Tuithung,Wife,Mayai,,,,,,,,,,,,,,,,,
 ,(L) P Modun,father,Mayai,,,,,,,,,,,,,,,,,
 ,(L) Kh Teshil,mother,Mayai,1000,,,,,,,,,,,,,,,,
