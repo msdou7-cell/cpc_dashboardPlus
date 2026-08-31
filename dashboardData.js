@@ -544,7 +544,7 @@ const dashboardData =
                          "total":  13849
                      },
                      {
-                         "leikai":  "",
+                         "leikai":  "Pastors",
                          "head":  "Pastors",
                          "members":  4,
                          "savingBox":  6482,
@@ -1001,7 +1001,7 @@ const dashboardData =
                      },
                      {
                          "leikai":  "Heinoukhong",
-                         "head":  "Km Leidun",
+                         "head":  "Km Khamba",
                          "members":  4,
                          "savingBox":  37108,
                          "tiles":  2500,
@@ -9670,7 +9670,7 @@ const dashboardData =
                             },
                             {
                                 "head":  "Pastors",
-                                "leikai":  "",
+                                "leikai":  "Pastors",
                                 "member":  "Rev Kt Ami",
                                 "relationship":  "",
                                 "freeWill":  5000,
@@ -9693,7 +9693,7 @@ const dashboardData =
                             },
                             {
                                 "head":  "Pastors",
-                                "leikai":  "",
+                                "leikai":  "Pastors",
                                 "member":  "A Angphun",
                                 "relationship":  "",
                                 "freeWill":  0,
@@ -9716,7 +9716,7 @@ const dashboardData =
                             },
                             {
                                 "head":  "Pastors",
-                                "leikai":  "",
+                                "leikai":  "Pastors",
                                 "member":  "R Solomon",
                                 "relationship":  "",
                                 "freeWill":  0,
@@ -9739,7 +9739,7 @@ const dashboardData =
                             },
                             {
                                 "head":  "Pastors",
-                                "leikai":  "",
+                                "leikai":  "Pastors",
                                 "member":  "P Angrung",
                                 "relationship":  "",
                                 "freeWill":  0,
@@ -16799,9 +16799,9 @@ const dashboardData =
                                 "savingBox":  0
                             },
                             {
-                                "head":  "Km Leidun",
+                                "head":  "Km Khamba",
                                 "leikai":  "Heinoukhong",
-                                "member":  "Km Leidun",
+                                "member":  "Km Khamba",
                                 "relationship":  "Self",
                                 "freeWill":  0,
                                 "faithPromise":  0,
@@ -16822,7 +16822,7 @@ const dashboardData =
                                 "savingBox":  37108
                             },
                             {
-                                "head":  "Km Leidun",
+                                "head":  "Km Khamba",
                                 "leikai":  "Heinoukhong",
                                 "member":  "P Teshil",
                                 "relationship":  "Wife",
@@ -16845,7 +16845,7 @@ const dashboardData =
                                 "savingBox":  0
                             },
                             {
-                                "head":  "Km Leidun",
+                                "head":  "Km Khamba",
                                 "leikai":  "Heinoukhong",
                                 "member":  "Km Tonika",
                                 "relationship":  "Daughter",
@@ -16868,7 +16868,7 @@ const dashboardData =
                                 "savingBox":  0
                             },
                             {
-                                "head":  "Km Leidun",
+                                "head":  "Km Khamba",
                                 "leikai":  "Heinoukhong",
                                 "member":  "Km Simon",
                                 "relationship":  "Son",
