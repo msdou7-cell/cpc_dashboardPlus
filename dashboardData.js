@@ -10,14 +10,14 @@ const dashboardData =
 {
     "totalFamilies":  155,
     "totalMembers":  804,
-    "grandTotal":  6461058,
+    "grandTotal":  8388861,
     "freeWill":  551515,
     "faithPromise":  0,
-    "employeeSubscription":  1801350,
+    "employeeSubscription":  3729153,
     "nonEmployeeSubscription":  294100,
     "phase1":  921500,
     "phase2":  550250,
-    "phase3":  0,
+    "phase3":  1927803,
     "phase4":  37000,
     "phase5":  292600,
     "phaseA":  0,
@@ -37,7 +37,7 @@ const dashboardData =
                          "members":  12,
                          "savingBox":  20404,
                          "tiles":  0,
-                         "total":  106004
+                         "total":  117904
                      },
                      {
                          "leikai":  "Khawai",
@@ -173,7 +173,7 @@ const dashboardData =
                          "members":  10,
                          "savingBox":  36223,
                          "tiles":  1000,
-                         "total":  74873
+                         "total":  104873
                      },
                      {
                          "leikai":  "Khawai",
@@ -181,7 +181,7 @@ const dashboardData =
                          "members":  7,
                          "savingBox":  36499,
                          "tiles":  500,
-                         "total":  141399
+                         "total":  172149
                      },
                      {
                          "leikai":  "Khawai",
@@ -189,7 +189,7 @@ const dashboardData =
                          "members":  5,
                          "savingBox":  18377,
                          "tiles":  0,
-                         "total":  50877
+                         "total":  73877
                      },
                      {
                          "leikai":  "Khawai",
@@ -229,7 +229,7 @@ const dashboardData =
                          "members":  9,
                          "savingBox":  39947,
                          "tiles":  2500,
-                         "total":  72447
+                         "total":  103671
                      },
                      {
                          "leikai":  "Khawai",
@@ -277,7 +277,7 @@ const dashboardData =
                          "members":  5,
                          "savingBox":  10800,
                          "tiles":  0,
-                         "total":  38300
+                         "total":  67400
                      },
                      {
                          "leikai":  "Mayai",
@@ -293,7 +293,7 @@ const dashboardData =
                          "members":  6,
                          "savingBox":  52776,
                          "tiles":  0,
-                         "total":  118276
+                         "total":  140276
                      },
                      {
                          "leikai":  "Mayai",
@@ -309,7 +309,7 @@ const dashboardData =
                          "members":  5,
                          "savingBox":  25624,
                          "tiles":  0,
-                         "total":  89524
+                         "total":  140524
                      },
                      {
                          "leikai":  "Mayai",
@@ -333,7 +333,7 @@ const dashboardData =
                          "members":  11,
                          "savingBox":  8620,
                          "tiles":  0,
-                         "total":  104120
+                         "total":  115960
                      },
                      {
                          "leikai":  "Wangwai",
@@ -341,7 +341,7 @@ const dashboardData =
                          "members":  9,
                          "savingBox":  13134,
                          "tiles":  0,
-                         "total":  80634
+                         "total":  150634
                      },
                      {
                          "leikai":  "Wangwai",
@@ -429,7 +429,7 @@ const dashboardData =
                          "members":  7,
                          "savingBox":  105409,
                          "tiles":  3000,
-                         "total":  152409
+                         "total":  195809
                      },
                      {
                          "leikai":  "Wangwai",
@@ -437,7 +437,7 @@ const dashboardData =
                          "members":  10,
                          "savingBox":  32808,
                          "tiles":  1500,
-                         "total":  146708
+                         "total":  194690
                      },
                      {
                          "leikai":  "Wangwai",
@@ -445,7 +445,7 @@ const dashboardData =
                          "members":  8,
                          "savingBox":  14532,
                          "tiles":  4000,
-                         "total":  78532
+                         "total":  108532
                      },
                      {
                          "leikai":  "Wangwai",
@@ -469,7 +469,7 @@ const dashboardData =
                          "members":  13,
                          "savingBox":  10119,
                          "tiles":  0,
-                         "total":  41119
+                         "total":  72110
                      },
                      {
                          "leikai":  "Wangwai",
@@ -493,7 +493,7 @@ const dashboardData =
                          "members":  7,
                          "savingBox":  0,
                          "tiles":  0,
-                         "total":  16000
+                         "total":  35000
                      },
                      {
                          "leikai":  "Wangwai",
@@ -557,7 +557,7 @@ const dashboardData =
                          "members":  7,
                          "savingBox":  23635,
                          "tiles":  0,
-                         "total":  78135
+                         "total":  106985
                      },
                      {
                          "leikai":  "Heaven",
@@ -573,7 +573,7 @@ const dashboardData =
                          "members":  6,
                          "savingBox":  15380,
                          "tiles":  0,
-                         "total":  71880
+                         "total":  89080
                      },
                      {
                          "leikai":  "Heaven",
@@ -581,7 +581,7 @@ const dashboardData =
                          "members":  4,
                          "savingBox":  46317,
                          "tiles":  0,
-                         "total":  73817
+                         "total":  104808
                      },
                      {
                          "leikai":  "Heaven",
@@ -597,7 +597,7 @@ const dashboardData =
                          "members":  6,
                          "savingBox":  12880,
                          "tiles":  0,
-                         "total":  39880
+                         "total":  64880
                      },
                      {
                          "leikai":  "Heaven",
@@ -629,7 +629,7 @@ const dashboardData =
                          "members":  7,
                          "savingBox":  28703,
                          "tiles":  0,
-                         "total":  105703
+                         "total":  143386
                      },
                      {
                          "leikai":  "Heaven",
@@ -637,7 +637,7 @@ const dashboardData =
                          "members":  5,
                          "savingBox":  44011,
                          "tiles":  2000,
-                         "total":  166011
+                         "total":  206511
                      },
                      {
                          "leikai":  "Heaven",
@@ -645,7 +645,7 @@ const dashboardData =
                          "members":  10,
                          "savingBox":  11446,
                          "tiles":  0,
-                         "total":  28646
+                         "total":  48082
                      },
                      {
                          "leikai":  "Heaven",
@@ -661,7 +661,7 @@ const dashboardData =
                          "members":  5,
                          "savingBox":  12379,
                          "tiles":  0,
-                         "total":  34879
+                         "total":  64879
                      },
                      {
                          "leikai":  "Heaven",
@@ -669,7 +669,7 @@ const dashboardData =
                          "members":  5,
                          "savingBox":  123477,
                          "tiles":  2500,
-                         "total":  334977
+                         "total":  505173
                      },
                      {
                          "leikai":  "Heaven",
@@ -685,7 +685,7 @@ const dashboardData =
                          "members":  5,
                          "savingBox":  0,
                          "tiles":  0,
-                         "total":  12500
+                         "total":  30960
                      },
                      {
                          "leikai":  "Heaven",
@@ -701,7 +701,7 @@ const dashboardData =
                          "members":  2,
                          "savingBox":  0,
                          "tiles":  0,
-                         "total":  3000
+                         "total":  14500
                      },
                      {
                          "leikai":  "Heaven",
@@ -717,7 +717,7 @@ const dashboardData =
                          "members":  7,
                          "savingBox":  10022,
                          "tiles":  0,
-                         "total":  22522
+                         "total":  45022
                      },
                      {
                          "leikai":  "Heaven",
@@ -733,7 +733,7 @@ const dashboardData =
                          "members":  4,
                          "savingBox":  9972,
                          "tiles":  0,
-                         "total":  32472
+                         "total":  55711
                      },
                      {
                          "leikai":  "Heaven",
@@ -749,7 +749,7 @@ const dashboardData =
                          "members":  3,
                          "savingBox":  4215,
                          "tiles":  1500,
-                         "total":  30715
+                         "total":  49515
                      },
                      {
                          "leikai":  "Heaven",
@@ -757,7 +757,7 @@ const dashboardData =
                          "members":  10,
                          "savingBox":  20672,
                          "tiles":  0,
-                         "total":  57672
+                         "total":  119172
                      },
                      {
                          "leikai":  "Heaven",
@@ -781,7 +781,7 @@ const dashboardData =
                          "members":  12,
                          "savingBox":  36608,
                          "tiles":  1000,
-                         "total":  137608
+                         "total":  195440
                      },
                      {
                          "leikai":  "Heaven",
@@ -837,7 +837,7 @@ const dashboardData =
                          "members":  7,
                          "savingBox":  11462,
                          "tiles":  4000,
-                         "total":  199362
+                         "total":  260862
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -845,7 +845,7 @@ const dashboardData =
                          "members":  4,
                          "savingBox":  19959,
                          "tiles":  1000,
-                         "total":  113459
+                         "total":  144450
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -853,7 +853,7 @@ const dashboardData =
                          "members":  4,
                          "savingBox":  4425,
                          "tiles":  0,
-                         "total":  56925
+                         "total":  81925
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -861,7 +861,7 @@ const dashboardData =
                          "members":  10,
                          "savingBox":  25072,
                          "tiles":  0,
-                         "total":  130822
+                         "total":  198822
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -869,7 +869,7 @@ const dashboardData =
                          "members":  6,
                          "savingBox":  41054,
                          "tiles":  0,
-                         "total":  127554
+                         "total":  156654
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -877,7 +877,7 @@ const dashboardData =
                          "members":  5,
                          "savingBox":  17488,
                          "tiles":  0,
-                         "total":  69988
+                         "total":  92988
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -885,7 +885,7 @@ const dashboardData =
                          "members":  5,
                          "savingBox":  17700,
                          "tiles":  0,
-                         "total":  61700
+                         "total":  106300
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -901,7 +901,7 @@ const dashboardData =
                          "members":  12,
                          "savingBox":  67979,
                          "tiles":  6000,
-                         "total":  372104
+                         "total":  520233
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -909,7 +909,7 @@ const dashboardData =
                          "members":  8,
                          "savingBox":  16773,
                          "tiles":  4000,
-                         "total":  198473
+                         "total":  232473
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -925,7 +925,7 @@ const dashboardData =
                          "members":  4,
                          "savingBox":  10558,
                          "tiles":  0,
-                         "total":  23058
+                         "total":  30558
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -933,7 +933,7 @@ const dashboardData =
                          "members":  6,
                          "savingBox":  3723,
                          "tiles":  0,
-                         "total":  6173
+                         "total":  7673
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -941,7 +941,7 @@ const dashboardData =
                          "members":  6,
                          "savingBox":  15404,
                          "tiles":  0,
-                         "total":  60904
+                         "total":  102404
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -949,7 +949,7 @@ const dashboardData =
                          "members":  5,
                          "savingBox":  33889,
                          "tiles":  0,
-                         "total":  181639
+                         "total":  214890
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -957,7 +957,7 @@ const dashboardData =
                          "members":  4,
                          "savingBox":  15404,
                          "tiles":  2000,
-                         "total":  81404
+                         "total":  105904
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -965,7 +965,7 @@ const dashboardData =
                          "members":  5,
                          "savingBox":  24365,
                          "tiles":  0,
-                         "total":  29365
+                         "total":  42365
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -989,7 +989,7 @@ const dashboardData =
                          "members":  9,
                          "savingBox":  10575,
                          "tiles":  2500,
-                         "total":  63575
+                         "total":  100475
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -1029,7 +1029,7 @@ const dashboardData =
                          "members":  4,
                          "savingBox":  26670,
                          "tiles":  0,
-                         "total":  86670
+                         "total":  125368
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -1037,7 +1037,7 @@ const dashboardData =
                          "members":  7,
                          "savingBox":  14725,
                          "tiles":  0,
-                         "total":  37225
+                         "total":  56225
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -1077,7 +1077,7 @@ const dashboardData =
                          "members":  5,
                          "savingBox":  40893,
                          "tiles":  0,
-                         "total":  115893
+                         "total":  168893
                      },
                      {
                          "leikai":  "Chingyang",
@@ -1109,7 +1109,7 @@ const dashboardData =
                          "members":  5,
                          "savingBox":  2904,
                          "tiles":  0,
-                         "total":  9904
+                         "total":  22599
                      },
                      {
                          "leikai":  "Chingyang",
@@ -1141,7 +1141,7 @@ const dashboardData =
                          "members":  5,
                          "savingBox":  19549,
                          "tiles":  1000,
-                         "total":  56349
+                         "total":  85449
                      },
                      {
                          "leikai":  "Chingyang",
@@ -1157,7 +1157,7 @@ const dashboardData =
                          "members":  8,
                          "savingBox":  26422,
                          "tiles":  0,
-                         "total":  39922
+                         "total":  52422
                      },
                      {
                          "leikai":  "Chingyang",
@@ -1165,7 +1165,7 @@ const dashboardData =
                          "members":  4,
                          "savingBox":  22961,
                          "tiles":  1000,
-                         "total":  71461
+                         "total":  89926
                      },
                      {
                          "leikai":  "Chingyang",
@@ -1181,7 +1181,7 @@ const dashboardData =
                          "members":  5,
                          "savingBox":  9589,
                          "tiles":  0,
-                         "total":  28589
+                         "total":  41589
                      },
                      {
                          "leikai":  "Chingyang",
@@ -1197,7 +1197,7 @@ const dashboardData =
                          "members":  4,
                          "savingBox":  4157,
                          "tiles":  1500,
-                         "total":  12657
+                         "total":  25657
                      },
                      {
                          "leikai":  "Chingyang",
@@ -1328,7 +1328,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  4000,
-                                "phase3":  0,
+                                "phase3":  11900,
                                 "phase4":  0,
                                 "phase5":  10000,
                                 "phaseA":  0,
@@ -3283,7 +3283,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  15000,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  30000,
                                 "phase4":  0,
                                 "phase5":  5000,
                                 "phaseA":  0,
@@ -3490,7 +3490,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  20000,
                                 "phase2":  2500,
-                                "phase3":  0,
+                                "phase3":  12000,
                                 "phase4":  0,
                                 "phase5":  14400,
                                 "phaseA":  0,
@@ -3559,7 +3559,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  18750,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -3651,7 +3651,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  15000,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  23000,
                                 "phase4":  0,
                                 "phase5":  10000,
                                 "phaseA":  0,
@@ -4065,7 +4065,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  5000,
                                 "phase2":  2500,
-                                "phase3":  0,
+                                "phase3":  11224,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -4088,7 +4088,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  15000,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  20000,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -4755,7 +4755,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  15000,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  29100,
                                 "phase4":  0,
                                 "phase5":  5000,
                                 "phaseA":  0,
@@ -4985,7 +4985,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  10000,
                                 "phase2":  5000,
-                                "phase3":  0,
+                                "phase3":  22000,
                                 "phase4":  0,
                                 "phase5":  3000,
                                 "phaseA":  0,
@@ -5192,7 +5192,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  15000,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  23000,
                                 "phase4":  0,
                                 "phase5":  18400,
                                 "phaseA":  0,
@@ -5215,7 +5215,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  15000,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  28000,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -5767,7 +5767,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  4000,
-                                "phase3":  0,
+                                "phase3":  11840,
                                 "phase4":  0,
                                 "phase5":  5000,
                                 "phaseA":  0,
@@ -5928,7 +5928,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  20000,
                                 "phase2":  10000,
-                                "phase3":  0,
+                                "phase3":  37500,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -5974,7 +5974,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  32500,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -7216,7 +7216,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  20000,
                                 "phase2":  10000,
-                                "phase3":  0,
+                                "phase3":  40900,
                                 "phase4":  0,
                                 "phase5":  10000,
                                 "phaseA":  0,
@@ -7239,7 +7239,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  1000,
                                 "phase2":  500,
-                                "phase3":  0,
+                                "phase3":  2500,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -7423,7 +7423,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  20000,
                                 "phase2":  10000,
-                                "phase3":  0,
+                                "phase3":  47982,
                                 "phase4":  0,
                                 "phase5":  9000,
                                 "phaseA":  0,
@@ -7630,7 +7630,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  15000,
                                 "phase2":  10000,
-                                "phase3":  0,
+                                "phase3":  30000,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -8090,7 +8090,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  15000,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  30991,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -8642,7 +8642,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  19000,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -9769,7 +9769,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  20000,
                                 "phase2":  2500,
-                                "phase3":  0,
+                                "phase3":  13350,
                                 "phase4":  0,
                                 "phase5":  1000,
                                 "phaseA":  0,
@@ -9815,7 +9815,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
-                                "phase3":  0,
+                                "phase3":  15500,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -10022,7 +10022,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  2500,
-                                "phase3":  0,
+                                "phase3":  7500,
                                 "phase4":  0,
                                 "phase5":  2000,
                                 "phaseA":  0,
@@ -10091,7 +10091,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
-                                "phase3":  0,
+                                "phase3":  9700,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -10160,7 +10160,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  15000,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  30991,
                                 "phase4":  0,
                                 "phase5":  5000,
                                 "phaseA":  0,
@@ -10413,7 +10413,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  15000,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  25000,
                                 "phase4":  0,
                                 "phase5":  3000,
                                 "phaseA":  0,
@@ -10873,7 +10873,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  20000,
                                 "phase2":  10000,
-                                "phase3":  0,
+                                "phase3":  37683,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -11034,7 +11034,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  20000,
                                 "phase2":  10000,
-                                "phase3":  0,
+                                "phase3":  40500,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -11149,7 +11149,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  5000,
                                 "phase2":  0,
-                                "phase3":  0,
+                                "phase3":  9736,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -11241,7 +11241,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
-                                "phase3":  0,
+                                "phase3":  9700,
                                 "phase4":  0,
                                 "phase5":  1000,
                                 "phaseA":  0,
@@ -11494,7 +11494,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  15000,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  30000,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -11609,7 +11609,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  30000,
                                 "phase2":  15000,
-                                "phase3":  0,
+                                "phase3":  142696,
                                 "phase4":  0,
                                 "phase5":  60000,
                                 "phaseA":  0,
@@ -11632,7 +11632,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  1000,
                                 "phase2":  500,
-                                "phase3":  0,
+                                "phase3":  2500,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -11655,7 +11655,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  4000,
-                                "phase3":  0,
+                                "phase3":  25000,
                                 "phase4":  0,
                                 "phase5":  25000,
                                 "phaseA":  0,
@@ -11839,7 +11839,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  5000,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  18460,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -12046,7 +12046,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  3000,
-                                "phase3":  0,
+                                "phase3":  11500,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -12115,7 +12115,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  5000,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  22500,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -12368,7 +12368,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  15000,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  23239,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -12552,7 +12552,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  10000,
                                 "phase2":  5000,
-                                "phase3":  0,
+                                "phase3":  18800,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -12690,7 +12690,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  5000,
-                                "phase3":  0,
+                                "phase3":  14000,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -12713,7 +12713,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  33500,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -12736,7 +12736,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  5000,
-                                "phase3":  0,
+                                "phase3":  14000,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -13173,7 +13173,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  10000,
                                 "phase2":  5000,
-                                "phase3":  0,
+                                "phase3":  24332,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -13196,7 +13196,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  15000,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  33500,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -14001,7 +14001,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  20000,
                                 "phase2":  10000,
-                                "phase3":  0,
+                                "phase3":  36500,
                                 "phase4":  0,
                                 "phase5":  5500,
                                 "phaseA":  0,
@@ -14070,7 +14070,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
-                                "phase3":  0,
+                                "phase3":  25000,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -14139,7 +14139,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  15000,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  30991,
                                 "phase4":  0,
                                 "phase5":  10000,
                                 "phaseA":  0,
@@ -14231,7 +14231,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  15000,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  25000,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -14323,7 +14323,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  20000,
                                 "phase2":  2500,
-                                "phase3":  0,
+                                "phase3":  20500,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -14392,7 +14392,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  15000,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  25000,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -14415,7 +14415,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
-                                "phase3":  0,
+                                "phase3":  22500,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -14576,7 +14576,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  15000,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  29100,
                                 "phase4":  0,
                                 "phase5":  5000,
                                 "phaseA":  0,
@@ -14714,7 +14714,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  15000,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  23000,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -14806,7 +14806,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  15000,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  29100,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -14829,7 +14829,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  1000,
                                 "phase2":  500,
-                                "phase3":  0,
+                                "phase3":  15500,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -15036,7 +15036,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  20000,
                                 "phase2":  2500,
-                                "phase3":  0,
+                                "phase3":  8000,
                                 "phase4":  0,
                                 "phase5":  6400,
                                 "phaseA":  0,
@@ -15082,7 +15082,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  20000,
                                 "phase2":  10000,
-                                "phase3":  0,
+                                "phase3":  60679,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -15128,7 +15128,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  5000,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  29450,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -15174,7 +15174,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  25000,
                                 "phase4":  0,
                                 "phase5":  10000,
                                 "phaseA":  0,
@@ -15197,7 +15197,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  4000,
-                                "phase3":  0,
+                                "phase3":  25000,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -15312,7 +15312,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  5000,
                                 "phase2":  2500,
-                                "phase3":  0,
+                                "phase3":  7000,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -15358,7 +15358,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  15000,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  27000,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -15611,7 +15611,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  10000,
                                 "phase2":  2500,
-                                "phase3":  0,
+                                "phase3":  7500,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -15726,7 +15726,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  500,
                                 "phase2":  250,
-                                "phase3":  0,
+                                "phase3":  1500,
                                 "phase4":  0,
                                 "phase5":  1200,
                                 "phaseA":  0,
@@ -15841,7 +15841,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  5000,
                                 "phase2":  2500,
-                                "phase3":  0,
+                                "phase3":  15000,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -15864,7 +15864,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  26500,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -15979,7 +15979,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  20000,
                                 "phase2":  2500,
-                                "phase3":  0,
+                                "phase3":  17332,
                                 "phase4":  0,
                                 "phase5":  13000,
                                 "phaseA":  0,
@@ -16002,7 +16002,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  500,
                                 "phase2":  250,
-                                "phase3":  0,
+                                "phase3":  1500,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -16025,7 +16025,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
-                                "phase3":  0,
+                                "phase3":  14419,
                                 "phase4":  0,
                                 "phase5":  10000,
                                 "phaseA":  0,
@@ -16094,7 +16094,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  15000,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  22000,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -16117,7 +16117,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  1000,
                                 "phase2":  500,
-                                "phase3":  0,
+                                "phase3":  2500,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -16186,7 +16186,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  5000,
-                                "phase3":  0,
+                                "phase3":  13000,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -16600,7 +16600,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  15000,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  17500,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -16623,7 +16623,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
-                                "phase3":  0,
+                                "phase3":  9700,
                                 "phase4":  0,
                                 "phase5":  4000,
                                 "phaseA":  0,
@@ -16646,7 +16646,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
-                                "phase3":  0,
+                                "phase3":  9700,
                                 "phase4":  0,
                                 "phase5":  4000,
                                 "phaseA":  0,
@@ -17129,7 +17129,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  20000,
                                 "phase2":  10000,
-                                "phase3":  0,
+                                "phase3":  38698,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -17221,7 +17221,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  15000,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  19000,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -17819,7 +17819,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  15000,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  25000,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -17842,7 +17842,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  15000,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  28000,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -18233,7 +18233,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  5000,
-                                "phase3":  0,
+                                "phase3":  12695,
                                 "phase4":  0,
                                 "phase5":  2000,
                                 "phaseA":  0,
@@ -18601,7 +18601,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  15000,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  29100,
                                 "phase4":  0,
                                 "phase5":  3300,
                                 "phaseA":  0,
@@ -18808,7 +18808,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  2500,
-                                "phase3":  0,
+                                "phase3":  12500,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
@@ -18992,7 +18992,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  5000,
                                 "phase2":  7500,
-                                "phase3":  0,
+                                "phase3":  18465,
                                 "phase4":  0,
                                 "phase5":  5000,
                                 "phaseA":  0,
@@ -19107,7 +19107,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  5000,
-                                "phase3":  0,
+                                "phase3":  13000,
                                 "phase4":  0,
                                 "phase5":  2000,
                                 "phaseA":  0,
@@ -19383,7 +19383,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  5000,
-                                "phase3":  0,
+                                "phase3":  13000,
                                 "phase4":  0,
                                 "phase5":  2000,
                                 "phaseA":  0,
