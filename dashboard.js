@@ -1488,7 +1488,6 @@ const KPI = [
     { id: "employeeSubscription", title: "Employee Subscription", icon: "👨‍💼", value: "employeeSubscription" },
     { id: "nonEmployeeSubscription", title: "Non Employee Subscription", icon: "👥", value: "nonEmployeeSubscription" },
     { id: "windows", title: "Windows", icon: "🪟", value: "windows" },
-    { id: "cpc", title: "CPC", icon: "📘", value: "cpc" },
     { id: "pillars", title: "Pillars", icon: "🏛", value: "pillars" },
     { id: "tiles", title: "Tiles", icon: "🧱", value: "tiles" },
     { id: "savingBox", title: "Saving Box", icon: "💵", value: "savingBox" },
