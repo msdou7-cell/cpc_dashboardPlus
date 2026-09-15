@@ -10,16 +10,16 @@ const dashboardData =
 {
     "totalFamilies":  155,
     "totalMembers":  804,
-    "grandTotal":  8492061,
+    "grandTotal":  8798321,
     "freeWill":  551515,
     "faithPromise":  0,
-    "employeeSubscription":  3729153,
+    "employeeSubscription":  4035413,
     "nonEmployeeSubscription":  402300,
     "phase1":  921500,
     "phase2":  550250,
     "phase3":  1927803,
     "phase4":  37000,
-    "phase5":  292600,
+    "phase5":  598860,
     "phaseA":  0,
     "phaseB":  53500,
     "phaseC":  0,
@@ -181,7 +181,7 @@ const dashboardData =
                          "members":  7,
                          "savingBox":  36499,
                          "tiles":  500,
-                         "total":  172149
+                         "total":  182149
                      },
                      {
                          "leikai":  "Khawai",
@@ -293,7 +293,7 @@ const dashboardData =
                          "members":  6,
                          "savingBox":  52776,
                          "tiles":  0,
-                         "total":  140276
+                         "total":  148276
                      },
                      {
                          "leikai":  "Mayai",
@@ -309,7 +309,7 @@ const dashboardData =
                          "members":  5,
                          "savingBox":  25624,
                          "tiles":  0,
-                         "total":  140524
+                         "total":  150524
                      },
                      {
                          "leikai":  "Mayai",
@@ -341,7 +341,7 @@ const dashboardData =
                          "members":  9,
                          "savingBox":  13134,
                          "tiles":  0,
-                         "total":  150634
+                         "total":  153134
                      },
                      {
                          "leikai":  "Wangwai",
@@ -429,7 +429,7 @@ const dashboardData =
                          "members":  7,
                          "savingBox":  105409,
                          "tiles":  3000,
-                         "total":  195809
+                         "total":  197809
                      },
                      {
                          "leikai":  "Wangwai",
@@ -445,7 +445,7 @@ const dashboardData =
                          "members":  8,
                          "savingBox":  14532,
                          "tiles":  4000,
-                         "total":  103532
+                         "total":  108032
                      },
                      {
                          "leikai":  "Wangwai",
@@ -493,7 +493,7 @@ const dashboardData =
                          "members":  7,
                          "savingBox":  0,
                          "tiles":  0,
-                         "total":  35000
+                         "total":  45000
                      },
                      {
                          "leikai":  "Wangwai",
@@ -557,7 +557,7 @@ const dashboardData =
                          "members":  7,
                          "savingBox":  23635,
                          "tiles":  0,
-                         "total":  106985
+                         "total":  117985
                      },
                      {
                          "leikai":  "Heaven",
@@ -605,7 +605,7 @@ const dashboardData =
                          "members":  8,
                          "savingBox":  9093,
                          "tiles":  0,
-                         "total":  33093
+                         "total":  35093
                      },
                      {
                          "leikai":  "Heaven",
@@ -629,7 +629,7 @@ const dashboardData =
                          "members":  7,
                          "savingBox":  28703,
                          "tiles":  0,
-                         "total":  143386
+                         "total":  174886
                      },
                      {
                          "leikai":  "Heaven",
@@ -637,7 +637,7 @@ const dashboardData =
                          "members":  5,
                          "savingBox":  44011,
                          "tiles":  2000,
-                         "total":  206511
+                         "total":  216511
                      },
                      {
                          "leikai":  "Heaven",
@@ -645,7 +645,7 @@ const dashboardData =
                          "members":  10,
                          "savingBox":  11446,
                          "tiles":  0,
-                         "total":  48082
+                         "total":  54842
                      },
                      {
                          "leikai":  "Heaven",
@@ -669,7 +669,7 @@ const dashboardData =
                          "members":  5,
                          "savingBox":  123477,
                          "tiles":  2500,
-                         "total":  505173
+                         "total":  575173
                      },
                      {
                          "leikai":  "Heaven",
@@ -757,7 +757,7 @@ const dashboardData =
                          "members":  10,
                          "savingBox":  20672,
                          "tiles":  0,
-                         "total":  123172
+                         "total":  128172
                      },
                      {
                          "leikai":  "Heaven",
@@ -781,7 +781,7 @@ const dashboardData =
                          "members":  12,
                          "savingBox":  36608,
                          "tiles":  1000,
-                         "total":  203440
+                         "total":  207440
                      },
                      {
                          "leikai":  "Heaven",
@@ -837,7 +837,7 @@ const dashboardData =
                          "members":  7,
                          "savingBox":  11462,
                          "tiles":  4000,
-                         "total":  260862
+                         "total":  285062
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -845,7 +845,7 @@ const dashboardData =
                          "members":  4,
                          "savingBox":  19959,
                          "tiles":  1000,
-                         "total":  144450
+                         "total":  139450
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -869,7 +869,7 @@ const dashboardData =
                          "members":  6,
                          "savingBox":  41054,
                          "tiles":  0,
-                         "total":  156654
+                         "total":  159154
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -877,7 +877,7 @@ const dashboardData =
                          "members":  5,
                          "savingBox":  17488,
                          "tiles":  0,
-                         "total":  92988
+                         "total":  97988
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -901,7 +901,7 @@ const dashboardData =
                          "members":  12,
                          "savingBox":  67979,
                          "tiles":  6000,
-                         "total":  520233
+                         "total":  584233
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -909,7 +909,7 @@ const dashboardData =
                          "members":  8,
                          "savingBox":  16773,
                          "tiles":  4000,
-                         "total":  232473
+                         "total":  245473
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -949,7 +949,7 @@ const dashboardData =
                          "members":  5,
                          "savingBox":  33889,
                          "tiles":  0,
-                         "total":  214890
+                         "total":  216430
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -989,7 +989,7 @@ const dashboardData =
                          "members":  9,
                          "savingBox":  10575,
                          "tiles":  2500,
-                         "total":  104475
+                         "total":  108235
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -1165,7 +1165,7 @@ const dashboardData =
                          "members":  4,
                          "savingBox":  22961,
                          "tiles":  1000,
-                         "total":  89926
+                         "total":  97926
                      },
                      {
                          "leikai":  "Chingyang",
@@ -1197,7 +1197,7 @@ const dashboardData =
                          "members":  4,
                          "savingBox":  4157,
                          "tiles":  1500,
-                         "total":  25657
+                         "total":  27657
                      },
                      {
                          "leikai":  "Chingyang",
@@ -3561,7 +3561,7 @@ const dashboardData =
                                 "phase2":  7500,
                                 "phase3":  18750,
                                 "phase4":  0,
-                                "phase5":  0,
+                                "phase5":  10000,
                                 "phaseA":  0,
                                 "phaseB":  0,
                                 "phaseC":  0,
@@ -4987,7 +4987,7 @@ const dashboardData =
                                 "phase2":  5000,
                                 "phase3":  22000,
                                 "phase4":  0,
-                                "phase5":  3000,
+                                "phase5":  11000,
                                 "phaseA":  0,
                                 "phaseB":  0,
                                 "phaseC":  0,
@@ -5217,7 +5217,7 @@ const dashboardData =
                                 "phase2":  7500,
                                 "phase3":  28000,
                                 "phase4":  0,
-                                "phase5":  0,
+                                "phase5":  10000,
                                 "phaseA":  0,
                                 "phaseB":  0,
                                 "phaseC":  0,
@@ -5930,7 +5930,7 @@ const dashboardData =
                                 "phase2":  10000,
                                 "phase3":  37500,
                                 "phase4":  0,
-                                "phase5":  0,
+                                "phase5":  2500,
                                 "phaseA":  0,
                                 "phaseB":  0,
                                 "phaseC":  0,
@@ -7241,7 +7241,7 @@ const dashboardData =
                                 "phase2":  500,
                                 "phase3":  2500,
                                 "phase4":  0,
-                                "phase5":  0,
+                                "phase5":  2000,
                                 "phaseA":  0,
                                 "phaseB":  0,
                                 "phaseC":  0,
@@ -7632,7 +7632,7 @@ const dashboardData =
                                 "phase2":  10000,
                                 "phase3":  30000,
                                 "phase4":  0,
-                                "phase5":  0,
+                                "phase5":  4500,
                                 "phaseA":  0,
                                 "phaseB":  0,
                                 "phaseC":  0,
@@ -8644,7 +8644,7 @@ const dashboardData =
                                 "phase2":  7500,
                                 "phase3":  19000,
                                 "phase4":  0,
-                                "phase5":  0,
+                                "phase5":  10000,
                                 "phaseA":  0,
                                 "phaseB":  0,
                                 "phaseC":  0,
@@ -9771,7 +9771,7 @@ const dashboardData =
                                 "phase2":  2500,
                                 "phase3":  13350,
                                 "phase4":  0,
-                                "phase5":  1000,
+                                "phase5":  12000,
                                 "phaseA":  0,
                                 "phaseB":  0,
                                 "phaseC":  0,
@@ -10553,7 +10553,7 @@ const dashboardData =
                                 "phase2":  0,
                                 "phase3":  0,
                                 "phase4":  0,
-                                "phase5":  0,
+                                "phase5":  2000,
                                 "phaseA":  0,
                                 "phaseB":  0,
                                 "phaseC":  0,
@@ -10875,7 +10875,7 @@ const dashboardData =
                                 "phase2":  10000,
                                 "phase3":  37683,
                                 "phase4":  0,
-                                "phase5":  0,
+                                "phase5":  31500,
                                 "phaseA":  0,
                                 "phaseB":  0,
                                 "phaseC":  0,
@@ -11036,7 +11036,7 @@ const dashboardData =
                                 "phase2":  10000,
                                 "phase3":  40500,
                                 "phase4":  0,
-                                "phase5":  0,
+                                "phase5":  10000,
                                 "phaseA":  0,
                                 "phaseB":  0,
                                 "phaseC":  0,
@@ -11243,7 +11243,7 @@ const dashboardData =
                                 "phase2":  0,
                                 "phase3":  9700,
                                 "phase4":  0,
-                                "phase5":  1000,
+                                "phase5":  7760,
                                 "phaseA":  0,
                                 "phaseB":  0,
                                 "phaseC":  0,
@@ -11611,7 +11611,7 @@ const dashboardData =
                                 "phase2":  15000,
                                 "phase3":  142696,
                                 "phase4":  0,
-                                "phase5":  60000,
+                                "phase5":  130000,
                                 "phaseA":  0,
                                 "phaseB":  0,
                                 "phaseC":  0,
@@ -12715,7 +12715,7 @@ const dashboardData =
                                 "phase2":  7500,
                                 "phase3":  33500,
                                 "phase4":  0,
-                                "phase5":  0,
+                                "phase5":  5000,
                                 "phaseA":  0,
                                 "phaseB":  0,
                                 "phaseC":  0,
@@ -13198,7 +13198,7 @@ const dashboardData =
                                 "phase2":  7500,
                                 "phase3":  33500,
                                 "phase4":  0,
-                                "phase5":  0,
+                                "phase5":  4000,
                                 "phaseA":  0,
                                 "phaseB":  0,
                                 "phaseC":  0,
@@ -14003,7 +14003,7 @@ const dashboardData =
                                 "phase2":  10000,
                                 "phase3":  36500,
                                 "phase4":  0,
-                                "phase5":  5500,
+                                "phase5":  10100,
                                 "phaseA":  0,
                                 "phaseB":  0,
                                 "phaseC":  0,
@@ -14095,7 +14095,7 @@ const dashboardData =
                                 "phase2":  0,
                                 "phase3":  0,
                                 "phase4":  15000,
-                                "phase5":  2000,
+                                "phase5":  21600,
                                 "phaseA":  0,
                                 "phaseB":  0,
                                 "phaseC":  0,
@@ -14141,7 +14141,7 @@ const dashboardData =
                                 "phase2":  7500,
                                 "phase3":  30991,
                                 "phase4":  0,
-                                "phase5":  10000,
+                                "phase5":  5000,
                                 "phaseA":  0,
                                 "phaseB":  0,
                                 "phaseC":  0,
@@ -14578,7 +14578,7 @@ const dashboardData =
                                 "phase2":  7500,
                                 "phase3":  29100,
                                 "phase4":  0,
-                                "phase5":  5000,
+                                "phase5":  7500,
                                 "phaseA":  0,
                                 "phaseB":  0,
                                 "phaseC":  0,
@@ -14716,7 +14716,7 @@ const dashboardData =
                                 "phase2":  7500,
                                 "phase3":  23000,
                                 "phase4":  0,
-                                "phase5":  0,
+                                "phase5":  5000,
                                 "phaseA":  0,
                                 "phaseB":  0,
                                 "phaseC":  0,
@@ -15084,7 +15084,7 @@ const dashboardData =
                                 "phase2":  10000,
                                 "phase3":  60679,
                                 "phase4":  0,
-                                "phase5":  0,
+                                "phase5":  30000,
                                 "phaseA":  0,
                                 "phaseB":  0,
                                 "phaseC":  0,
@@ -15130,7 +15130,7 @@ const dashboardData =
                                 "phase2":  7500,
                                 "phase3":  29450,
                                 "phase4":  0,
-                                "phase5":  0,
+                                "phase5":  20000,
                                 "phaseA":  0,
                                 "phaseB":  0,
                                 "phaseC":  0,
@@ -15176,7 +15176,7 @@ const dashboardData =
                                 "phase2":  7500,
                                 "phase3":  25000,
                                 "phase4":  0,
-                                "phase5":  10000,
+                                "phase5":  24000,
                                 "phaseA":  0,
                                 "phaseB":  0,
                                 "phaseC":  0,
@@ -15314,7 +15314,7 @@ const dashboardData =
                                 "phase2":  2500,
                                 "phase3":  7000,
                                 "phase4":  0,
-                                "phase5":  0,
+                                "phase5":  3000,
                                 "phaseA":  0,
                                 "phaseB":  0,
                                 "phaseC":  0,
@@ -15360,7 +15360,7 @@ const dashboardData =
                                 "phase2":  7500,
                                 "phase3":  27000,
                                 "phase4":  0,
-                                "phase5":  0,
+                                "phase5":  10000,
                                 "phaseA":  0,
                                 "phaseB":  0,
                                 "phaseC":  0,
@@ -16027,7 +16027,7 @@ const dashboardData =
                                 "phase2":  0,
                                 "phase3":  14419,
                                 "phase4":  0,
-                                "phase5":  10000,
+                                "phase5":  11540,
                                 "phaseA":  0,
                                 "phaseB":  0,
                                 "phaseC":  0,
@@ -16625,7 +16625,7 @@ const dashboardData =
                                 "phase2":  0,
                                 "phase3":  9700,
                                 "phase4":  0,
-                                "phase5":  4000,
+                                "phase5":  7760,
                                 "phaseA":  0,
                                 "phaseB":  0,
                                 "phaseC":  0,
@@ -18994,7 +18994,7 @@ const dashboardData =
                                 "phase2":  7500,
                                 "phase3":  18465,
                                 "phase4":  0,
-                                "phase5":  5000,
+                                "phase5":  13000,
                                 "phaseA":  0,
                                 "phaseB":  0,
                                 "phaseC":  0,
@@ -19385,7 +19385,7 @@ const dashboardData =
                                 "phase2":  5000,
                                 "phase3":  13000,
                                 "phase4":  0,
-                                "phase5":  2000,
+                                "phase5":  4000,
                                 "phaseA":  0,
                                 "phaseB":  0,
                                 "phaseC":  0,

@@ -98,7 +98,7 @@ P Temui,P Temui,Self,Khawai,1000,,,,,,,,,,,,,,,1000,36223
 Parhai Medun,Parhai Medun,Self,Khawai,,,20000,2500,12000,,14400,,,,,,30000,,30000,500,36499
 ,P Tungshil,Wife,Khawai,,,,,,,,,,,,,,,,,
 ,P Tomui,Sister,Khawai,,,,,,,,,,,,,,,,,
-,P Molightson,Son,Khawai,,,,7500,18750,,,,,,,,,,,,
+,P Molightson,Son,Khawai,,,,7500,18750,,10000,,,,,,,,,,
 ,P Muiran,Daughter-in-law,Khawai,,,,,,,,,,,,,,,,,
 ,P Koin,Son,Khawai,,,,,,,,,,,,,,,,,
 ,P Teshimreidar Dangsha,Granddaughter,Khawai,,,,,,,,,,,,,,,,,
@@ -160,7 +160,7 @@ L Meba,L Meba,Self,Mayai,,,,,,,,,,,,,,,,,
 ,Tegaishim,Daughter,Mayai,,,,,,,,,,,,,,,,,
 ,L Morung,Son,Mayai,,,,,,,,,,,,,,,,,
 L Angrung,L Angrung,Self,Mayai,,,,,,,,,,,,,,,30000,,52776
-,Th Khuran,Wife,Mayai,,,10000,5000,22000,,3000,,,,,,,,,,
+,Th Khuran,Wife,Mayai,,,10000,5000,22000,,11000,,,,,,,,,,
 ,L Tedun,Sister,Mayai,2000,,,,,,,,500,,,,,,,,
 ,L Darshim,Daughter,Mayai,15000,,,,,,,,,,,,,,,,
 ,L Tungin,Daughter,Mayai,,,,,,,,,,,,,,,,,
@@ -170,7 +170,7 @@ P Moshilpha,P Moshilpha,Self,Mayai,,,,,,,,,1000,,,8800,,,,1500,40732
 ,(L) P Modun,father,Mayai,,,,,,,,,,,,,,,,,
 ,(L) Kh Teshil,mother,Mayai,1000,,,,,,,,,,,,,,,,
 P Meshil,P Meshil,Self,Mayai,,,15000,7500,23000,,18400,,,,,,,,,,25624
-,A Loidang,Wife,Mayai,,,15000,7500,28000,,,,,,,,,,,,
+,A Loidang,Wife,Mayai,,,15000,7500,28000,,10000,,,,,,,,,,
 ,(L) U Tungshil,mother,Mayai,,,,,,,,,500,,,,,,,,
 ,P Moinsham,Son,Mayai,,,,,,,,,,,,,,,,,
 ,P Telinda,Daughter,Mayai,,,,,,,,,,,,,,,,,
@@ -201,7 +201,7 @@ A Angphun,A Angphun,Self,Wangwai,,,5000,2500,,,4000,,,,,,15000,,,,8620
 ,A Teshimran,Granddaughter,Wangwai,,,,,,,,,,,,,,,,,
 A Angrung,A Angrung,Self,Wangwai,,,,,,,,,,,,,,,,,13134
 ,Kh Leimui,Wife,Wangwai,,,,,,,,,,,,,,,,,
-,A Kophun,Son,Wangwai,,,20000,10000,37500,,,,,,,,,,30000,,
+,A Kophun,Son,Wangwai,,,20000,10000,37500,,2500,,,,,,,,30000,,
 ,A Tedun,Daughter-in-law,Wangwai,,,,,,,,,,,,,,,,,
 ,A Angdun,Son,Wangwai,,,,7500,32500,,,,,,,,,,,,
 ,Khullak Talitha,Daughter-in-law,Wangwai,,,,,,,,,,,,,,,,,
@@ -258,7 +258,7 @@ Kh Kodun,Kh Kodun,Self,Wangwai,,,,,,,,,500,,,8000,,,,,2912
 ,Kh Leimuikham,Daughter,Wangwai,,,,,,,,,,,,,,,,,
 ,Kh Leithoi,Daughter,Wangwai,,,,,,,,,,,,,,,,,
 Ks Moshil,Ks Moshil,Self,Wangwai,,,20000,10000,40900,,10000,,,,,,,,,3000,105409
-,Ks Shanti,Wife,Wangwai,,,1000,500,2500,,,,,,,,,,,,
+,Ks Shanti,Wife,Wangwai,,,1000,500,2500,,2000,,,,,,,,,,
 ,Ks Amos,Son,Wangwai,500,,,,,,,,,,,,,,,,
 ,Ch Tungran,Daughter-in-law,Wangwai,,,,,,,,,,,,,,,,,
 ,Ks Teresa,Daughter,Wangwai,,,,2000,,,,,,,,,,,,,
@@ -275,7 +275,7 @@ L Monglem,L Monglem,Self,Wangwai,,,20000,2500,,4000,,,,,,,,,,1500,32808
 ,Eugenia Laijing,Granddaughter,Wangwai,,,,,,,,,,,,,,,,,
 ,L Teningthoi,Granddaughter,Wangwai,,,,,,,,,,,,,,,,,
 L Kothil,L Kothil,Self,Wangwai,,,,,,,,,,,,,,,,4000,14532
-,L Morung,Son,Wangwai,,,15000,10000,30000,,,,,,,,,,30000,,
+,L Morung,Son,Wangwai,,,15000,10000,30000,,4500,,,,,,,,30000,,
 ,L Tedar,Daughter-in-law,Wangwai,,,,,,,,,,,,,,,,,
 ,L Momocha,Grandson,Wangwai,,,,,,,,,,,,,,,,,
 ,L Koyaingam,Grandson,Wangwai,,,,,,,,,,,,,,,,,
@@ -319,7 +319,7 @@ S Toran,Th Toran,Self,Wangwai,,,,,,,,,,,,,,,,,9015
 ,S Toreikim,Granddaughter,Wangwai,,,,,,,,,,,,,,,,,
 Th Teshil,(L) Th Teshil,Wife,Wangwai,,,,,,,,,,,,,,,,,
 ,Th Yaima,Son,Wangwai,500,,,,,,,,,,,8000,,,,,
-,Honsanla Jajo,Daughter-in-law,Wangwai,,,,7500,19000,,,,,,,,,,,,
+,Honsanla Jajo,Daughter-in-law,Wangwai,,,,7500,19000,,10000,,,,,,,,,,
 ,Th Angacha,Son,Wangwai,,,,,,,,,,,,,,,,,
 ,Th Medun,Son,Wangwai,,,,,,,,,,,,,,,,,
 ,Th Cornelius,Grandson,Wangwai,,,,,,,,,,,,,,,,,
@@ -368,7 +368,7 @@ Pastors,Rev Kt Ami,,Pastors,5000,,,,,,,,,,,,,,,,6482
 ,A Angphun,,Pastors,,,,,,,,,,,,,,,,,
 ,R Solomon,,Pastors,,,,,,,,,,,,,,,,,
 ,P Angrung,,Pastors,,,,,,,,,,,,,,,,,
-K Leithil,K Leithil,Self,Heaven,,,20000,2500,13350,,1000,,,,,,,,30000,,23635
+K Leithil,K Leithil,Self,Heaven,,,20000,2500,13350,,12000,,,,,,,,30000,,23635
 ,K Leishion,Wife,Heaven,,,,,,,,,,,,,,,,,
 ,K Mothil,Son,Heaven,1000,,,,15500,,,,,,,,,,,,
 ,K Hringtun,Daughter-in-law,Heaven,,,,,,,,,,,,,,,,,
@@ -402,7 +402,7 @@ Kh Angdun,Kh Angdun,Self,Heaven,,,,,,,,,500,,,1000,,,,,12880
 ,Kh Toningshing,Daughter,Heaven,,,,,,,,,,,,,,,,,
 Kh Mechao,Kh Mechao,Self,Heaven,,,,,,,,,1000,,,8000,15000,,,,9093
 ,Kh Tomui,Wife,Heaven,,,,,,,,,,,,,,,,,
-,Kh Moshilpha,Son,Heaven,,,,,,,,,,,,,,,,,
+,Kh Moshilpha,Son,Heaven,,,,,,,2000,,,,,,,,,,
 ,Kh Tedarthang,Daughter-in-law,Heaven,,,,,,,,,,,,,,,,,
 ,Kh Kothil,Son,Heaven,,,,,,,,,,,,,,,,,
 ,Kh Molhouyang,Grandson,Heaven,,,,,,,,,,,,,,,,,
@@ -416,14 +416,14 @@ Kh Modar,Kh Modar,Self,Heaven,,,,,,,,,500,,,3000,,,,,1970
 Km Khamshun,Km Khamshun,Self,Heaven,,,,,,,,,500,,,4000,10000,,,,4031
 ,Km Tedar,Wife,Heaven,,,,,,,,,,,,,,,,,
 ,Km Morungman,Son,Heaven,,,,,,,,,,,,,,,,,
-P Kodar,P Kodar,Self,Heaven,,,20000,10000,37683,,,,,,,,15000,,30000,,28703
+P Kodar,P Kodar,Self,Heaven,,,20000,10000,37683,,31500,,,,,,15000,,30000,,28703
 ,P Tonai,Wife,Heaven,,,,,,,,,,,,,,,,,
 ,P Modarphun,Son,Heaven,,,,,,,,,,,,,,,,,
 ,Kp Leimuikham,Daughter-in-law,Heaven,,,,,,,,,,,,,,,,,
 ,P Temui-in,Daughter,Heaven,,,,2000,,,,,,,,,,,,,
 ,P Molimrui,Grandson,Heaven,,,,,,,,,,,,,,,,,
 ,P Koroushingthil,Grandson,Heaven,,,,,,,,,,,,,,,,,
-Ks Temui,Ks Temui,Self,Heaven,,,20000,10000,40500,,,,,,,,30000,,30000,2000,44011
+Ks Temui,Ks Temui,Self,Heaven,,,20000,10000,40500,,10000,,,,,,30000,,30000,2000,44011
 ,(L) Ks Khamba,Husband,Heaven,,,20000,10000,,,,,,,,,,,,,
 ,Ks Moraj,Son,Heaven,,,,,,,,,,,,,,,,,
 ,Ks Koyai-ngam,Son,Heaven,,,,,,,,,,,,,,,,,
@@ -432,7 +432,7 @@ Ks Mephom,Ks Mephom,Self,Heaven,,,5000,,9736,,,,,,,,10000,,,,11446
 ,Ks Leidong,Wife,Heaven,,,,,,,,,,,,,,,,,
 ,Ks Mongam,Son,Heaven,200,,,,,,,,,,,1000,,,,,
 ,ks Todar,Daughter-in-law,Heaven,,,,,,,,,,,,,,,,,
-,Ks Korung,Son,Heaven,,,,,9700,,1000,,,,,,,,,,
+,Ks Korung,Son,Heaven,,,,,9700,,7760,,,,,,,,,,
 ,Ks Angthil,Son,Heaven,,,,,,,,,,,,,,,,,
 ,Ks Toshirus,Daughter-in-law,Heaven,,,,,,,,,,,,,,,,,
 ,Ks Modunkhul,Grandson,Heaven,,,,,,,,,,,,,,,,,
@@ -448,7 +448,7 @@ Ks Khoitong,Ks Khoitong,Self,Heaven,,,15000,7500,30000,,,,,,,,,,,,12379
 ,Ks Mophom,Son,Heaven,,,,,,,,,,,,,,,,,
 ,Ks Koshingran,Son,Heaven,,,,,,,,,,,,,,,,,
 ,Ks Anglhouwar,Son,Heaven,,,,,,,,,,,,,,,,,
-Ks Angrung,Ks Angrung,Self,Heaven,1000,,30000,15000,142696,,60000,,,,,,30000,,30000,2500,123477
+Ks Angrung,Ks Angrung,Self,Heaven,1000,,30000,15000,142696,,130000,,,,,,30000,,30000,2500,123477
 ,Ks Shanti,Wife,Heaven,7500,,1000,500,2500,,,,,,,,,,,,
 ,Ks Gracy,Daughter,Heaven,,,,4000,25000,,25000,,,,,,,,,,
 ,Ks Gideon,Son,Heaven,,,,,,,,,,,,,,,,,
@@ -496,7 +496,7 @@ P Leidun,P Leidun,Self,Heaven,,,,,,,,,500,,,8000,15000,,,,20672
 ,Ks Tedun,Wife,Heaven,,,,,,,,,,,,,,,,,
 ,P Morung,Son,Heaven,,,,,,,,,,,,,,,,,
 ,P Darshim,Daughter-in-law,Heaven,,,,5000,14000,,,,,,,,,,,,
-,P Kothil,Son,Heaven,,,,7500,33500,,,,,,,,,,,,
+,P Kothil,Son,Heaven,,,,7500,33500,,5000,,,,,,,,,,
 ,Khulpu Teshil,Daughter-in-law,Heaven,,,,5000,14000,,,,,,,,,,,,
 ,P Toshining,Granddaughter,Heaven,,,,,,,,,,,,,,,,,
 ,P Moshiny,Grandson,Heaven,,,,,,,,,,,,,,,,,
@@ -517,7 +517,7 @@ P Leidong,P Leidong,Self,Heaven,500,,,,,,,,1000,,,4000,,,,500,6149
 P Angrung,P Angrung,Self,Heaven,,,,,,,,,1000,,,8000,30000,,,1000,36608
 ,P Shangkhu,Wife,Heaven,1000,,,,,,,,,,,,,,,,
 ,P Mophom,Son,Heaven,,,10000,5000,24332,,,,,,,,,,30000,,
-,P Tedar,Daughter-in-law,Heaven,,,15000,7500,33500,,,,,,,,,,,,
+,P Tedar,Daughter-in-law,Heaven,,,15000,7500,33500,,4000,,,,,,,,,,
 ,P Medun,Son,Heaven,,,,,,,,,,,,,,,,,
 ,P Tenai,Daughter-in-law,Heaven,,,,,,,,,,,,,,,,,
 ,P Mowarson,Grandson,Heaven,,,,,,,,,,,,,,,,,
@@ -552,13 +552,13 @@ U Shilkham,U Shilkham,Self,Heinoukhong,,,,,,,,,,,,,,,,,3858
 ,(L) N KumaR,Husband,Heinoukhong,,,,,,,,,500,,,,,,,,
 ,N Athoicha,Daughter,Heinoukhong,,,,,,,,,,,,,,,,,
 A Shillem,A Shillem,Self,Heinoukhong,,,,,,,,,,,,,,,,4000,11462
-,P Konai,Son,Heinoukhong,,,20000,10000,36500,,5500,,,,,,,,,,
+,P Konai,Son,Heinoukhong,,,20000,10000,36500,,10100,,,,,,,,,,
 ,Km Tungshil,Daughter-in-law,Heinoukhong,,,,,,,,,,,,,,,,,
 ,P Moshildou,Grandson,Heinoukhong,50000,,,,,15000,16400,,,,,,,,,,
 ,Dr. P Meran,Grandson,Heinoukhong,,,,,25000,,,,,,,,,,,,
-,P Angnaikham,Grandson,Heinoukhong,50000,,,,,15000,2000,,,,,,,,,,
+,P Angnaikham,Grandson,Heinoukhong,50000,,,,,15000,21600,,,,,,,,,,
 ,P Khambatol,Grandson,Heinoukhong,,,,,,,,,,,,,,,,,
-K Medun,K Medun,Self,Heinoukhong,,,15000,7500,30991,,10000,,,,,,30000,,30000,1000,19959
+K Medun,K Medun,Self,Heinoukhong,,,15000,7500,30991,,5000,,,,,,30000,,30000,1000,19959
 ,P Teshor,Wife,Heinoukhong,,,,,,,,,,,,,,,,,
 ,K Moran,Son,Heinoukhong,,,,,,,,,,,,,,,,,
 ,K Techanshim,Daughter,Heinoukhong,,,,,,,,,,,,,,,,,
@@ -577,13 +577,13 @@ A Khulphun,A Khulphun,Self,Heinoukhong,,,20000,2500,20500,,,,,,,,30000,,,,25072
 ,A Momansham,Grandson,Heinoukhong,,,,,,,,,,,,,,,,,
 ,A Kothil,Grandson,Heinoukhong,,,,,,,,,,,,,,,,,
 P Teshil,P Teshil,Self,Heinoukhong,,,,,,,,,,,,,,,,,41054
-,U Mophom,Son,Heinoukhong,,,15000,7500,29100,,5000,,,,,,,,,,
+,U Mophom,Son,Heinoukhong,,,15000,7500,29100,,7500,,,,,,,,,,
 ,A Leidar,Daughter-in-law,Heinoukhong,,,,,,,,,,,,,,,,,
 ,U Francis,Grandson,Heinoukhong,54000,,,,,,,,,,,,,,,,
 ,U Kolinson,Grandson,Heinoukhong,5000,,,,,,,,,,,,,,,,
 ,U Sonia,Grand-Daughter,Heinoukhong,,,,,,,,,,,,,,,,,
 A Temui,A Temui,Self,Heinoukhong,,,,,,,,,,,,,,,,,17488
-,U Moshildou,Son,Heinoukhong,,,15000,7500,23000,,,,,,,,,,30000,,
+,U Moshildou,Son,Heinoukhong,,,15000,7500,23000,,5000,,,,,,,,30000,,
 ,Km Teon,Daughter-in-law,Heinoukhong,,,,,,,,,,,,,,,,,
 ,U Teshiltrim,Grand-Daughter,Heinoukhong,,,,,,,,,,,,,,,,,
 ,U Mothilphun,Grandson,Heinoukhong,,,,,,,,,,,,,,,,,
@@ -599,19 +599,19 @@ P Yaima,P Yaima,Self,Heinoukhong,,,,,,,,,500,,,8000,,,,,8957
 ,P Angdun,Son,Heinoukhong,,,,,,,,,,,,,,,,,
 K Koshil,K Koshil,Self,Heinoukhong,1500,,20000,2500,8000,,6400,,,,,,,,30000,6000,67979
 ,Selung Khumui,Wife,Heinoukhong,,,,,,,,,,,,,,,,,
-,K Modar,Son,Heinoukhong,101000,,20000,10000,60679,,,,,,,,,,,,
+,K Modar,Son,Heinoukhong,101000,,20000,10000,60679,,30000,,,,,,,,,,
 ,Selung Teshil,Daughter-in-law,Heinoukhong,,,,,,,,,,,,,10000,,,,
-,K Korung,Son,Heinoukhong,11725,,5000,7500,29450,,,,,,,,,,,,
+,K Korung,Son,Heinoukhong,11725,,5000,7500,29450,,20000,,,,,,,,,,
 ,Mothang Darshim,Daughter-in-law,Heinoukhong,500,,,,,,,,,,,,10000,,,,
-,K Angphun,Son,Heinoukhong,,,,7500,25000,,10000,,,,,,,,30000,,
+,K Angphun,Son,Heinoukhong,,,,7500,25000,,24000,,,,,,,,30000,,
 ,Dr. U Tothum,Daughter-in-law,Heinoukhong,,,,4000,25000,,,,,,,,10000,,,,
 ,K Teniya,Grand-Daughter,Heinoukhong,250,,,,,,,,,,,,,,,,
 ,K Tewarthang,Grand-Daughter,Heinoukhong,,,,,,,,,,,,,,,,,
 ,K Toin,Grand-Daughter,Heinoukhong,250,,,,,,,,,,,,,,,,
 ,K Tekantrim Khleya,Grand-Daughter,Heinoukhong,,,,,,,,,,,,,,,,,
-K Angnai,K Angnai,Self,Heinoukhong,,,5000,2500,7000,,,,,,,,30000,,,4000,16773
+K Angnai,K Angnai,Self,Heinoukhong,,,5000,2500,7000,,3000,,,,,,30000,,,4000,16773
 ,P Temui,Wife,Heinoukhong,,,,,,,,,,,,,,,,,
-,K Bishem,Son,Heinoukhong,82500,,15000,7500,27000,,,,,,,,,,30000,,
+,K Bishem,Son,Heinoukhong,82500,,15000,7500,27000,,10000,,,,,,,,30000,,
 ,Ds Apecha Dangsawa,Daughter-in-law,Heinoukhong,,,,,,,,,,,,,,,,,
 ,K Kothil,Son,Heinoukhong,5200,,,,,,,,,,,,,,,,
 ,Dk Toshim,Daughter-in-law,Heinoukhong,,,,,,,,,,,,,,,,,
@@ -640,7 +640,7 @@ A Inakhul,A Inakhul,Self,Heinoukhong,,,5000,2500,15000,,,,,,,,30000,,,,15404
 ,Ks Lemuel @Morungam Maring,Grandson,Heinoukhong,,,,,,,,,,,,,,,,,
 P Mophom,P Mophom,Self,Heinoukhong,11500,,20000,2500,17332,,13000,,,,,,30000,,30000,,33889
 ,A Khumui,Wife,Heinoukhong,,,500,250,1500,,,,,,,,,,,,
-,P Moshil,Son,Heinoukhong,,,,,14419,,10000,,,,,,,,30000,,
+,P Moshil,Son,Heinoukhong,,,,,14419,,11540,,,,,,,,30000,,
 ,Khulpu Teshor,Daughter-in-law,Heinoukhong,,,,,,,,,,,,,,,,,
 ,P Techanshim,Grand-Daughter,Heinoukhong,,,,,,,,,,,,,,,,,
 P Khamba,P Khamba,Self,Heinoukhong,,,15000,7500,22000,,,,,,,,10000,,,2000,15404
@@ -666,7 +666,7 @@ Km Moshil,Km Moshil,Self,Heinoukhong,,,,,,,,,1000,,,8000,15000,,,2500,10575
 ,L Leimui,Wife,Heinoukhong,,,,,,,,,,,,,,,,,
 ,Km Mothil,Son,Heinoukhong,,,,,,,,,,,,,,,,,
 ,P Tungshil,Daughter-in-law,Heinoukhong,,,15000,7500,17500,,,,,,,,,,,,
-,Km Kothil,Son,Heinoukhong,,,,,9700,,4000,,,,,,,,,,
+,Km Kothil,Son,Heinoukhong,,,,,9700,,7760,,,,,,,,,,
 ,Kh Sundayla,Daughter-in-law,Heinoukhong,,,,,9700,,4000,,,,,,,,,,
 ,Km Angrung,Son,Heinoukhong,,,,,,,,,,,,,,,,,
 ,Km Teshil Maring,Grand-Daughter,Heinoukhong,,,,,,,,,,,,,,,,,
@@ -769,7 +769,7 @@ A Daring,A Daring,Self,Chingyang,,,,2500,12500,,,,,,,,,,,,26422
 ,U Tedarshim,Grand-Daughter,Chingyang,,,,,,,,,,,,,,,,,
 ,U Modarshim,Grandson,Chingyang,,,,,,,,,,,,,,,,,
 ,U Todailim,Grand-Daughter,Chingyang,,,,,,,,,,,,,,,,,
-U Korung,U Korung,Self,Chingyang,,,5000,7500,18465,,5000,,,,,,,,30000,1000,22961
+U Korung,U Korung,Self,Chingyang,,,5000,7500,18465,,13000,,,,,,,,30000,1000,22961
 ,Ks Muining,Wife,Chingyang,,,,,,,,,,,,,,,,,
 ,U Muidou,Daughter,Chingyang,,,,,,,,,,,,,,,,,
 ,U Jonathan,Son,Chingyang,,,,,,,,,,,,,,,,,
@@ -786,7 +786,7 @@ K Khamba,K Khamba,Self,Chingyang,2000,,,,,,,,1000,,,1000,,,,,5858
 ,Kansham Teshana Khleya,Grand-Daughter,Chingyang,,,,,,,,,,,,,,,,,
 ,K Totrim,Daughter,Chingyang,,,,,,,,,,,,,,,,,
 ,K Tungnaikham,Daughter,Chingyang,,,,,,,,,,,,,,,,,
-K Monglem,K Monglem,Self,Chingyang,,,,5000,13000,,2000,,,,,,,,,1500,4157
+K Monglem,K Monglem,Self,Chingyang,,,,5000,13000,,4000,,,,,,,,,1500,4157
 ,P Apecha,Wife,Chingyang,,,,,,,,,,,,,,,,,
 ,K Teshilla Khleya,Daughter,Chingyang,,,,,,,,,,,,,,,,,
 ,Kh Daring,Wife,Chingyang,,,,,,,,,,,,,,,,,
