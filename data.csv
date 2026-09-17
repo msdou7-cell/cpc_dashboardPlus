@@ -655,7 +655,7 @@ S Modun,S Modun,Self,Heinoukhong,,,,5000,13000,,,,,,,,,,,,24365
 K Angshil,K Angshil,Self,Heinoukhong,,,,,,,,,1000,,,,,,,2000,18989
 ,S Toshil,Wife,Heinoukhong,1000,,,,,,,,,,,,,,,,
 ,K Kodun,Son,Heinoukhong,,,,,,,,,,,,,,,,,
-P Mephom,P Mephom,Self,Heinoukhong,,,,,,,,,500,,,8000,,,,2000,13580
+P Mephom,P Mephom,Self,Heinoukhong,,,,,,,,,500,,,8000,,,,3000,13580
 ,Km Khunai,Wife,Heinoukhong,,,,,,,,,,,,,,,,,
 ,P Koshilning,Son,Heinoukhong,2000,,,,,,,,,,,,,,,,
 ,Th Tungshil,Daughter-in-law,Heinoukhong,,,,,,,,,,,,,,,,,
@@ -803,3 +803,4 @@ Men's Society,,,Church,7800,,,,,,,,,,,,,,,,
 All Society,,,Church,2340,,,,,,,,,,,,,,,,
 General Fund,,,Church,7200,,,,,,,,,,,,,,,,
 Mother Teresa Group,,,Group,200,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,143750,

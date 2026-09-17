@@ -9,8 +9,8 @@ const dashboardData =
 
 {
     "totalFamilies":  155,
-    "totalMembers":  804,
-    "grandTotal":  8852821,
+    "totalMembers":  805,
+    "grandTotal":  8997571,
     "freeWill":  551515,
     "faithPromise":  0,
     "employeeSubscription":  4035413,
@@ -28,7 +28,7 @@ const dashboardData =
     "windows":  661500,
     "cpc":  0,
     "pillars":  810000,
-    "tiles":  142750,
+    "tiles":  287500,
     "savingBox":  2249343,
     "families":  [
                      {
@@ -980,8 +980,8 @@ const dashboardData =
                          "head":  "P Mephom",
                          "members":  7,
                          "savingBox":  13580,
-                         "tiles":  2000,
-                         "total":  26080
+                         "tiles":  3000,
+                         "total":  27080
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -1266,10 +1266,10 @@ const dashboardData =
                      {
                          "leikai":  "Group",
                          "head":  "Mother Teresa Group",
-                         "members":  1,
+                         "members":  2,
                          "savingBox":  0,
-                         "tiles":  0,
-                         "total":  200
+                         "tiles":  143750,
+                         "total":  143950
                      }
                  ],
     "memberDirectory":  [
@@ -16381,7 +16381,7 @@ const dashboardData =
                                 "windows":  0,
                                 "cpc":  0,
                                 "pillars":  0,
-                                "tiles":  2000,
+                                "tiles":  3000,
                                 "savingBox":  13580
                             },
                             {
@@ -19763,6 +19763,29 @@ const dashboardData =
                                 "cpc":  0,
                                 "pillars":  0,
                                 "tiles":  0,
+                                "savingBox":  0
+                            },
+                            {
+                                "head":  "Mother Teresa Group",
+                                "leikai":  "Group",
+                                "member":  "",
+                                "relationship":  "",
+                                "freeWill":  0,
+                                "faithPromise":  0,
+                                "phase1":  0,
+                                "phase2":  0,
+                                "phase3":  0,
+                                "phase4":  0,
+                                "phase5":  0,
+                                "phaseA":  0,
+                                "phaseB":  0,
+                                "phaseC":  0,
+                                "phaseD":  0,
+                                "phaseE":  0,
+                                "windows":  0,
+                                "cpc":  0,
+                                "pillars":  0,
+                                "tiles":  143750,
                                 "savingBox":  0
                             }
                         ]
