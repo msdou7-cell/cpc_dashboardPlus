@@ -10,7 +10,7 @@ const dashboardData =
 {
     "totalFamilies":  155,
     "totalMembers":  804,
-    "grandTotal":  8798321,
+    "grandTotal":  8849321,
     "freeWill":  551515,
     "faithPromise":  0,
     "employeeSubscription":  4035413,
@@ -28,7 +28,7 @@ const dashboardData =
     "windows":  661500,
     "cpc":  0,
     "pillars":  810000,
-    "tiles":  88250,
+    "tiles":  139250,
     "savingBox":  2249343,
     "families":  [
                      {
@@ -36,8 +36,8 @@ const dashboardData =
                          "head":  "Dk Roshan",
                          "members":  12,
                          "savingBox":  20404,
-                         "tiles":  0,
-                         "total":  117904
+                         "tiles":  6000,
+                         "total":  123904
                      },
                      {
                          "leikai":  "Khawai",
@@ -60,8 +60,8 @@ const dashboardData =
                          "head":  "Kh Tungmui",
                          "members":  7,
                          "savingBox":  7480,
-                         "tiles":  0,
-                         "total":  7980
+                         "tiles":  2000,
+                         "total":  9980
                      },
                      {
                          "leikai":  "Khawai",
@@ -76,8 +76,8 @@ const dashboardData =
                          "head":  "Kh Mophun",
                          "members":  6,
                          "savingBox":  9503,
-                         "tiles":  0,
-                         "total":  10503
+                         "tiles":  1500,
+                         "total":  12003
                      },
                      {
                          "leikai":  "Khawai",
@@ -116,8 +116,8 @@ const dashboardData =
                          "head":  "P Monglem",
                          "members":  9,
                          "savingBox":  7400,
-                         "tiles":  3000,
-                         "total":  19400
+                         "tiles":  4500,
+                         "total":  20900
                      },
                      {
                          "leikai":  "Khawai",
@@ -172,8 +172,8 @@ const dashboardData =
                          "head":  "P Temui",
                          "members":  10,
                          "savingBox":  36223,
-                         "tiles":  1000,
-                         "total":  104873
+                         "tiles":  1500,
+                         "total":  105373
                      },
                      {
                          "leikai":  "Khawai",
@@ -188,8 +188,8 @@ const dashboardData =
                          "head":  "P Konai",
                          "members":  5,
                          "savingBox":  18377,
-                         "tiles":  0,
-                         "total":  73877
+                         "tiles":  2500,
+                         "total":  76377
                      },
                      {
                          "leikai":  "Khawai",
@@ -276,8 +276,8 @@ const dashboardData =
                          "head":  "L Yaima",
                          "members":  5,
                          "savingBox":  10800,
-                         "tiles":  0,
-                         "total":  67400
+                         "tiles":  2500,
+                         "total":  69900
                      },
                      {
                          "leikai":  "Mayai",
@@ -316,8 +316,8 @@ const dashboardData =
                          "head":  "Km Angnai",
                          "members":  11,
                          "savingBox":  15171,
-                         "tiles":  0,
-                         "total":  24671
+                         "tiles":  2000,
+                         "total":  26671
                      },
                      {
                          "leikai":  "Mayai",
@@ -332,8 +332,8 @@ const dashboardData =
                          "head":  "A Angphun",
                          "members":  11,
                          "savingBox":  8620,
-                         "tiles":  0,
-                         "total":  115960
+                         "tiles":  2000,
+                         "total":  117960
                      },
                      {
                          "leikai":  "Wangwai",
@@ -380,8 +380,8 @@ const dashboardData =
                          "head":  "LK Teshil",
                          "members":  7,
                          "savingBox":  17692,
-                         "tiles":  500,
-                         "total":  97192
+                         "tiles":  3000,
+                         "total":  99692
                      },
                      {
                          "leikai":  "Wangwai",
@@ -404,16 +404,16 @@ const dashboardData =
                          "head":  "Kh Khambaton",
                          "members":  5,
                          "savingBox":  770,
-                         "tiles":  0,
-                         "total":  4270
+                         "tiles":  2500,
+                         "total":  6770
                      },
                      {
                          "leikai":  "Wangwai",
                          "head":  "Kh Khamshun",
                          "members":  4,
                          "savingBox":  2990,
-                         "tiles":  0,
-                         "total":  3490
+                         "tiles":  2000,
+                         "total":  5490
                      },
                      {
                          "leikai":  "Wangwai",
@@ -436,8 +436,8 @@ const dashboardData =
                          "head":  "L Monglem",
                          "members":  10,
                          "savingBox":  32808,
-                         "tiles":  1500,
-                         "total":  194690
+                         "tiles":  5500,
+                         "total":  198690
                      },
                      {
                          "leikai":  "Wangwai",
@@ -596,8 +596,8 @@ const dashboardData =
                          "head":  "Kh Angdun",
                          "members":  6,
                          "savingBox":  12880,
-                         "tiles":  0,
-                         "total":  64880
+                         "tiles":  2000,
+                         "total":  66880
                      },
                      {
                          "leikai":  "Heaven",
@@ -620,8 +620,8 @@ const dashboardData =
                          "head":  "Km Khamshun",
                          "members":  3,
                          "savingBox":  4031,
-                         "tiles":  0,
-                         "total":  18531
+                         "tiles":  1500,
+                         "total":  20031
                      },
                      {
                          "leikai":  "Heaven",
@@ -756,8 +756,8 @@ const dashboardData =
                          "head":  "P Leidun",
                          "members":  10,
                          "savingBox":  20672,
-                         "tiles":  0,
-                         "total":  128172
+                         "tiles":  1000,
+                         "total":  129172
                      },
                      {
                          "leikai":  "Heaven",
@@ -772,8 +772,8 @@ const dashboardData =
                          "head":  "P Leidong",
                          "members":  9,
                          "savingBox":  6149,
-                         "tiles":  500,
-                         "total":  37049
+                         "tiles":  3500,
+                         "total":  40049
                      },
                      {
                          "leikai":  "Heaven",
@@ -852,8 +852,8 @@ const dashboardData =
                          "head":  "A Keirung",
                          "members":  4,
                          "savingBox":  4425,
-                         "tiles":  0,
-                         "total":  81925
+                         "tiles":  2000,
+                         "total":  83925
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -868,16 +868,16 @@ const dashboardData =
                          "head":  "P Teshil",
                          "members":  6,
                          "savingBox":  41054,
-                         "tiles":  0,
-                         "total":  159154
+                         "tiles":  2500,
+                         "total":  161654
                      },
                      {
                          "leikai":  "Heinoukhong",
                          "head":  "A Temui",
                          "members":  5,
                          "savingBox":  17488,
-                         "tiles":  0,
-                         "total":  97988
+                         "tiles":  2000,
+                         "total":  99988
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -924,8 +924,8 @@ const dashboardData =
                          "head":  "A Mophom",
                          "members":  4,
                          "savingBox":  10558,
-                         "tiles":  0,
-                         "total":  30558
+                         "tiles":  1000,
+                         "total":  31558
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -980,8 +980,8 @@ const dashboardData =
                          "head":  "P Mephom",
                          "members":  7,
                          "savingBox":  13580,
-                         "tiles":  1000,
-                         "total":  25080
+                         "tiles":  2000,
+                         "total":  26080
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -1028,8 +1028,8 @@ const dashboardData =
                          "head":  "Ks Khamtol",
                          "members":  4,
                          "savingBox":  26670,
-                         "tiles":  0,
-                         "total":  125368
+                         "tiles":  2000,
+                         "total":  127368
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -1084,8 +1084,8 @@ const dashboardData =
                          "head":  "U Kothil",
                          "members":  4,
                          "savingBox":  13311,
-                         "tiles":  0,
-                         "total":  51811
+                         "tiles":  1000,
+                         "total":  52811
                      },
                      {
                          "leikai":  "Chingyang",
@@ -1140,8 +1140,8 @@ const dashboardData =
                          "head":  "P Merung",
                          "members":  5,
                          "savingBox":  19549,
-                         "tiles":  1000,
-                         "total":  85449
+                         "tiles":  1500,
+                         "total":  85949
                      },
                      {
                          "leikai":  "Chingyang",
@@ -1293,7 +1293,7 @@ const dashboardData =
                                 "windows":  0,
                                 "cpc":  0,
                                 "pillars":  0,
-                                "tiles":  0,
+                                "tiles":  6000,
                                 "savingBox":  20404
                             },
                             {
@@ -1776,7 +1776,7 @@ const dashboardData =
                                 "windows":  0,
                                 "cpc":  0,
                                 "pillars":  0,
-                                "tiles":  0,
+                                "tiles":  2000,
                                 "savingBox":  7480
                             },
                             {
@@ -2029,7 +2029,7 @@ const dashboardData =
                                 "windows":  0,
                                 "cpc":  0,
                                 "pillars":  0,
-                                "tiles":  0,
+                                "tiles":  1500,
                                 "savingBox":  9503
                             },
                             {
@@ -2558,7 +2558,7 @@ const dashboardData =
                                 "windows":  0,
                                 "cpc":  0,
                                 "pillars":  0,
-                                "tiles":  3000,
+                                "tiles":  4500,
                                 "savingBox":  7400
                             },
                             {
@@ -3271,7 +3271,7 @@ const dashboardData =
                                 "windows":  0,
                                 "cpc":  0,
                                 "pillars":  0,
-                                "tiles":  1000,
+                                "tiles":  1500,
                                 "savingBox":  36223
                             },
                             {
@@ -3662,7 +3662,7 @@ const dashboardData =
                                 "windows":  0,
                                 "cpc":  0,
                                 "pillars":  0,
-                                "tiles":  0,
+                                "tiles":  2500,
                                 "savingBox":  18377
                             },
                             {
@@ -4766,7 +4766,7 @@ const dashboardData =
                                 "windows":  0,
                                 "cpc":  0,
                                 "pillars":  0,
-                                "tiles":  0,
+                                "tiles":  2500,
                                 "savingBox":  10800
                             },
                             {
@@ -5318,7 +5318,7 @@ const dashboardData =
                                 "windows":  0,
                                 "cpc":  0,
                                 "pillars":  0,
-                                "tiles":  0,
+                                "tiles":  2000,
                                 "savingBox":  15171
                             },
                             {
@@ -5640,7 +5640,7 @@ const dashboardData =
                                 "windows":  15000,
                                 "cpc":  0,
                                 "pillars":  0,
-                                "tiles":  0,
+                                "tiles":  2000,
                                 "savingBox":  8620
                             },
                             {
@@ -6583,7 +6583,7 @@ const dashboardData =
                                 "windows":  0,
                                 "cpc":  0,
                                 "pillars":  0,
-                                "tiles":  500,
+                                "tiles":  3000,
                                 "savingBox":  17692
                             },
                             {
@@ -6882,7 +6882,7 @@ const dashboardData =
                                 "windows":  0,
                                 "cpc":  0,
                                 "pillars":  0,
-                                "tiles":  0,
+                                "tiles":  2500,
                                 "savingBox":  770
                             },
                             {
@@ -6997,7 +6997,7 @@ const dashboardData =
                                 "windows":  0,
                                 "cpc":  0,
                                 "pillars":  0,
-                                "tiles":  0,
+                                "tiles":  2000,
                                 "savingBox":  2990
                             },
                             {
@@ -7388,7 +7388,7 @@ const dashboardData =
                                 "windows":  0,
                                 "cpc":  0,
                                 "pillars":  0,
-                                "tiles":  1500,
+                                "tiles":  5500,
                                 "savingBox":  32808
                             },
                             {
@@ -10378,7 +10378,7 @@ const dashboardData =
                                 "windows":  0,
                                 "cpc":  0,
                                 "pillars":  0,
-                                "tiles":  0,
+                                "tiles":  2000,
                                 "savingBox":  12880
                             },
                             {
@@ -10815,7 +10815,7 @@ const dashboardData =
                                 "windows":  10000,
                                 "cpc":  0,
                                 "pillars":  0,
-                                "tiles":  0,
+                                "tiles":  1500,
                                 "savingBox":  4031
                             },
                             {
@@ -12632,7 +12632,7 @@ const dashboardData =
                                 "windows":  15000,
                                 "cpc":  0,
                                 "pillars":  0,
-                                "tiles":  0,
+                                "tiles":  1000,
                                 "savingBox":  20672
                             },
                             {
@@ -12931,7 +12931,7 @@ const dashboardData =
                                 "windows":  0,
                                 "cpc":  0,
                                 "pillars":  0,
-                                "tiles":  500,
+                                "tiles":  3500,
                                 "savingBox":  6149
                             },
                             {
@@ -14242,7 +14242,7 @@ const dashboardData =
                                 "windows":  30000,
                                 "cpc":  0,
                                 "pillars":  0,
-                                "tiles":  0,
+                                "tiles":  2000,
                                 "savingBox":  4425
                             },
                             {
@@ -14564,7 +14564,7 @@ const dashboardData =
                                 "windows":  0,
                                 "cpc":  0,
                                 "pillars":  0,
-                                "tiles":  0,
+                                "tiles":  2500,
                                 "savingBox":  41054
                             },
                             {
@@ -14702,7 +14702,7 @@ const dashboardData =
                                 "windows":  0,
                                 "cpc":  0,
                                 "pillars":  0,
-                                "tiles":  0,
+                                "tiles":  2000,
                                 "savingBox":  17488
                             },
                             {
@@ -15622,7 +15622,7 @@ const dashboardData =
                                 "windows":  0,
                                 "cpc":  0,
                                 "pillars":  0,
-                                "tiles":  0,
+                                "tiles":  1000,
                                 "savingBox":  10558
                             },
                             {
@@ -16381,7 +16381,7 @@ const dashboardData =
                                 "windows":  0,
                                 "cpc":  0,
                                 "pillars":  0,
-                                "tiles":  1000,
+                                "tiles":  2000,
                                 "savingBox":  13580
                             },
                             {
@@ -17140,7 +17140,7 @@ const dashboardData =
                                 "windows":  0,
                                 "cpc":  0,
                                 "pillars":  30000,
-                                "tiles":  0,
+                                "tiles":  2000,
                                 "savingBox":  26670
                             },
                             {
@@ -17945,7 +17945,7 @@ const dashboardData =
                                 "windows":  0,
                                 "cpc":  0,
                                 "pillars":  30000,
-                                "tiles":  0,
+                                "tiles":  1000,
                                 "savingBox":  13311
                             },
                             {
@@ -18612,7 +18612,7 @@ const dashboardData =
                                 "windows":  0,
                                 "cpc":  0,
                                 "pillars":  0,
-                                "tiles":  1000,
+                                "tiles":  1500,
                                 "savingBox":  19549
                             },
                             {
