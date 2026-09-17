@@ -10,7 +10,7 @@ const dashboardData =
 {
     "totalFamilies":  155,
     "totalMembers":  804,
-    "grandTotal":  8849321,
+    "grandTotal":  8852821,
     "freeWill":  551515,
     "faithPromise":  0,
     "employeeSubscription":  4035413,
@@ -28,7 +28,7 @@ const dashboardData =
     "windows":  661500,
     "cpc":  0,
     "pillars":  810000,
-    "tiles":  139250,
+    "tiles":  142750,
     "savingBox":  2249343,
     "families":  [
                      {
@@ -177,7 +177,7 @@ const dashboardData =
                      },
                      {
                          "leikai":  "Khawai",
-                         "head":  "Parhai Medun",
+                         "head":  "P Medun",
                          "members":  7,
                          "savingBox":  36499,
                          "tiles":  500,
@@ -228,8 +228,8 @@ const dashboardData =
                          "head":  "S Muining",
                          "members":  9,
                          "savingBox":  39947,
-                         "tiles":  2500,
-                         "total":  103671
+                         "tiles":  4500,
+                         "total":  105671
                      },
                      {
                          "leikai":  "Khawai",
@@ -300,8 +300,8 @@ const dashboardData =
                          "head":  "P Moshilpha",
                          "members":  4,
                          "savingBox":  40732,
-                         "tiles":  1500,
-                         "total":  53032
+                         "tiles":  2000,
+                         "total":  53532
                      },
                      {
                          "leikai":  "Mayai",
@@ -988,8 +988,8 @@ const dashboardData =
                          "head":  "Km Moshil",
                          "members":  9,
                          "savingBox":  10575,
-                         "tiles":  2500,
-                         "total":  108235
+                         "tiles":  3500,
+                         "total":  109235
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -3482,9 +3482,9 @@ const dashboardData =
                                 "savingBox":  0
                             },
                             {
-                                "head":  "Parhai Medun",
+                                "head":  "P Medun",
                                 "leikai":  "Khawai",
-                                "member":  "Parhai Medun",
+                                "member":  "P Medun",
                                 "relationship":  "Self",
                                 "freeWill":  0,
                                 "faithPromise":  0,
@@ -3505,7 +3505,7 @@ const dashboardData =
                                 "savingBox":  36499
                             },
                             {
-                                "head":  "Parhai Medun",
+                                "head":  "P Medun",
                                 "leikai":  "Khawai",
                                 "member":  "P Tungshil",
                                 "relationship":  "Wife",
@@ -3528,7 +3528,7 @@ const dashboardData =
                                 "savingBox":  0
                             },
                             {
-                                "head":  "Parhai Medun",
+                                "head":  "P Medun",
                                 "leikai":  "Khawai",
                                 "member":  "P Tomui",
                                 "relationship":  "Sister",
@@ -3551,7 +3551,7 @@ const dashboardData =
                                 "savingBox":  0
                             },
                             {
-                                "head":  "Parhai Medun",
+                                "head":  "P Medun",
                                 "leikai":  "Khawai",
                                 "member":  "P Molightson",
                                 "relationship":  "Son",
@@ -3574,7 +3574,7 @@ const dashboardData =
                                 "savingBox":  0
                             },
                             {
-                                "head":  "Parhai Medun",
+                                "head":  "P Medun",
                                 "leikai":  "Khawai",
                                 "member":  "P Muiran",
                                 "relationship":  "Daughter-in-law",
@@ -3597,7 +3597,7 @@ const dashboardData =
                                 "savingBox":  0
                             },
                             {
-                                "head":  "Parhai Medun",
+                                "head":  "P Medun",
                                 "leikai":  "Khawai",
                                 "member":  "P Koin",
                                 "relationship":  "Son",
@@ -3620,7 +3620,7 @@ const dashboardData =
                                 "savingBox":  0
                             },
                             {
-                                "head":  "Parhai Medun",
+                                "head":  "P Medun",
                                 "leikai":  "Khawai",
                                 "member":  "P Teshimreidar Dangsha",
                                 "relationship":  "Granddaughter",
@@ -4053,7 +4053,7 @@ const dashboardData =
                                 "windows":  0,
                                 "cpc":  0,
                                 "pillars":  0,
-                                "tiles":  2500,
+                                "tiles":  4500,
                                 "savingBox":  39947
                             },
                             {
@@ -5111,7 +5111,7 @@ const dashboardData =
                                 "windows":  0,
                                 "cpc":  0,
                                 "pillars":  0,
-                                "tiles":  1500,
+                                "tiles":  2000,
                                 "savingBox":  40732
                             },
                             {
@@ -16542,7 +16542,7 @@ const dashboardData =
                                 "windows":  15000,
                                 "cpc":  0,
                                 "pillars":  0,
-                                "tiles":  2500,
+                                "tiles":  3500,
                                 "savingBox":  10575
                             },
                             {

@@ -95,7 +95,7 @@ P Temui,P Temui,Self,Khawai,1000,,,,,,,,,,,,,,,1500,36223
 ,P Mongam,Nephew,Khawai,,,,,,,,,,,,,,,,,
 ,P Kosamson,Nephew,Khawai,,,,,,,,,,,,,,,,,
 ,P Johny @ Kothang,Nephew,Khawai,,,,,,,,,,,,,,,,,
-Parhai Medun,Parhai Medun,Self,Khawai,,,20000,2500,12000,,14400,,,,,,30000,,30000,500,36499
+P Medun,P Medun,Self,Khawai,,,20000,2500,12000,,14400,,,,,,30000,,30000,500,36499
 ,P Tungshil,Wife,Khawai,,,,,,,,,,,,,,,,,
 ,P Tomui,Sister,Khawai,,,,,,,,,,,,,,,,,
 ,P Molightson,Son,Khawai,,,,7500,18750,,10000,,,,,,,,,,
@@ -119,7 +119,7 @@ P Modun,P Modun,Self,Khawai,,,,,,,,,500,,,,,,,,
 ,P Vallyrose,Wife,Khawai,,,,,,,,,,,,,,,,,
 ,P Koyai-ngam,P Modun,Khawai,,,,,,,,,,,,,,,,,
 R Apethoi,R Apethoi,Self,Khawai,,,,,,,,,,,,,,,,,
-S Muining,S Muining,Self,Khawai,,,,,,,,,,,,,,,,2500,39947
+S Muining,S Muining,Self,Khawai,,,,,,,,,,,,,,,,4500,39947
 ,S Ashem,Sister-in-law,Khawai,,,5000,2500,11224,,,,,,,,,,,,
 ,S Kothou,Brother,Khawai,,,15000,7500,20000,,,,,,,,,,,,
 ,S Todar,Sister-in-law,Khawai,,,,,,,,,,,,,,,,,
@@ -165,7 +165,7 @@ L Angrung,L Angrung,Self,Mayai,,,,,,,,,,,,,,,30000,,52776
 ,L Darshim,Daughter,Mayai,15000,,,,,,,,,,,,,,,,
 ,L Tungin,Daughter,Mayai,,,,,,,,,,,,,,,,,
 ,L Khushim,Daughter,Mayai,,,,,,,,,,,,,,,,,
-P Moshilpha,P Moshilpha,Self,Mayai,,,,,,,,,1000,,,8800,,,,1500,40732
+P Moshilpha,P Moshilpha,Self,Mayai,,,,,,,,,1000,,,8800,,,,2000,40732
 ,Theishingla Tuithung,Wife,Mayai,,,,,,,,,,,,,,,,,
 ,(L) P Modun,father,Mayai,,,,,,,,,,,,,,,,,
 ,(L) Kh Teshil,mother,Mayai,1000,,,,,,,,,,,,,,,,
@@ -662,7 +662,7 @@ P Mephom,P Mephom,Self,Heinoukhong,,,,,,,,,500,,,8000,,,,2000,13580
 ,P Tengou,Daughter,Heinoukhong,,,,,,,,,,,,,,,,,
 ,P Teshiltrim,Grand-Daughter,Heinoukhong,,,,,,,,,,,,,,,,,
 ,P Modun,Grandson,Heinoukhong,,,,,,,,,,,,,,,,,
-Km Moshil,Km Moshil,Self,Heinoukhong,,,,,,,,,1000,,,8000,15000,,,2500,10575
+Km Moshil,Km Moshil,Self,Heinoukhong,,,,,,,,,1000,,,8000,15000,,,3500,10575
 ,L Leimui,Wife,Heinoukhong,,,,,,,,,,,,,,,,,
 ,Km Mothil,Son,Heinoukhong,,,,,,,,,,,,,,,,,
 ,P Tungshil,Daughter-in-law,Heinoukhong,,,15000,7500,17500,,,,,,,,,,,,
