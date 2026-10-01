@@ -10,7 +10,7 @@ const dashboardData =
 {
     "totalFamilies":  155,
     "totalMembers":  804,
-    "grandTotal":  9053751,
+    "grandTotal":  9054751,
     "freeWill":  551515,
     "faithPromise":  0,
     "employeeSubscription":  4142843,
@@ -28,7 +28,7 @@ const dashboardData =
     "windows":  661500,
     "cpc":  0,
     "pillars":  810000,
-    "tiles":  142250,
+    "tiles":  143250,
     "savingBox":  2249343,
     "families":  [
                      {
@@ -172,8 +172,8 @@ const dashboardData =
                          "head":  "P Temui",
                          "members":  10,
                          "savingBox":  36223,
-                         "tiles":  500,
-                         "total":  109373
+                         "tiles":  1500,
+                         "total":  110373
                      },
                      {
                          "leikai":  "Khawai",
@@ -3271,7 +3271,7 @@ const dashboardData =
                                 "windows":  0,
                                 "cpc":  0,
                                 "pillars":  0,
-                                "tiles":  500,
+                                "tiles":  1500,
                                 "savingBox":  36223
                             },
                             {
