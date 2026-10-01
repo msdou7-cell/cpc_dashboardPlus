@@ -10,7 +10,7 @@ const dashboardData =
 {
     "totalFamilies":  155,
     "totalMembers":  804,
-    "grandTotal":  9055251,
+    "grandTotal":  9053751,
     "freeWill":  551515,
     "faithPromise":  0,
     "employeeSubscription":  4142843,
@@ -28,7 +28,7 @@ const dashboardData =
     "windows":  661500,
     "cpc":  0,
     "pillars":  810000,
-    "tiles":  143750,
+    "tiles":  142250,
     "savingBox":  2249343,
     "families":  [
                      {
@@ -172,8 +172,8 @@ const dashboardData =
                          "head":  "P Temui",
                          "members":  10,
                          "savingBox":  36223,
-                         "tiles":  1500,
-                         "total":  110373
+                         "tiles":  500,
+                         "total":  109373
                      },
                      {
                          "leikai":  "Khawai",
@@ -900,8 +900,8 @@ const dashboardData =
                          "head":  "K Koshil",
                          "members":  12,
                          "savingBox":  67979,
-                         "tiles":  6000,
-                         "total":  623713
+                         "tiles":  5500,
+                         "total":  623213
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -3271,7 +3271,7 @@ const dashboardData =
                                 "windows":  0,
                                 "cpc":  0,
                                 "pillars":  0,
-                                "tiles":  1500,
+                                "tiles":  500,
                                 "savingBox":  36223
                             },
                             {
@@ -15047,7 +15047,7 @@ const dashboardData =
                                 "windows":  0,
                                 "cpc":  0,
                                 "pillars":  30000,
-                                "tiles":  6000,
+                                "tiles":  5500,
                                 "savingBox":  67979
                             },
                             {
