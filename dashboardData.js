@@ -10,14 +10,14 @@ const dashboardData =
 {
     "totalFamilies":  155,
     "totalMembers":  804,
-    "grandTotal":  10957524,
+    "grandTotal":  11007524,
     "freeWill":  551515,
     "faithPromise":  0,
-    "employeeSubscription":  5955616,
+    "employeeSubscription":  6005616,
     "nonEmployeeSubscription":  538800,
     "phase1":  921500,
     "phase2":  557750,
-    "phase3":  2087803,
+    "phase3":  2137803,
     "phase4":  1529653,
     "phase5":  858910,
     "phaseA":  0,
@@ -917,7 +917,7 @@ const dashboardData =
                          "members":  5,
                          "savingBox":  14573,
                          "tiles":  1000,
-                         "total":  54073
+                         "total":  104073
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -15542,7 +15542,7 @@ const dashboardData =
                                 "faithPromise":  0,
                                 "phase1":  0,
                                 "phase2":  0,
-                                "phase3":  0,
+                                "phase3":  50000,
                                 "phase4":  0,
                                 "phase5":  0,
                                 "phaseA":  0,
