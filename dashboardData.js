@@ -10,16 +10,16 @@ const dashboardData =
 {
     "totalFamilies":  155,
     "totalMembers":  804,
-    "grandTotal":  11007524,
+    "grandTotal":  11012724,
     "freeWill":  551515,
     "faithPromise":  0,
-    "employeeSubscription":  6005616,
+    "employeeSubscription":  6010816,
     "nonEmployeeSubscription":  538800,
     "phase1":  921500,
     "phase2":  557750,
     "phase3":  2137803,
     "phase4":  1529653,
-    "phase5":  858910,
+    "phase5":  864110,
     "phaseA":  0,
     "phaseB":  53500,
     "phaseC":  0,
@@ -173,7 +173,7 @@ const dashboardData =
                          "members":  10,
                          "savingBox":  36223,
                          "tiles":  3500,
-                         "total":  147373
+                         "total":  152573
                      },
                      {
                          "leikai":  "Khawai",
@@ -3285,7 +3285,7 @@ const dashboardData =
                                 "phase2":  7500,
                                 "phase3":  30000,
                                 "phase4":  30000,
-                                "phase5":  15000,
+                                "phase5":  20200,
                                 "phaseA":  0,
                                 "phaseB":  0,
                                 "phaseC":  0,
