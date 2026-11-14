@@ -552,7 +552,7 @@ U Shilkham,U Shilkham,Self,Heinoukhong,,,,,,,,,,,,2000,,,,,3858
 ,(L) N KumaR,Husband,Heinoukhong,,,,,,,,,500,,,,,,,,
 ,N Athoicha,Daughter,Heinoukhong,,,,,,,,,,,,,,,,,
 A Shillem,A Shillem,Self,Heinoukhong,,,,,,,,,,,,,,,,4000,11462
-,P Konai,Son,Heinoukhong,,,20000,10000,36500,,10100,,,,,,,,,,
+,P Konai,Son,Heinoukhong,,,20000,10000,36500,36500,10100,,,,,,,,,,
 ,Km Tungshil,Daughter-in-law,Heinoukhong,,,,,,,,,,,,,,,,,
 ,P Moshildou,Grandson,Heinoukhong,50000,,,,,15000,16400,,,,,,,,,,
 ,Dr. P Meran,Grandson,Heinoukhong,,,,,25000,,20000,,,,,,,,,,
@@ -566,7 +566,7 @@ A Keirung,A Keirung,Self,Heinoukhong,,,15000,7500,25000,25000,10000,,,,,,30000,,
 ,Kh Christina,Wife,Heinoukhong,,,,,,,,,,,,,,,,,
 ,A Shilky,Daughter,Heinoukhong,,,,,,,,,,,,,,,,,
 ,A Towarni,Daughter,Heinoukhong,,,,,,,,,,,,,,,,,
-A Khulphun,A Khulphun,Self,Heinoukhong,,,20000,10000,20500,8000,,,,,,,30000,,,3000,25072
+A Khulphun,A Khulphun,Self,Heinoukhong,,,20000,10000,20500,15000,,,,,,,30000,,,3000,25072
 ,P Khumui,Wife,Heinoukhong,,,500,250,,,,,,,,,,,,,
 ,Angman Happyla,Wife,Heinoukhong,,,,,,,,,,,,,,,,,
 ,A Mongam,Son,Heinoukhong,,,15000,7500,25000,25000,,,,,,,30000,,,,
@@ -577,7 +577,7 @@ A Khulphun,A Khulphun,Self,Heinoukhong,,,20000,10000,20500,8000,,,,,,,30000,,,30
 ,A Momansham,Grandson,Heinoukhong,,,,,,,,,,,,,,,,,
 ,A Kothil,Grandson,Heinoukhong,,,,,,,,,,,,,,,,,
 P Teshil,P Teshil,Self,Heinoukhong,,,,,,,,,,,,,,,,2500,41054
-,U Mophom,Son,Heinoukhong,,,15000,7500,29100,29100,12500,,,,,,,,,,
+,U Mophom,Son,Heinoukhong,,,15000,7500,29100,29350,12500,,,,,,,,,,
 ,A Leidar,Daughter-in-law,Heinoukhong,,,,,,,,,,,,,,,,,
 ,U Francis,Grandson,Heinoukhong,54000,,,,,,10000,,,,,,,,,,
 ,U Kolinson,Grandson,Heinoukhong,5000,,,,,,,,,,,,,,,,
@@ -588,7 +588,7 @@ A Temui,A Temui,Self,Heinoukhong,,,,,,,,,,,,,,,,2000,17488
 ,U Teshiltrim,Grand-Daughter,Heinoukhong,,,,,,,,,,,,,,,,,
 ,U Mothilphun,Grandson,Heinoukhong,,,,,,,,,,,,,,,,,
 U Kophom,U Kophom,Self,Heinoukhong,,,15000,7500,29100,9100,,,,,,,20000,,,,17700
-,A Tothang,Wife,Heinoukhong,,,1000,500,15500,,,,,,,,,,,,
+,A Tothang,Wife,Heinoukhong,,,1000,500,15500,15500,,,,,,,,,,,
 ,U Teshoriya,Daughter,Heinoukhong,,,,,,,,,,,,,,,,,
 ,U Modai-in,Son,Heinoukhong,,,,,,,,,,,,,,,,,
 ,U Towarthang,Daughter,Heinoukhong,,,,,,,,,,,,,,,,,
@@ -688,7 +688,7 @@ P Angrung,P Angrung,Self,Heinoukhong,,,,,,,,,1000,,,8000,,,,1000,13457
 ,K Tungnai,Wife,Heinoukhong,,,,,,,,,,,,,,,,,
 ,P Kothang,Son,Heinoukhong,,,,,,,,,,,,,,,,,
 ,P Methil,Son,Heinoukhong,,,,,,,,,,,,,,,,,
-Ks Khamtol,Ks Khamtol,Self,Heinoukhong,,,20000,10000,38698,35000,,,,,,,,,30000,2000,26670
+Ks Khamtol,Ks Khamtol,Self,Heinoukhong,,,20000,10000,38698,38698,,,,,,,,,30000,2000,26670
 ,U Khuring,Wife,Heinoukhong,,,,,,,,,,,,,,,,,
 ,Ks Jacob,Son,Heinoukhong,,,,,,,,,,,,,,,,,
 ,Ks Kowarthang,Son,Heinoukhong,,,,,,,,,,,,,,,,,
@@ -699,7 +699,7 @@ A Peter,A Peter,Self,Heinoukhong,,,15000,7500,19000,6000,,,,,,,,,,500,14725
 ,A Koshil,Son,Heinoukhong,,,,,,,,,,,,,,,,,
 ,Angson Teringshim,Grand-Daughter,Heinoukhong,,,,,,,,,,,,,,,,,
 ,Angson Moshingwar,Grandson,Heinoukhong,,,,,,,,,,,,,,,,,
-Tk Mekhulshim,Tk Mekhulshim,Self,Heinoukhong,1000,,,,,,,,500,,,7000,,,,1500,6520
+Tk Mekhulshim,Tk Mekhulshim,Self,Heinoukhong,1000,,,,,,,,500,,,7000,,,,2500,6520
 ,U Teon,Wife,Heinoukhong,,,,,,,,,,,,,,,,,
 ,Tk Moses,Son,Heinoukhong,,,,,,,,,,,,,,,,,
 ,Tk Muining,Daughter,Heinoukhong,,,,,,,,,,,,,,,,,
@@ -718,7 +718,7 @@ U Khamshun,U Khamshun,Self,Chingyang,,,,,,,,,,,,,,,,,4285
 ,U Mo-ingson,Grandson,Chingyang,,,,,,,,,,,,,,,,,
 K Kothil,K Kothil,Self,Chingyang,,,,,,,,,500,,,5000,,,,1000,6130
 ,U Todar,Wife,Chingyang,,,,,,,,,,,,,,,,,
-U Angrung,U Angrung,Self,Chingyang,,,15000,7500,25000,24000,,,,,,,,,,,40893
+U Angrung,U Angrung,Self,Chingyang,,,15000,7500,25000,25000,,,,,,,,,,,40893
 ,Ml Daring,Wife,Chingyang,,,15000,7500,28000,28000,,,,,,,,,30000,,
 ,U Modunkhul,Son,Chingyang,,,,,,,,,,,,,,,,,
 ,U Muining,Daughter,Chingyang,,,,,,,,,,,,,,,,,
