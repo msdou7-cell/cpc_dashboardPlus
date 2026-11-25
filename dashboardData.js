@@ -10,21 +10,21 @@ const dashboardData =
 {
     "totalFamilies":  155,
     "totalMembers":  805,
-    "grandTotal":  11230427,
+    "grandTotal":  11242427,
     "freeWill":  551515,
     "faithPromise":  0,
-    "employeeSubscription":  6206519,
-    "nonEmployeeSubscription":  559800,
+    "employeeSubscription":  6211519,
+    "nonEmployeeSubscription":  566800,
     "phase1":  921500,
     "phase2":  557750,
     "phase3":  2137803,
-    "phase4":  1593601,
+    "phase4":  1598601,
     "phase5":  995865,
     "phaseA":  0,
     "phaseB":  53500,
     "phaseC":  0,
     "phaseD":  0,
-    "phaseE":  506300,
+    "phaseE":  513300,
     "windows":  661500,
     "cpc":  0,
     "pillars":  810000,
@@ -941,7 +941,7 @@ const dashboardData =
                          "members":  6,
                          "savingBox":  15404,
                          "tiles":  0,
-                         "total":  105904
+                         "total":  110904
                      },
                      {
                          "leikai":  "Heinoukhong",
@@ -1189,7 +1189,7 @@ const dashboardData =
                          "members":  7,
                          "savingBox":  5858,
                          "tiles":  0,
-                         "total":  10858
+                         "total":  17858
                      },
                      {
                          "leikai":  "Chingyang",
@@ -15865,7 +15865,7 @@ const dashboardData =
                                 "phase1":  5000,
                                 "phase2":  2500,
                                 "phase3":  15000,
-                                "phase4":  0,
+                                "phase4":  5000,
                                 "phase5":  0,
                                 "phaseA":  0,
                                 "phaseB":  0,
@@ -19252,7 +19252,7 @@ const dashboardData =
                                 "phaseB":  1000,
                                 "phaseC":  0,
                                 "phaseD":  0,
-                                "phaseE":  1000,
+                                "phaseE":  8000,
                                 "windows":  0,
                                 "cpc":  0,
                                 "pillars":  0,
